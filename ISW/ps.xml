@@ -1,0 +1,125 @@
+<parameters>
+	<parameter>
+		<name>EstimateByGroupedSample</name>
+		<value type="0">0</value>
+	</parameter>
+	<parameter>
+		<name>ElementsPerThread</name>
+		<value type="0">500</value>
+	</parameter>
+	<parameter>
+		<name>NumberOfThreads</name>
+		<value type="0">8</value>
+	</parameter>
+	<parameter>
+		<name>FreeSamplesOnDestroy</name>
+		<value type="0">1</value>
+	</parameter>
+	<parameter>
+		<name>CriteriaList</name>
+		<value type="8">
+			<item>
+				<index>0</index>
+				<type>Criterion_GoodnessOfFitKolmogorov</type>
+				<checked>false</checked>
+				<info>
+					<name>Критерий Колмогорова</name>
+					<filename>Критерий Колмогорова</filename>
+					<note>Универсальный критерий согласия</note>
+					<group>4</group>
+				</info>
+			</item>
+		</value>
+	</parameter>
+	<parameter>
+		<name>sampleVolumeList</name>
+		<value type="1">
+			<item>
+				<index>0</index>
+				<value>20</value>
+			</item>
+		</value>
+	</parameter>
+	<parameter>
+		<name>SampleNumber</name>
+		<value type="0">100000</value>
+	</parameter>
+	<parameter>
+		<name>DistributionsList</name>
+		<value type="7">
+			<item>
+				<index>0</index>
+				<value>Shift(Scale(D9(),1.000000000000000000?),0.000000000000000000?)</value>
+			</item>
+		</value>
+	</parameter>
+	<parameter>
+		<name>SampleToTestIndex</name>
+		<value type="0">0</value>
+	</parameter>
+	<parameter>
+		<name>StatisticOptions</name>
+		<value type="9">
+			<est_meth>0</est_meth>
+			<est_type>0</est_type>
+			<est_subj>1</est_subj>
+			<est_init>         1</est_init>
+			<est_init_q>         1</est_init_q>
+			<gr_type>         1</gr_type>
+			<gr_numb>         7</gr_numb>
+			<gr_numb_own>         5</gr_numb_own>
+			<gr_left>       -35</gr_left>
+			<gr_right>        35</gr_right>
+			<gr_delta>       100</gr_delta>
+			<robust>         0</robust>
+			<fixed>         0</fixed>
+			<X_set volume="         5">
+				<item>    0.2654</item>
+				<item>    0.9403</item>
+				<item>    3.6175</item>
+				<item>   17.3995</item>
+				<item>6.0816366893599e+247</item>
+			</X_set>
+			<hypothesis>         0</hypothesis>
+			<W volume="         7">
+				<item>         0</item>
+				<item>         1</item>
+				<item>         0</item>
+				<item>         0</item>
+				<item>         0</item>
+				<item>         0</item>
+				<item>         0</item>
+			</W>
+			<Nik>         1</Nik>
+			<GenTestDistr>         0</GenTestDistr>
+			<NumberSamples>       100</NumberSamples>
+			<MaxSampleSize>       200</MaxSampleSize>
+			<significance>      0.01</significance>
+			<search>         4</search>
+			<VisualSearch>         0</VisualSearch>
+			<eps>     1e-11</eps>
+			<epsf>     1e-11</epsf>
+			<newton>         0</newton>
+			<approx>         1</approx>
+			<DoSmirnovTransform>         0</DoSmirnovTransform>
+			<NetServiceDiscover>         0</NetServiceDiscover>
+			<NetTaskService>         0</NetTaskService>
+		</value>
+	</parameter>
+	<parameter>
+		<name>SaveSampleInFile</name>
+		<value type="0">1</value>
+	</parameter>
+	<parameter>
+		<name>SamplesList</name>
+		<value type="2">1</value>
+	</parameter>
+	<parameter>
+		<name>DoNotUseCentralHost</name>
+		<value type="0">0</value>
+	</parameter>
+	<parameter>
+		<name>RandomInit</name>
+		<value type="0">100</value>
+	</parameter>
+</parameters>

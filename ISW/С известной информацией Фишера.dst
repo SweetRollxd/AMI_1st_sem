@@ -1,0 +1,11 @@
+[Distributions]
+Exp(0?,1?)
+Cauchy(0?,1?)
+Laplace(0?,1?)
+LnNormal(0?,1?)
+Logistic(0?,1?)
+Maxwell(0?,1?)
+Normal(0?,1?)
+Seminormal(0?,1?)
+Rayleigh(0?,1?)
+

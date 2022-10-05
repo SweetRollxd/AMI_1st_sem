@@ -1,0 +1,108 @@
+<parameters>
+	<parameter>
+		<name>EstimateByGroupedSample</name>
+		<value type="0">0</value>
+	</parameter>
+	<parameter>
+		<name>ElementsPerThread</name>
+		<value type="0">500</value>
+	</parameter>
+	<parameter>
+		<name>NumberOfThreads</name>
+		<value type="0">2</value>
+	</parameter>
+	<parameter>
+		<name>CriteriaList</name>
+		<value type="8">
+			<item>
+				<index>0</index>
+				<type>Criterion_NormalitySkewness</type>
+				<checked>false</checked>
+				<info>
+					<name>Критерий Симметрии</name>
+					<filename>Критерий Симметрии</filename>
+					<note>Данный критерий возвращает значение Симметрии</note>
+					<group>0</group>
+				</info>
+			</item>
+		</value>
+	</parameter>
+	<parameter>
+		<name>sampleVolumeList</name>
+		<value type="1">
+			<item>
+				<index>0</index>
+				<value>100</value>
+			</item>
+			<item>
+				<index>1</index>
+				<value>100</value>
+			</item>
+			<item>
+				<index>2</index>
+				<value>100</value>
+			</item>
+			<item>
+				<index>3</index>
+				<value>100</value>
+			</item>
+			<item>
+				<index>4</index>
+				<value>100</value>
+			</item>
+			<item>
+				<index>5</index>
+				<value>100</value>
+			</item>
+			<item>
+				<index>6</index>
+				<value>100</value>
+			</item>
+		</value>
+	</parameter>
+	<parameter>
+		<name>SampleNumber</name>
+		<value type="0">100</value>
+	</parameter>
+	<parameter>
+		<name>DistributionsList</name>
+		<value type="7">
+			<item>
+				<index>0</index>
+				<value>Shift(Scale(D25(0.432900000000000007?,0.982899999999999996),7.073500000000000121),5.927500000000000213)</value>
+			</item>
+			<item>
+				<index>1</index>
+				<value>Shift(Scale(D25(0.432900000000000007?,0.982899999999999996?),7.073500000000000121),5.927500000000000213)</value>
+			</item>
+			<item>
+				<index>2</index>
+				<value>Shift(Scale(D25(0.432900000000000007?,0.982899999999999996?),7.073500000000000121?),5.927500000000000213)</value>
+			</item>
+			<item>
+				<index>3</index>
+				<value>Shift(Scale(D25(0.432900000000000007,0.982899999999999996?),7.073500000000000121?),5.927500000000000213?)</value>
+			</item>
+			<item>
+				<index>4</index>
+				<value>Shift(Scale(D25(0.432900000000000007,0.982899999999999996),7.073500000000000121?),5.927500000000000213?)</value>
+			</item>
+			<item>
+				<index>5</index>
+				<value>Shift(Scale(D25(0.432900000000000007,0.982899999999999996),7.073500000000000121),5.927500000000000213?)</value>
+			</item>
+			<item>
+				<index>6</index>
+				<value>Shift(Scale(D25(0.432900000000000007?,0.982899999999999996?),7.073500000000000121?),5.927500000000000213?)</value>
+			</item>
+		</value>
+	</parameter>
+	<parameter>
+		<name>SamplesList</name>
+		<value type="2">1</value>
+	</parameter>
+	<parameter>
+		<name>RandomInit</name>
+		<value type="0">100</value>
+	</parameter>
+</parameters>

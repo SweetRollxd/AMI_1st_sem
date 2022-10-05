@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="Windows-1251" standalone="yes" ?>
+<Tables>
+  <Criterion_GoodnessOfFitKolmogorov Description="Критерий Колмогорова">
+    <OMP Description="Метод максимального правдоподобия">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="GAMMA">Shift(Scale(D19(5.1092),0.0861),0.2950)</Scale>
+        <Both  />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="GAMMA">Shift(Scale(D19(4.5462),0.1001),0.3100)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="GAMMA">Shift(Scale(D19(5.1092),0.0861),0.2950)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="GAMMA">Shift(Scale(D19(5.4566),0.0794),0.2870)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(5.3541, 7.2519, 2.5630),1.7652),0.302)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(4.4680, 4.8450, 3.9105),2.3784),0.324)</Scale>
+        <Both  Synonym="GAMMA">Shift(Scale(D19(6.2949),0.0624),0.2613)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(5.2604, 7.4327, 2.1872),1.4774),0.30)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(4.8849, 5.2341, 3.6279),2.3872),0.303)</Scale>
+        <Both  Synonym="GAMMA">Shift(Scale(D19(6.4721),0.0580),0.2620)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form   Synonym="BETA_III">Shift(Scale(D22(5.2604, 7.4327, 2.1872),1.4774),0.30)</Form>
+        <Form1  Synonym="BETA_III">Shift(Scale(D22(4.8849, 5.2341, 3.6279),2.3872),0.303)</Form1>
+        <FormForm1  Synonym="GAMMA">Shift(Scale(D19(6.4721),0.0580),0.2620)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="GAMMA">Shift(Scale(D19(5.9860),0.0780),0.2528)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.0987),0.1463),0.3350)</Scale>
+        <Both  Synonym="GAMMA">Shift(Scale(D19(5.3642),0.0654),0.2600)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="GAMMA">Shift(Scale(D19(7.6325),0.0531),0.2368)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.4954),0.1411),0.3325)</Scale>
+        <Both  Synonym="GAMMA">Shift(Scale(D19(7.5402),0.0451),0.2422)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="GAMMA">Shift(Scale(D19(5.2194),0.0848),0.2920)</Scale>
+        <Form Synonym="GAMMA">Shift(Scale(D19(3.6805),0.1355),0.3350)</Form>
+        <ScaleForm  Synonym="GAMMA">Shift(Scale(D19(6.6012),0.0563),0.2598)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="GAMMA">Shift(Scale(D19(5.2194),0.0848),0.2920)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.6805),0.1355),0.3350)</Scale>
+        <Both  Synonym="GAMMA">Shift(Scale(D19(6.6012),0.0563),0.2598)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="GAMMA">Shift(Scale(D19(5.2194),0.0848),0.2920)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.6805),0.1355),0.3350)</Scale>
+        <Both  Synonym="GAMMA">Shift(Scale(D19(6.6012),0.0563),0.2598)</Both>
+      </Максимального_значения>
+      <Гамма ID="D19">
+        <Shift />
+        <Scale Form="0.3" Synonym="BETA_III">Shift(Scale(D22(6.6871, 4.8368, 4.4047),1.9440),0.281)</Scale>
+        <Scale Form="0.5" Synonym="BETA_III">Shift(Scale(D22(6.9356, 5.0081, 4.3582),4.8470),0.280)</Scale>
+        <Scale Form="1.0" Synonym="BETA_III">Shift(Scale(D22(6.7187, 5.3740, 3.7755),1.6875),0.282)</Scale>
+        <Scale Form="2.0" Synonym="BETA_III">Shift(Scale(D22(5.8359, 22.6032, 2.1921),4.00),0.282)</Scale>
+        <Scale Form="3.0" Synonym="BETA_III">Shift(Scale(D22(5.9055, 24.4312, 2.0996),4.00),0.282)</Scale>
+        <Scale Form="4.0" Synonym="BETA_III">Shift(Scale(D22(5.9419, 27.1264, 1.9151),4.00),0.282)</Scale>
+        <Scale Form="5.0" Synonym="BETA_III">Shift(Scale(D22(5.8774, 30.0692, 1.7199),4.00),0.282)</Scale>
+        <Form  Form="0.3" Synonym="BETA_III">Shift(Scale(D22(6.4536, 5.7519, 3.3099),1.6503),0.280)</Form>
+        <Form  Form="0.5" Synonym="BETA_III">Shift(Scale(D22(6.3860, 5.9685, 3.1228),1.6154),0.280)</Form>
+        <Form  Form="1.0" Synonym="BETA_III">Shift(Scale(D22(6.1176, 6.4704, 2.6933),1.5501),0.280)</Form>
+        <Form  Form="2.0" Synonym="BETA_III">Shift(Scale(D22(6.1387, 6.5644, 2.6021),1.4840),0.280)</Form>
+        <Form  Form="3.0" Synonym="BETA_III">Shift(Scale(D22(6.1221, 6.6131, 2.5536),1.4590),0.280)</Form>
+        <Form  Form="4.0" Synonym="BETA_III">Shift(Scale(D22(6.0827, 6.7095, 2.4956),1.4494),0.280)</Form>
+        <Form  Form="5.0" Synonym="BETA_III">Shift(Scale(D22(6.0887, 6.7265, 2.4894),1.4432),0.280)</Form>
+        <ScaleForm Form="0.3" Synonym="BETA_III">Shift(Scale(D22(6.9705, 5.6777, 3.6297),1.5070),0.270)</ScaleForm>
+        <ScaleForm Form="0.5" Synonym="BETA_III">Shift(Scale(D22(6.4083, 5.9339, 3.2063),1.4483),0.2774)</ScaleForm>
+        <ScaleForm Form="1.0" Synonym="BETA_III">Shift(Scale(D22(5.6031, 6.1293, 2.7065),1.3607),0.2903)</ScaleForm>
+        <ScaleForm Form="2.0" Synonym="BETA_III">Shift(Scale(D22(5.8324, 6.1446, 2.7546),1.3280),0.2862)</ScaleForm>
+        <ScaleForm Form="3.0" Synonym="BETA_III">Shift(Scale(D22(6.0393, 6.1276, 2.8312),1.3203),0.2827)</ScaleForm>
+        <ScaleForm Form="4.0" Synonym="BETA_III">Shift(Scale(D22(6.1584, 6.1187, 2.8748),1.3170),0.2807)</ScaleForm>
+        <ScaleForm Form="5.0" Synonym="BETA_III">Shift(Scale(D22(6.1957, 6.1114, 2.8894),1.3140),0.2801)</ScaleForm>
+      </Гамма>
+      <Двустороннее_экспоненциальное ID="D26">
+        <Form Form="0.5" Synonym="GAMMA">Shift(Scale(D19(3.7437),0.1349),0.325)</Form>
+        <Form Form="0.75" Synonym="GAMMA">Shift(Scale(D19(3.7808),0.1349),0.330)</Form>
+        <Form Form="1" Synonym="GAMMA">Shift(Scale(D19(3.9433),0.1340),0.3200)</Form>
+        <Form Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.2366, 5.7254, 2.8969),2.4200),0.330)</Form>
+        <Form Form="2" Synonym="BETA_III">Shift(Scale(D22(4.6934, 5.6544, 3.0971),2.4099),0.315)</Form>
+        <Form Form="3" Synonym="BETA_III">Shift(Scale(D22(6.5249, 5.0755, 4.5306),2.4069),0.285)</Form>
+        <Form Form="4" Synonym="BETA_III">Shift(Scale(D22(3.6243, 5.3291, 2.4503),2.1853),0.36)</Form>
+        <Form Form="5" Synonym="BETA_III">Shift(Scale(D22(3.4549, 6.2388, 2.0813),2.300),0.3600)</Form>
+        <Form Form="7" Synonym="BETA_III">Shift(Scale(D22(3.4527, 6.2874, 2.062),2.300),0.3600)</Form>
+        <Scale Form="0.5" Synonym="GAMMA">Shift(Scale(D19(3.5811),0.1366),0.325)</Scale>
+        <Scale Form="0.75" Synonym="BETA_III">Shift(Scale(D22(4.5525, 4.9086, 3.8651),2.3718),0.315)</Scale>
+        <Scale Form="1" Synonym="BETA_III">Shift(Scale(D22(4.4680, 4.8450, 3.9105),2.3784),0.324)</Scale>
+        <Scale Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.3698, 5.2853, 3.3545),2.3863),0.318)</Scale>
+        <Scale Form="2" Synonym="BETA_III">Shift(Scale(D22(4.8849, 5.2341, 3.6279),2.3872),0.303)</Scale>
+        <Scale Form="3" Synonym="BETA_III">Shift(Scale(D22(5.2350, 5.0903, 3.9316),2.3905),0.300)</Scale>
+        <Scale Form="4" Synonym="BETA_III">Shift(Scale(D22(4.4775, 5.7536, 2.9612),2.4028),0.31)</Scale>
+        <Scale Form="5" Synonym="BETA_III">Shift(Scale(D22(3.1581, 6.2159, 1.9964),2.300),0.3600)</Scale>
+        <Scale Form="7" Synonym="BETA_III">Shift(Scale(D22(3.1789, 6.3997, 1.9239),2.300),0.360)</Scale>
+        <Shift Form="0.5" Synonym="GAMMA">Shift(Scale(D19(4.4361),0.1186),0.320)</Shift>
+        <Shift Form="0.75" Synonym="BETA_III">Shift(Scale(D22(4.7066, 10.8120, 1.8954),2.50),0.302)</Shift>
+        <Shift Form="1" Synonym="BETA_III">Shift(Scale(D22(5.3541, 7.2519, 2.5630),1.7652),0.302)</Shift>
+        <Shift Form="1.6" Synonym="BETA_III">Shift(Scale(D22(5.4129, 7.6381, 2.1289),1.3936),0.290)</Shift>
+        <Shift Form="2" Synonym="BETA_III">Shift(Scale(D22(5.2604, 7.4327, 2.1872),1.4774),0.30)</Shift>
+        <Shift Form="3" Synonym="BETA_III">Shift(Scale(D22(8.5402, 6.1019, 4.4047),1.8871),0.250)</Shift>
+        <Shift Form="4" Synonym="BETA_III">Shift(Scale(D22(3.8031, 7.8639, 1.9955),2.1337),0.3400)</Shift>
+        <Shift Form="5" Synonym="BETA_III">Shift(Scale(D22(4.8171, 5.5295, 3.0757),2.000),0.320)</Shift>
+        <Shift Form="7" Synonym="BETA_III">Shift(Scale(D22(4.4660, 5.47624, 2.6851),2.000),0.3200)</Shift>
+        <All Form="0.5" Synonym="BETA_III">Shift(Scale(D22(4.4961, 5.7241, 3.1229),2.26825),0.306)</All>
+        <All Form="0.75" Synonym="BETA_III">Shift(Scale(D22(4.5753, 6.8907, 2.74626),1.8903),0.294)</All>
+        <All Form="1" Synonym="GAMMA">Shift(Scale(D19(5.5391),0.0606),0.2700)</All>
+        <All Form="1.6" Synonym="BETA_III">Shift(Scale(D22(7.4853, 7.2752, 3.2095),1.14609),0.260)</All>
+        <All Form="2" Synonym="BETA_III">Shift(Scale(D22(9.3597, 5.7532, 5.8275),1.4507),0.2500)</All>
+        <All Form="3" Synonym="GAMMA">Shift(Scale(D19(3.6025),0.10128),0.3125)</All>
+        <All Form="4" Synonym="GAMMA">Shift(Scale(D19(3.5001),0.1150),0.3200)</All>
+        <All Form="5" Synonym="BETA_III">Shift(Scale(D22(3.5446, 6.6218, 2.5197),2.2850),0.325)</All>
+        <All Form="7" Synonym="BETA_III">Shift(Scale(D22(3.5462, 6.6218, 2.2864),2.2850),0.325)</All>
+        <ScaleForm Form="0.5" Synonym="GAMMA">Shift(Scale(D19(3.1115),0.1442),0.330)</ScaleForm>
+        <ScaleForm Form="0.75" Synonym="BETA_III">Shift(Scale(D22(4.0450, 4.9340, 3.7586),2.3832),0.310)</ScaleForm>
+        <ScaleForm Form="1" Synonym="BETA_III">Shift(Scale(D22(3.9724, 4.8877, 3.7872),2.3973),0.3150)</ScaleForm>
+        <ScaleForm Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.9730, 4.5743, 4.6422),2.3576),0.29)</ScaleForm>
+        <ScaleForm Form="2" Synonym="BETA_III">Shift(Scale(D22(4.6127, 4.8440, 4.1337),2.4080),0.295)</ScaleForm>
+        <ScaleForm Form="3" Synonym="BETA_III">Shift(Scale(D22(5.5689, 4.6553, 4.9339),2.4147),0.280)</ScaleForm>
+        <ScaleForm Form="4" Synonym="BETA_III">Shift(Scale(D22(2.6607, 6.1554, 2.0175),2.4197),0.364)</ScaleForm>
+        <ScaleForm Form="5" Synonym="BETA_III">Shift(Scale(D22(3.7224, 4.6425, 3.1224),2.2000),0.330)</ScaleForm>
+        <ScaleForm Form="7" Synonym="BETA_III">Shift(Scale(D22(3.8325, 4.7340, 3.0569),2.2000),0.330)</ScaleForm>
+        <ShiftForm Form="0.5" Synonym="GAMMA">Shift(Scale(D19(3.8417),0.1265),0.322)</ShiftForm>
+        <ShiftForm Form="0.75" Synonym="BETA_III">Shift(Scale(D22(4.9912, 6.4499, 2.6816),1.90),0.295)</ShiftForm>
+        <ShiftForm Form="1" Synonym="BETA_III">Shift(Scale(D22(4.9365, 8.1400, 2.2383),1.7312),0.3)</ShiftForm>
+        <ShiftForm Form="1.6" Synonym="BETA_III">Shift(Scale(D22(6.2506, 7.4916, 2.5914),1.4130),0.275)</ShiftForm>
+        <ShiftForm Form="2" Synonym="BETA_III">Shift(Scale(D22(5.7052, 7.2179, 2.5877),1.5433),0.29)</ShiftForm>
+        <ShiftForm Form="3" Synonym="BETA_III">Shift(Scale(D22(6.5008, 7.8186, 3.25827),2.1735),0.270)</ShiftForm>
+        <ShiftForm Form="4" Synonym="BETA_III">Shift(Scale(D22(4.1178, 7.0193, 2.3554),2.1116),0.330)</ShiftForm>
+        <ShiftForm Form="5" Synonym="BETA_III">Shift(Scale(D22(4.9052, 5.6639, 2.9616),2.000),0.310)</ShiftForm>
+        <ShiftForm Form="7" Synonym="BETA_III">Shift(Scale(D22(4.9890, 5.1511, 3.1470),2.0000),0.310)</ShiftForm>
+        <Both Form="0.5" Synonym="GAMMA">Shift(Scale(D19(3.6713),0.1251),0.326)</Both>
+        <Both Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.5451, 7.3578, 3.0559),2.100),0.280)</Both>
+        <Both Form="1" Synonym="GAMMA">Shift(Scale(D19(6.2949),0.0624),0.2613)</Both>
+        <Both Form="1.6" Synonym="BETA_III">Shift(Scale(D22(5.3623, 7.3149, 2.1379),1.1702),0.29)</Both>
+        <Both Form="2" Synonym="GAMMA">Shift(Scale(D19(6.4721),0.0580),0.2620)</Both>
+        <Both Form="3" Synonym="BETA_III">Shift(Scale(D22(6.8503, 6.2212, 3.9819),1.9216),0.265)</Both>
+        <Both Form="4" Synonym="BETA_III">Shift(Scale(D22(4.4530, 6.5204, 2.8504),2.1247),0.315)</Both>
+        <Both Form="5" Synonym="BETA_III">Shift(Scale(D22(4.5122, 5.6639, 2.8588),2.000),0.310)</Both>
+        <Both Form="7" Synonym="BETA_III">Shift(Scale(D22(3.5462, 6.6218, 2.2864),2.2850),0.325)</Both>
+      </Двустороннее_экспоненциальное>  
+      <Sb-Джонсона ID="D23">
+        <Form  Synonym="BETA_III">Shift(Scale(D22(6.3484, 7.4913, 2.3663),1.4790),0.27)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(6.8242, 4.7737, 5.2621),2.3878),0.27)</Form1>
+        <FormForm1 Synonym="BETA_III">Shift(Scale(D22(6.6559, 8.1766, 2.9405),1.6143),0.27)</FormForm1>
+      </Sb-Джонсона>
+      <Sl-Джонсона ID="D24">
+        <Shift />
+        <Scale Synonym="BETA_III">Shift(Scale(D22(6.3484, 7.4913, 2.3663),1.4790),0.27)</Scale>
+        <Form  Synonym="BETA_III">Shift(Scale(D22(6.3484,7.4913, 2.3663),1.4790),0.27)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(6.8242, 4.7737, 5.2621),2.3878),0.27)</Form1>
+        <ScaleForm  Synonym="BETA_III">Shift(Scale(D22(6.3484, 7.4913, 2.3663),1.4790),0.27)</ScaleForm>
+        <ScaleForm1 Synonym="BETA_III">Shift(Scale(D22(6.6559, 8.1766, 2.9405),1.6143),0.27)</ScaleForm1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(6.6559, 8.1766, 2.9405),1.6143),0.27)</FormForm1>
+        <ScaleFormForm1 Synonym="BETA_III">Shift(Scale(D22(6.6559, 8.1766, 2.9405),1.6143),0.27)</ScaleFormForm1>
+      </Sl-Джонсона>
+      <Su-Джонсона ID="D25">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(6.6252, 7.4025, 3.0590),1.6516),0.27)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(5.3417, 4.6440, 4.7448),2.3802),0.29)</Scale>
+        <Form  Synonym="BETA_III">Shift(Scale(D22(6.3484, 7.4913, 2.3663),1.4790),0.27)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(6.8242, 4.7737, 5.2621),2.3878),0.27)</Form1>
+        <ShiftForm  Synonym="BETA_III">Shift(Scale(D22(6.3069, 6.1065, 3.2916),1.3317),0.27)</ShiftForm>
+        <ShiftForm1 Synonym="BETA_III">Shift(Scale(D22(6.4839, 7.0152, 2.7376),1.2838),0.27)</ShiftForm1>
+        <Both Synonym="BETA_III">Shift(Scale(D22(6.2438, 6.9161, 2.5011),1.0904),0.27)</Both>
+        <ScaleForm  Synonym="BETA_III">Shift(Scale(D22(6.4496, 6.7714, 3.3119),1.4226),0.27)</ScaleForm>
+        <ScaleForm1 Synonym="BETA_III">Shift(Scale(D22(5.9751, 4.4559, 5.6810),2.4123),0.27)</ScaleForm1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(6.4792, 7.0243, 2.8437),1.4260),0.27)</FormForm1>
+        <All Synonym="BETA_III">Shift(Scale(D22(6.6889, 8.1712, 2.3857),0.9291),0.25)</All>
+        <ShiftScaleForm1 Synonym="BETA_III">Shift(Scale(D22(7.1354, 8.0363, 2.7466),1.1766),0.25)</ShiftScaleForm1>
+        <ShiftFormForm1  Synonym="BETA_III">Shift(Scale(D22(6.4262, 6.9732, 2.7325),1.1317),0.26)</ShiftFormForm1>
+        <ScaleFormForm1  Synonym="BETA_III">Shift(Scale(D22(6.2414, 6.4027, 3.7458),1.4361),0.27)</ScaleFormForm1>
+        <AllForm1 Synonym="BETA_III">Shift(Scale(D22(6.1239, 7.9516, 2.24033),0.9839),0.27)</AllForm1>
+      </Su-Джонсона>
+    </OMP>
+    <MD Description="Метод использующий MD-оценки">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="GAMMA">Shift(Scale(D19(4.4983),0.0621),0.2891)</Scale>
+        <Both />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="GAMMA">Shift(Scale(D19(4.2884),0.0705),0.3072)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="GAMMA">Shift(Scale(D19(4.8579),0.0639),0.2900)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="GAMMA">Shift(Scale(D19(5.3106),0.0581),0.2865)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="GAMMA">Shift(Scale(D19(5.0103),0.0602),0.2968)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.0431),0.1355),0.3182)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.1079,2.4629),0.1661),0.3340)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="LN_NORM">D10(-0.5469,0.2152)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.2458),0.1343),0.3072)</Scale>
+        <Both  Synonym="LN_NORM">D10(-0.7236,0.1837)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form Synonym="LN_NORM">D10(-0.5469,0.2152)</Form>
+        <Form1 Synonym="GAMMA">Shift(Scale(D19(3.2458),0.1343),0.3072)</Form1>
+        <FormForm1  Synonym="LN_NORM">D10(-0.7236,0.1837)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="LN_NORM">D10(-0.5182,0.2268)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.4398),0.1255),0.3022)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-1.6929,2.5234),0.1892),0.3607)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-3.8497,3.2770),0.2136),0.2607)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.6522,1.8288),0.1738),0.3384)</Scale>
+        <Both  Synonym="LN_NORM">D10(-0.7389,0.1771)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="SU_J">Shift(Scale(D25(-1.9028,2.3972),0.2227),0.3890)</Scale>
+        <Form Synonym="GAMMA">Shift(Scale(D19(3.5424),0.1203),0.2975)</Form>
+        <ScaleForm  Synonym="SU_J">Shift(Scale(D25(-1.3144,2.2480),0.1616),0.3858)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-1.9028,2.3972),0.2227),0.3890)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.5424),0.1203),0.2975)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-1.3144,2.2480),0.1616),0.3858)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-1.9028,2.3972),0.2227),0.3890)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(3.5424),0.1203),0.2975)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-1.3144,2.2480),0.1616),0.3858)</Both>
+      </Максимального_значения>
+    </MD>
+  </Criterion_GoodnessOfFitKolmogorov>
+  <Criterion_GoodnessOfFitSmirnov Description="Критерий Смирнова">
+    <OMP Description="Метод максимального правдоподобия">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="LN_NORM">D10(0.2260,0.6951)</Scale>
+        <Both  />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="LN_NORM">D10(0.2050,0.7718)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="LN_NORM">D10(0.2248,0.7248)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="LN_NORM">D10(0.2462,0.6779)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="GAMMA">Shift(Scale(D19(1.7941),0.8324),0.0149)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(0.8539),1.9952),0.0000)</Scale>
+        <Both  Synonym="GAMMA">Shift(Scale(D19(1.7071),0.7234),0.0170)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="GAMMA">Shift(Scale(D19(2.6428),0.5089),0.2056)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(0.8700),2.0786),0.0004)</Scale>
+        <Both  Synonym="LN_NORM">D10(0.1164,0.5436)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form Synonym="SU_J">Shift(Scale(D25(-2.5588,1.6251),0.4763),0.2134)</Form>
+        <Form1 Synonym="GAMMA">Shift(Scale(D19(0.8231),2.1973),0.0001)</Form1>
+        <FormForm1  Synonym="SU_J">Shift(Scale(D25(-2.2909,1.3491),0.3115),0.3134)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="GAMMA">Shift(Scale(D19(1.4108),1.0209),0.0004)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(0.8839),1.7507),0.0019)</Scale>
+        <Both  Synonym="GAMMA">Shift(Scale(D19(1.3546),0.7565),0.0005)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.9441,1.7404),0.3783),0.3082)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(0.8376),2.1815),0.0001)</Scale>
+        <Both  Synonym="LN_NORM">D10(0.0831,0.4473)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="LN_NORM">D10(0.2414,0.7017)</Scale>
+        <Form Synonym="GAMMA">Shift(Scale(D19(0.8856),0.4831),0.0002)</Form>
+        <ScaleForm  Synonym="LN_NORM">D10(0.1501,0.5108)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="LN_NORM">D10(0.2414,0.7017)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(0.8856),0.4831),0.0002)</Scale>
+        <Both  Synonym="LN_NORM">D10(0.1501,0.5108)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="LN_NORM">D10(0.2414,0.7017)</Shift>
+        <Scale Synonym="GAMMA">Shift(Scale(D19(0.8856),2.0700),0.0002)</Scale>
+        <Both  Synonym="LN_NORM">D10(0.1501,0.5108)</Both>
+      </Максимального_значения>
+      <Гамма ID="D19">
+        <Shift />
+        <Scale Form="0.3" Synonym="SU_J">Shift(Scale(D25(-3.1901,1.1381),0.1399),0.0081)</Scale>
+        <Scale Form="0.5" Synonym="SU_J">Shift(Scale(D25(-2.8625,1.1796),0.2003),0.0790)</Scale>
+        <Scale Form="1.0" Synonym="SU_J">Shift(Scale(D25(-2.5635,1.2797),0.2922),0.1584)</Scale>
+        <Scale Form="2.0" Synonym="SU_J">Shift(Scale(D25(-2.5372,1.3749),0.3464),0.2162)</Scale>
+        <Scale Form="3.0" Synonym="SU_J">Shift(Scale(D25(-2.3014,1.3875),0.3991),0.2750)</Scale>
+        <Scale Form="4.0" Synonym="SU_J">Shift(Scale(D25(-2.3759,1.4418),0.4149),0.2480)</Scale>
+        <Scale Form="5.0" Synonym="SU_J">Shift(Scale(D25(-2.4574,1.4599),0.3976),0.2712)</Scale>
+        <Form  Form="0.3" Synonym="SU_J">Shift(Scale(D25(-2.8117,1.3517),0.2973),0.1474)</Form>
+        <Form  Form="0.5" Synonym="SU_J">Shift(Scale(D25(-2.8816,1.4625),0.3377),0.1280)</Form>
+        <Form  Form="1.0" Synonym="SU_J">Shift(Scale(D25(-2.5861,1.4818),0.4130),0.1740)</Form>
+        <Form  Form="2.0" Synonym="SU_J">Shift(Scale(D25(-2.3222,1.4442),0.4335),0.2845)</Form>
+        <Form  Form="3.0" Synonym="SU_J">Shift(Scale(D25(-2.3895,1.4817),0.4344),0.2824)</Form>
+        <Form  Form="4.0" Synonym="SU_J">Shift(Scale(D25(-2.2574,1.4921),0.4694),0.3216)</Form>
+        <Form  Form="5.0" Synonym="SU_J">Shift(Scale(D25(-2.2611,1.4644),0.4393),0.3231)</Form>
+        <ScaleForm Form="0.3" Synonym="SU_J">Shift(Scale(D25(-2.4288,1.2878),0.2749),0.2074)</ScaleForm>
+        <ScaleForm Form="0.5" Synonym="SU_J">Shift(Scale(D25(-2.4027,1.3861),0.3389),0.2290)</ScaleForm>
+        <ScaleForm Form="1.0" Synonym="SU_J">Shift(Scale(D25(-2.2666,1.3824),0.3515),0.2731)</ScaleForm>
+        <ScaleForm Form="2.0" Synonym="SU_J">Shift(Scale(D25(-2.2109,1.3527),0.3317),0.3149)</ScaleForm>
+        <ScaleForm Form="3.0" Synonym="SU_J">Shift(Scale(D25(-2.4295,1.4110),0.3163),0.2784)</ScaleForm>
+        <ScaleForm Form="4.0" Synonym="SU_J">Shift(Scale(D25(-2.4153,1.4306),0.3318),0.2604)</ScaleForm>
+        <ScaleForm Form="5.0" Synonym="SU_J">Shift(Scale(D25(-2.1345,1.3945),0.3655),0.3263)</ScaleForm>
+      </Гамма>
+    </OMP>
+  </Criterion_GoodnessOfFitSmirnov>
+  <Criterion_GoodnessOfFitOmegaSmall>
+    <OMP Description="Метод максимального правдоподобия">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.3738, 1.2145),1.0792),0.011)</Scale>
+        <Both  />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.527, 1.1515),1.5527),0.012)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.3738, 1.2145),1.0792),0.011)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.353, 1.220),0.9786),0.0118)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(3.3130, 3.8338, 10.097),0.7517),0.011)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(3.9800, 1.4667, 38.0035),1.13),0.0111)</Scale>
+        <Both  Synonym="BETA_III">Shift(Scale(D22(4.489, 3.7706, 17.577),0.7065),0.0085)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(4.433, 3.6365, 13.920),0.6632),0.0084)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.153, 0.9448),2.5477),0.016)</Scale>
+        <Both  Synonym="BETA_III">Shift(Scale(D22(4.1153, 4.1748, 11.035),0.5116),0.009)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form Synonym="BETA_III">Shift(Scale(D22(4.433, 3.6365, 13.920),0.6632),0.0084)</Form>
+        <Form1 Synonym="SB_J">Shift(Scale(D23(3.153, 0.9448),2.5477),0.016)</Form1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.1153, 4.1748, 11.035),0.5116),0.009)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="SB_J">Shift(Scale(D23(2.359, 1.0732),0.595),0.0129)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.1895, 0.9134),2.690),0.013)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.4364, 1.0678),1.000),0.011)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="SB_J">Shift(Scale(D23(4.0026, 1.2853),1.00),0.0122)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.264, 0.9581),2.7046),0.014)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.2137, 1.3612),0.36),0.0105)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.498, 1.2236),1.1632),0.01)</Scale>
+        <Form Synonym="SB_J">Shift(Scale(D23(3.343, 0.9817),2.753),0.015)</Form>
+        <ScaleForm  Synonym="SB_J">Shift(Scale(D23(3.3854, 1.4453),0.4986),0.007)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="SB_J">Shift(Scale(D23(3.498, 1.2236),1.1632),0.01)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.343, 0.9817),2.753),0.015)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.3854, 1.4453),0.4986),0.007)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="SB_J">Shift(Scale(D23(3.498, 1.2236),1.1632),0.01)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.343, 0.9817),2.753),0.015)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.3854, 1.4453),0.4986),0.007)</Both>
+      </Максимального_значения>
+      <Гамма ID="D19">
+        <Shift />
+        <Scale Form="0.3" Synonym="BETA_III">Shift(Scale(D22(3.2722, 1.9596, 16.1768),0.750),0.013)</Scale>
+        <Scale Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.2296, 2.1984, 14.3153),0.700),0.013)</Scale>
+        <Scale Form="1.0" Synonym="BETA_III">Shift(Scale(D22(3.1201, 2.5460, 11.1200),0.600),0.013)</Scale>
+        <Scale Form="2.0" Synonym="BETA_III">Shift(Scale(D22(2.9463, 3.1124, 9.1160),0.600),0.013)</Scale>
+        <Scale Form="3.0" Synonym="BETA_III">Shift(Scale(D22(2.8840, 3.3796, 8.4342),0.600),0.013)</Scale>
+        <Scale Form="4.0" Synonym="BETA_III">Shift(Scale(D22(2.8522, 3.5285, 8.1044),0.600),0.013)</Scale>
+        <Scale Form="5.0" Synonym="BETA_III">Shift(Scale(D22(2.8249, 3.6280, 7.8756),0.6000),0.013)</Scale>
+        <Form  Form="0.3" Synonym="BETA_III">Shift(Scale(D22(3.0247, 3.2256, 11.113),0.7755),0.0125)</Form>
+        <Form  Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.0143, 3.3504, 10.095),0.7214),0.0125)</Form>
+        <Form  Form="1.0" Synonym="BETA_III">Shift(Scale(D22(2.9928, 3.4716, 8.8275),0.6346),0.0125)</Form>
+        <Form  Form="2.0" Synonym="BETA_III">Shift(Scale(D22(2.9909, 3.5333,8.2010),0.5786),0.0125)</Form>
+        <Form  Form="3.0" Synonym="BETA_III">Shift(Scale(D22(2.9737, 3.5528, 7.8843),0.5549),0.0125)</Form>
+        <Form  Form="4.0" Synonym="BETA_III">Shift(Scale(D22(2.9677, 3.5426, 7.7632),0.5418),0.0125)</Form>
+        <Form  Form="5.0" Synonym="BETA_III">Shift(Scale(D22(2.9638, 3.5465, 7.6558),0.5334),0.0125)</Form>
+        <ScaleForm Form="0.3" Synonym="BETA_III">Shift(Scale(D22(2.3607, 4.0840, 7.0606),0.6189),0.0145)</ScaleForm>
+        <ScaleForm Form="0.5" Synonym="BETA_III">Shift(Scale(D22(2.7216, 3.9844, 7.4493),0.5372),0.013)</ScaleForm>
+        <ScaleForm Form="1.0" Synonym="BETA_III">Shift(Scale(D22(3.0000, 3.8959, 7.3247),0.4508),0.012)</ScaleForm>
+        <ScaleForm Form="2.0" Synonym="BETA_III">Shift(Scale(D22(3.0533, 3.9402, 7.1173),0.4246),0.0118)</ScaleForm>
+        <ScaleForm Form="3.0" Synonym="BETA_III">Shift(Scale(D22(3.0703, 3.9618, 7.034),0.4163),0.0117)</ScaleForm>
+        <ScaleForm Form="4.0" Synonym="BETA_III">Shift(Scale(D22(3.0967, 3.9539, 7.064),0.4122),0.0116)</ScaleForm>
+        <ScaleForm Form="5.0" Synonym="BETA_III">Shift(Scale(D22(4.4332, 3.6256, 10.552),0.4098),0.0084)</ScaleForm>
+      </Гамма>
+      <Двустороннее_экспоненциальное ID="D26">
+        <Form Form="0.5" Synonym="BETA_III">Shift(Scale(D22(2.6596, 1.5374, 22.6346),1.100),0.015)</Form>
+        <Form Form="0.75" Synonym="BETA_III">Shift(Scale(D22(4.9844, 1.4891, 37.5211),1.001),0.0085)</Form>
+        <Form Form="1" Synonym="BETA_III">Shift(Scale(D22(2.8981, 1.5614, 20.0694),1.00),0.014)</Form>
+        <Form Form="1.6" Synonym="SB_J">Shift(Scale(D23(3.6139, 1.0337),3.400),0.013)</Form>
+        <Form Form="2" Synonym="SB_J">Shift(Scale(D23(2.7740, 0.9495),1.900),0.0170)</Form>
+        <Form Form="3" Synonym="BETA_III">Shift(Scale(D22(3.2178, 1.6133, 19.2436),1.000),0.0125)</Form>
+        <Form Form="4" Synonym="BETA_III">Shift(Scale(D22(2.6493, 2.3780, 23.7392),2.3027),0.0133)</Form>
+        <Form Form="5" Synonym="BETA_III">Shift(Scale(D22(3.3548, 1.7217, 20.2585),1.1000),0.012)</Form>
+        <Form Form="7" Synonym="BETA_III">Shift(Scale(D22(3.4065, 1.72170, 20.5769),1.1000),0.012)</Form>
+        <Scale Form="0.5" Synonym="BETA_III">Shift(Scale(D22(2.3196, 1.5425, 22.7256),1.2000),0.016)</Scale>
+        <Scale Form="0.75" Synonym="BETA_III">Shift(Scale(D22(6.1042, 1.2892, 53.3676),0.8800),0.009)</Scale>
+        <Scale Form="1" Synonym="BETA_III">Shift(Scale(D22(3.9800, 1.4667, 38.0035),1.13),0.0111)</Scale>
+        <Scale Form="1.6" Synonym="SB_J">Shift(Scale(D23(2.7348, 0.9148),1.800),0.016)</Scale>
+        <Scale Form="2" Synonym="SB_J">Shift(Scale(D23(3.3182, 0.94801),2.9500),0.016)</Scale>
+        <Scale Form="3" Synonym="BETA_III">Shift(Scale(D22(3.6534, 1.5249, 28.5258),1.0550),0.0117)</Scale>
+        <Scale Form="4" Synonym="BETA_III">Shift(Scale(D22(2.9074, 1.7706, 24.9344),1.40),0.0134)</Scale>
+        <Scale Form="5" Synonym="BETA_III">Shift(Scale(D22(3.2927, 1.6388, 23.4040),1.100),0.012)</Scale>
+        <Scale Form="7" Synonym="BETA_III">Shift(Scale(D22(3.3961, 1.6388, 23.7205),1.100),0.012)</Scale>
+        <Shift Form="0.5" Synonym="BETA_III">Shift(Scale(D22(2.8412, 1.9552, 17.4052),1.200),0.014)</Shift>
+        <Shift Form="0.75" Synonym="BETA_III">Shift(Scale(D22(3.5628, 2.6431, 16.5587),1.030),0.010)</Shift>
+        <Shift Form="1" Synonym="BETA_III">Shift(Scale(D22(3.3130, 3.8338, 10.0967),0.7517),0.011)</Shift>
+        <Shift Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.5239, 3.7332, 15.6889),0.6596),0.009)</Shift>
+        <Shift Form="2" Synonym="BETA_III">Shift(Scale(D22(4.4331, 3.6365, 13.9198),0.6632),0.0084)</Shift>
+        <Shift Form="3" Synonym="BETA_III">Shift(Scale(D22(3.6203, 2.6395, 11.3638),0.600),0.010)</Shift>
+        <Shift Form="4" Synonym="BETA_III">Shift(Scale(D22(3.2370, 2.7787, 15.5238),1.05),0.011)</Shift>
+        <Shift Form="5" Synonym="BETA_III">Shift(Scale(D22(4.0012, 2.0310, 17.0057),0.730),0.0095)</Shift>
+        <Shift Form="7" Synonym="BETA_III">Shift(Scale(D22(4.0337, 1.7885, 18.1049),0.7300),0.0095)</Shift>
+        <All Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.0778, 1.6214, 30.1798),1.2),0.013)</All>
+        <All Form="0.75" Synonym="BETA_III">Shift(Scale(D22(3.2636, 1.7846, 29.6713),0.800),0.0118)</All>
+        <All Form="1" Synonym="BETA_III">Shift(Scale(D22(5.2856, 3.0510, 34.1638),0.7312),0.0079)</All>
+        <All Form="1.6" Synonym="BETA_III">Shift(Scale(D22(6.8750, 4.6392, 18.020),0.3937),0.006)</All>
+        <All Form="2" Synonym="BETA_III">Shift(Scale(D22(6.7594, 3.8575, 28.6668),0.5921),0.006)</All>
+        <All Form="3" Synonym="SL_J">Shift(Scale(D24(1.1736, 1.2083),0.1163),0.0103)</All>
+        <All Form="4" Synonym="BETA_III">Shift(Scale(D22(3.5304, 2.1937, 29.8592),1.000),0.01)</All>
+        <All Form="5" Synonym="BETA_III">Shift(Scale(D22(4.5253, 1.7162, 31.4699),0.715),0.009)</All>
+        <All Form="7" Synonym="BETA_III">Shift(Scale(D22(4.3835, 1.5744, 28.6719),0.715),0.009)</All>
+        <ScaleForm  Form="0.5" Synonym="BETA_III">Shift(Scale(D22(1.6693, 1.3771, 15.5765),0.940),0.017)</ScaleForm>
+        <ScaleForm  Form="0.75" Synonym="BETA_III">Shift(Scale(D22(1.6779, 1.3775, 15.6587),0.940),0.017)</ScaleForm>
+        <ScaleForm  Form="1" Synonym="BETA_III">Shift(Scale(D22(3.7712, 1.1413, 38.6694),0.790),0.011)</ScaleForm>
+        <ScaleForm  Form="1.6" Synonym="SB_J">Shift(Scale(D23(2.3111, 0.8115),1.350),0.016)</ScaleForm>
+        <ScaleForm  Form="2" Synonym="SB_J">Shift(Scale(D23(2.2458, 0.7970),1.300),0.017)</ScaleForm>
+        <ScaleForm  Form="3" Synonym="BETA_III">Shift(Scale(D22(6.6688, 1.2016, 63.6672),0.830),0.008)</ScaleForm>
+        <ScaleForm  Form="4" Synonym="BETA_III">Shift(Scale(D22(2.8323, 1.4558, 24.26690),1.0),0.012)</ScaleForm>
+        <ScaleForm  Form="5" Synonym="BETA_III">Shift(Scale(D22(4.0952, 1.3628, 33.3948),0.900),0.0095)</ScaleForm>
+        <ScaleForm  Form="7" Synonym="BETA_III">Shift(Scale(D22(4.5574, 1.36280, 36.1643),0.900),0.0095)</ScaleForm>
+        <ShiftForm  Form="0.5" Synonym="BETA_III">Shift(Scale(D22(2.4600, 1.7966, 19.8161),1.2000),0.014)</ShiftForm>
+        <ShiftForm  Form="0.75" Synonym="BETA_III">Shift(Scale(D22(2.5230, 2.8292, 19.5602),1.4650),0.014)</ShiftForm>
+        <ShiftForm  Form="1" Synonym="BETA_III">Shift(Scale(D22(3.9062, 3.9000, 13.5396),0.7491),0.009)</ShiftForm>
+        <ShiftForm  Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.2190, 3.9949, 12.6139),0.5642),0.0087)</ShiftForm>
+        <ShiftForm  Form="2" Synonym="BETA_III">Shift(Scale(D22(4.0430, 3.72568, 12.5794),0.6313),0.0087)</ShiftForm>
+        <ShiftForm  Form="3" Synonym="BETA_III">Shift(Scale(D22(3.5065, 2.5837, 11.5972),0.600),0.010)</ShiftForm>
+        <ShiftForm  Form="4" Synonym="BETA_III">Shift(Scale(D22(2.9892, 2.7082, 14.1961),1.0),0.0117)</ShiftForm>
+        <ShiftForm  Form="5" Synonym="BETA_III">Shift(Scale(D22(3.8227, 2.0270, 16.0637),0.7200),0.0095)</ShiftForm>
+        <ShiftForm  Form="7" Synonym="BETA_III">Shift(Scale(D22(4.1853, 1.7329, 19.4044),0.7200),0.0095)</ShiftForm>
+        <Both Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.8085, 1.5324, 32.1564),0.950),0.011)</Both>
+        <Both Form="0.75" Synonym="BETA_III">Shift(Scale(D22(2.6652, 2.4143, 24.7681),1.300),0.013)</Both>
+        <Both Form="1" Synonym="BETA_III">Shift(Scale(D22(4.4891, 3.7706, 17.5774),0.7065),0.0085)</Both>
+        <Both Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.5491, 4.8658, 9.0448),0.4000),0.008)</Both>
+        <Both Form="2" Synonym="BETA_III">Shift(Scale(D22(4.1156, 4.1748, 11.0347),0.5116),0.009)</Both>
+        <Both Form="3" Synonym="BETA_III">Shift(Scale(D22(3.7581, 2.3887, 13.3525),0.500),0.010)</Both>
+        <Both Form="4" Synonym="BETA_III">Shift(Scale(D22(3.7333, 2.7350, 28.9872),1.4094),0.0094)</Both>
+        <Both Form="5" Synonym="BETA_III">Shift(Scale(D22(4.1888, 1.9896, 21.3460),0.7450),0.009)</Both>
+        <Both Form="7" Synonym="BETA_III">Shift(Scale(D22(4.3597, 1.7257, 23.2817),0.7450),0.009)</Both>
+      </Двустороннее_экспоненциальное>
+      <Sb-Джонсона ID="D23">
+        <Form  Synonym="BETA_III">Shift(Scale(D22(4.2304, 3.8058, 13.1934),0.6908),0.0086)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(2.9153, 2.0048, 33.4135),2.07821),0.0114)</Form1>
+        <FormForm1 Synonym="BETA_III">Shift(Scale(D22(4.3897, 4.0574, 12.1009),0.5119),0.0086)</FormForm1>
+      </Sb-Джонсона>
+      <Sl-Джонсона ID="D24">
+        <Shift />
+        <Scale Synonym="BETA_III">Shift(Scale(D22(4.2304, 3.8058, 13.1934),0.6908),0.0086)</Scale>
+        <Form  Synonym="BETA_III">Shift(Scale(D22(4.2304, 3.8058, 13.1934),0.6908),0.0086)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(2.9153, 2.0048, 33.4135),2.07821),0.0114)</Form1>
+        <ScaleForm  Synonym="BETA_III">Shift(Scale(D22(4.2304, 3.8058, 13.1934),0.6908),0.0086)</ScaleForm>
+        <ScaleForm1 Synonym="BETA_III">Shift(Scale(D22(4.3897, 4.0574, 12.1009),0.5119),0.0086)</ScaleForm1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.3897, 4.0574, 12.1009),0.5119),0.0086)</FormForm1>
+        <ScaleFormForm1 Synonym="BETA_III">Shift(Scale(D22(4.3897, 4.0574, 12.1009),0.5119),0.0086)</ScaleFormForm1>
+      </Sl-Джонсона>
+      <Su-Джонсона ID="D25">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(3.6990, 3.8775, 11.9942),0.6601),0.01)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(2.2077, 1.7250, 28.4959),1.75),0.015)</Scale>
+        <Form  Synonym="BETA_III">Shift(Scale(D22(3.6736, 3.9355, 11.2146),0.6908),0.01)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(2.9153, 2.0048, 33.4235),2.07821),0.0114)</Form1>
+        <ShiftForm  Synonym="BETA_III">Shift(Scale(D22(5.9540, 3.1023, 30.6943),0.6380),0.0071)</ShiftForm>
+        <ShiftForm1 Synonym="BETA_III">Shift(Scale(D22(4.6011, 5.7370, 19.1580),1.0),0.0075)</ShiftForm1>
+        <Both Synonym="BETA_III">Shift(Scale(D22(4.7686, 4.6085, 11.1421),0.3929),0.0075)</Both>
+        <ScaleForm  Synonym="BETA_III">Shift(Scale(D22(5.2030, 3.9325, 15.6968),0.4659),0.0075)</ScaleForm>
+        <ScaleForm1 Synonym="BETA_III">Shift(Scale(D22(2.4905, 1.6985, 45.9674),2.3084),0.012)</ScaleForm1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.3897, 4.0574, 12.1009),0.5119),0.0086)</FormForm1>
+        <All Synonym="BETA_III">Shift(Scale(D22(7.3500, 5.4726, 13.7452),0.2883),0.0052)</All>
+        <ShiftScaleForm1 Synonym="BETA_III">Shift(Scale(D22(5.6379, 4.0985, 18.5518),0.42100),0.007)</ShiftScaleForm1>
+        <ShiftFormForm1  Synonym="BETA_III">Shift(Scale(D22(5.7750, 4.7935, 18.1182),0.4777),0.0065)</ShiftFormForm1>
+        <ScaleFormForm1  Synonym="BETA_III">Shift(Scale(D22(5.2574, 3.6440, 19.9213),0.4707),0.0075)</ScaleFormForm1>
+        <AllForm1 Synonym="BETA_III">Shift(Scale(D22(6.9736, 6.6406, 13.7433),0.3151),0.0052)</AllForm1>
+      </Su-Джонсона>
+    </OMP>
+    <MD Description="Метод использующий MD-оценки">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-1.9324,1.1610),0.0134),0.0203)</Scale>
+        <Both  />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="SL_J">Shift(Scale(D24(-1.5024,1.0991),0.0173),0.0256)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-1.4705,1.1006),0.0164),0.0259)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-1.7706,1.2978),0.0188),0.0220)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="LN_NORM">D10(-2.8601,0.5471)</Shift>
+        <Scale Synonym="SL_J">Shift(Scale(D24(1.0117,0.9485),0.2162),0.0137)</Scale>
+        <Both  Synonym="LN_NORM">D10(-3.2853,0.4666)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="LN_NORM">D10(-2.8649,0.5668)</Shift>
+        <Scale Synonym="SL_J">Shift(Scale(D24(1.0477,0.9883),0.2356),0.0112)</Scale>
+        <Both  Synonym="LN_NORM">D10(-3.2715,0.4645)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form Synonym="LN_NORM">D10(-2.8649,0.5668)</Form>
+        <Form1 Synonym="SL_J">Shift(Scale(D24(1.0477,0.9883),0.2356),0.0112)</Form1>
+        <FormForm1  Synonym="LN_NORM">D10(-3.2715,0.4645)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="LN_NORM">D10(-2.8577,0.5739)</Shift>
+        <Scale Synonym="SL_J">Shift(Scale(D24(1.2759,1.0437),0.2825),0.0089)</Scale>
+        <Both  Synonym="LN_NORM">D10(-3.2603,0.4874)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="LN_NORM">D10(-2.8831,0.5367)</Shift>
+        <Scale Synonym="SL_J">Shift(Scale(D24(1.0898,1.0225),0.2399),0.0096)</Scale>
+        <Both  Synonym="LN_NORM">D10(-3.2915,0.4592)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="SU_J">Shift(Scale(D25(-1.5348,1.1226),0.0166),0.0252)</Scale>
+        <Form Synonym="SL_J">Shift(Scale(D24(1.0771,1.0388),0.2065),0.0109)</Form>
+        <ScaleForm  Synonym="SU_J">Shift(Scale(D25(-1.5326,1.4446),0.0147),0.0188)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-1.5348,1.1226),0.0166),0.0252)</Shift>
+        <Scale Synonym="SL_J">Shift(Scale(D24(1.0771,1.0388),0.2065),0.0109)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-1.5326,1.4446),0.0147),0.0188)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-1.5348,1.1226),0.0166),0.0252)</Shift>
+        <Scale Synonym="SL_J">Shift(Scale(D24(1.0771,1.0388),0.2065),0.0109)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-1.5326,1.4446),0.0147),0.0188)</Both>
+      </Максимального_значения>
+    </MD>
+  </Criterion_GoodnessOfFitOmegaSmall>
+  <Criterion_GoodnessOfFitOmegaBig>
+    <OMP Description="Метод максимального правдоподобия">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.8386, 1.3429),7.500),0.090)</Scale>
+        <Both  />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(4.2019, 1.2918),11.500),0.100)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.8386, 1.3429),7.500),0.090)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.9591, 1.3296),7.800),0.1010)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(4.0842, 1.7532, 28.1434),6.00),0.105)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(4.0842, 1.7532, 28.1434),6.00),0.105)</Scale>
+        <Both  Synonym="BETA_III">Shift(Scale(D22(5.3576, 3.8690, 17.2148),4.2386),0.073)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(4.1081, 5.0598, 16.9721),7.9065),0.09)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(3.4638, 2.330, 35.7115),12.603),0.105)</Scale>
+        <Both  Synonym="BETA_III">Shift(Scale(D22(4.7262, 4.6575, 9.4958),2.717),0.0775)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form Synonym="BETA_III">Shift(Scale(D22(3.4638, 2.330, 35.7115),12.603),0.105)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(4.1081, 5.0598, 16.9721),7.9065),0.09)</Form1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.7262, 4.6575, 9.4958),2.717),0.0775)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="SB_J">Shift(Scale(D23(3.4814, 1.2375),7.810),0.1)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.7830, 1.0678),18.0),0.11)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.290, 1.129),5.837),0.099)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="SB_J">Shift(Scale(D23(5.1316, 1.5681),10.0),0.065)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.516, 1.054),14.748),0.117)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.409, 1.434),2.448),0.095)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="SB_J">Shift(Scale(D23(4.799, 1.402),13.0),0.085)</Scale>
+        <Form Synonym="SB_J">Shift(Scale(D23(3.512, 1.064),14.496),0.125)</Form>
+        <ScaleForm  Synonym="SB_J">Shift(Scale(D23(3.4830, 1.5138),3.00),0.07)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="SB_J">Shift(Scale(D23(4.799, 1.402),13.0),0.085)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.512, 1.064),14.496),0.125)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.4830, 1.5138),3.00),0.07)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="SB_J">Shift(Scale(D23(4.799, 1.402),13.0),0.085)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.512, 1.064),14.496),0.125)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.4830, 1.5138),3.00),0.07)</Both>
+      </Максимального_значения>
+      <Гамма ID="D19">
+        <Shift />
+        <Scale Form="0.3" Synonym="BETA_III">Shift(Scale(D22(3.3848, 2.8829, 14.684),6.0416),0.1088)</Scale>
+        <Scale Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.0045, 2.9358, 18.8524),5.2436),0.077)</Scale>
+        <Scale Form="1.0" Synonym="BETA_III">Shift(Scale(D22(5.0314, 3.1848, 15.4626),4.3804),0.077)</Scale>
+        <Scale Form="2.0" Synonym="BETA_III">Shift(Scale(D22(4.9479, 3.3747, 13.0426),3.8304),0.077)</Scale>
+        <Scale Form="3.0" Synonym="BETA_III">Shift(Scale(D22(5.0367, 3.4129, 12.9013),3.6867),0.077)</Scale>
+        <Scale Form="4.0" Synonym="BETA_III">Shift(Scale(D22(4.9432, 3.5038, 12.2240),3.6302),0.077)</Scale>
+        <Scale Form="5.0" Synonym="BETA_III">Shift(Scale(D22(4.8810, 3.5762, 11.7894),3.6051),0.077)</Scale>
+        <Form  Form="0.3" Synonym="BETA_III">Shift(Scale(D22(3.1073, 3.7039, 8.6717),4.3439),0.1120)</Form>
+        <Form  Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.1104, 3.7292, 8.0678),4.0132),0.1120)</Form>
+        <Form  Form="1.0" Synonym="BETA_III">Shift(Scale(D22(3.1149, 3.7919, 7.4813),3.6770),0.1120)</Form>
+        <Form  Form="2.0" Synonym="BETA_III">Shift(Scale(D22(3.0434, 4.1620, 7.1516),3.8500),0.1120)</Form>
+        <Form  Form="3.0" Synonym="BETA_III">Shift(Scale(D22(3.0565, 3.9092, 6.7844),3.3972),0.1120)</Form>
+        <Form  Form="4.0" Synonym="BETA_III">Shift(Scale(D22(3.0531, 3.9437, 6.7619),3.3993),0.1120)</Form>
+        <Form  Form="5.0" Synonym="BETA_III">Shift(Scale(D22(3.0502, 3.9640, 6.7510),3.4024),0.1120)</Form>
+        <ScaleForm Form="0.3" Synonym="BETA_III">Shift(Scale(D22(4.5322, 4.060, 10.0718),2.9212),0.078)</ScaleForm>
+        <ScaleForm Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.0079, 4.056, 10.0292),2.5872),0.073)</ScaleForm>
+        <ScaleForm Form="1.0" Synonym="BETA_III">Shift(Scale(D22(5.0034, 4.1093, 9.1610),2.3427),0.073)</ScaleForm>
+        <ScaleForm Form="2.0" Synonym="BETA_III">Shift(Scale(D22(4.9237, 4.2091, 8.6643),2.2754),0.073)</ScaleForm>
+        <ScaleForm Form="3.0" Synonym="BETA_III">Shift(Scale(D22(4.9475, 4.2070, 8.6686),2.2512),0.073)</ScaleForm>
+        <ScaleForm Form="4.0" Synonym="BETA_III">Shift(Scale(D22(4.9274, 4.2279, 8.5573),2.2390),0.073)</ScaleForm>
+        <ScaleForm Form="5.0" Synonym="BETA_III">Shift(Scale(D22(4.9207, 4.2432, 8.4881),2.2314),0.073)</ScaleForm>
+      </Гамма>    
+      <Двустороннее_экспоненциальное ID="D26">      
+	<Form Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.1673, 1.7964, 33.1733),6.000),0.088)</Form>
+	<Form Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.5017, 1.7097, 32.6151),5.4000),0.09)</Form>
+	<Form Form="1" Synonym="BETA_III">Shift(Scale(D22(2.9208, 2.5613, 25.6028),12.5850),0.117)</Form>
+	<Form Form="1.6" Synonym="BETA_III">Shift(Scale(D22(3.7982, 2.4042, 26.2612),10.00),0.095)</Form>
+	<Form Form="2" Synonym="BETA_III">Shift(Scale(D22(3.0026, 2.7848, 21.7432),12.5565),0.111)</Form>
+	<Form Form="3" Synonym="BETA_III">Shift(Scale(D22(3.7511, 2.3357, 19.6979),8.000),0.095)</Form>
+	<Form Form="4" Synonym="BETA_III">Shift(Scale(D22(2.7055, 3.0084, 16.8946),12.5483),0.12)</Form>
+	<Form Form="5" Synonym="BETA_III">Shift(Scale(D22(3.2750, 2.7257, 19.7022),11.000),0.105)</Form>
+	<Form Form="7" Synonym="BETA_III">Shift(Scale(D22(3.3337, 2.7380, 19.7773),11.000),0.105)</Form>
+	<Scale Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.3595, 1.7388, 37.1241),6.000),0.087)</Scale>
+	<Scale Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.7288, 1.7042, 38.1627),5.700),0.085)</Scale>
+	<Scale Form="1" Synonym="BETA_III">Shift(Scale(D22(4.0842, 1.7532, 28.1434),6.00),0.105)</Scale>
+	<Scale Form="1.6" Synonym="BETA_III">Shift(Scale(D22(3.6908, 2.1990, 32.1310),10.00),0.10)</Scale>
+	<Scale Form="2" Synonym="BETA_III">Shift(Scale(D22(3.4638, 2.3300, 35.7115),12.6033),0.105)</Scale>
+	<Scale Form="3" Synonym="BETA_III">Shift(Scale(D22(4.1218, 2.1349, 30.0763),8.500),0.094)</Scale>
+	<Scale Form="4" Synonym="BETA_III">Shift(Scale(D22(2.6333, 2.6314, 22.5692),12.5941),0.125)</Scale>
+	<Scale Form="5" Synonym="BETA_III">Shift(Scale(D22(3.7185, 2.2262, 24.9194),8.500),0.10)</Scale>
+	<Scale Form="7" Synonym="BETA_III">Shift(Scale(D22(3.7496, 2.2445, 24.3153),8.500),0.09)</Scale>
+	<Shift Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.4953, 2.2898, 14.9125),6.400),0.116)</Shift>
+	<Shift Form="0.75" Synonym="BETA_III">Shift(Scale(D22(3.1406, 2.9653, 10.3579),5.500),0.12)</Shift>
+	<Shift Form="1" Synonym="BETA_III">Shift(Scale(D22(4.2270, 3.0430, 8.4289),3.000),0.09)</Shift>
+	<Shift Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.0782, 5.1594, 17.0570),7.900),0.09)</Shift>
+	<Shift Form="2" Synonym="BETA_III">Shift(Scale(D22(4.1081, 5.0598,16.9721),7.9065),0.09)</Shift>
+	<Shift Form="3" Synonym="BETA_III">Shift(Scale(D22(4.6108, 3.3193, 12.0931),4.000),0.079)</Shift>
+	<Shift Form="4" Synonym="BETA_III">Shift(Scale(D22(2.7800, 5.1280, 11.7638),10.5031),0.11)</Shift>
+	<Shift Form="5" Synonym="BETA_III">Shift(Scale(D22(3.8528, 2.9989, 12.7999),5.2000),0.09)</Shift>
+	<Shift Form="7" Synonym="BETA_III">Shift(Scale(D22(3.9524, 2.6173, 14.0679),5.2000),0.09)</Shift>
+	<All Form="0.5" Synonym="BETA_III">Shift(Scale(D22(4.5039, 2.0396, 37.0448),8.000),0.092)</All>
+	<All Form="0.75" Synonym="BETA_III">Shift(Scale(D22(6.2120, 2.1027, 40.3780),4.800),0.075)</All>
+	<All Form="1" Synonym="BETA_III">Shift(Scale(D22(5.2973, 3.3781, 27.5085),4.8145),0.073)</All>
+	<All Form="1.6" Synonym="BETA_III">Shift(Scale(D22(5.08840, 5.2459, 10.6760),2.4738),0.068)</All>
+	<All Form="2" Synonym="BETA_III">Shift(Scale(D22(4.3857, 5.7110, 17.3440),5.0052),0.075)</All>
+	<All Form="3" Synonym="BETA_III">Shift(Scale(D22(5.9548, 2.9777, 28.5342),3.800),0.069)</All>
+	<All Form="4" Synonym="BETA_III">Shift(Scale(D22(4.1564, 2.7774, 30.5627),6.0165),0.0822)</All>
+	<All Form="5" Synonym="BETA_III">Shift(Scale(D22(4.3601, 2.6164, 38.0670),7.4729),0.0785)</All>
+	<All Form="7" Synonym="BETA_III">Shift(Scale(D22(4.5480,2.1191, 28.5121),5.000),0.0785)</All>
+	<ScaleForm Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.786, 1.500, 45.3895),5.200),0.08)</ScaleForm>
+	<ScaleForm Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.7330, 1.5217, 44.0784),5.200),0.078)</ScaleForm>
+	<ScaleForm Form="1" Synonym="BETA_III">Shift(Scale(D22(3.7352, 1.5349, 29.4582),5.300),0.098)</ScaleForm>
+	<ScaleForm Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.6625, 1.4267, 33.5120),4.500),0.09)</ScaleForm>
+	<ScaleForm Form="2" Synonym="BETA_III">Shift(Scale(D22(4.2125, 1.5874, 32.6127),5.500),0.09)</ScaleForm>
+	<ScaleForm Form="3" Synonym="BETA_III">Shift(Scale(D22(6.0616, 1.6126, 47.4733),5.800),0.074)</ScaleForm>
+	<ScaleForm Form="4" Synonym="BETA_III">Shift(Scale(D22(2.0354, 2.3209, 23.5136),12.7679),0.132)</ScaleForm>
+	<ScaleForm Form="5" Synonym="BETA_III">Shift(Scale(D22(3.9441, 1.9099, 34.2183),8.000),0.085)</ScaleForm>
+	<ScaleForm Form="7" Synonym="BETA_III">Shift(Scale(D22(4.4259, 1.8843, 34.1400),7.30),0.085)</ScaleForm>
+	<ShiftForm Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.1191, 2.0392, 20.4775),6.600),0.116)</ShiftForm>
+	<ShiftForm Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.9765, 2.6769, 32.3123),6.400),0.070)</ShiftForm>
+	<ShiftForm Form="1" Synonym="BETA_III">Shift(Scale(D22(4.8431, 4.1424, 14.2651),4.6769),0.073)</ShiftForm>
+	<ShiftForm Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.5576, 4.2326, 10.9573),3.23142),0.08)</ShiftForm>
+	<ShiftForm Form="2" Synonym="BETA_III">Shift(Scale(D22(4.6827, 3.7977, 12.6413),3.4486),0.08)</ShiftForm>
+	<ShiftForm Form="3" Synonym="BETA_III">Shift(Scale(D22(4.7371, 3.2610, 13.7406),4.000),0.070)</ShiftForm>
+	<ShiftForm Form="4" Synonym="BETA_III">Shift(Scale(D22(3.6594, 3.4364, 13.5600),5.9140),0.084)</ShiftForm>
+	<ShiftForm Form="5" Synonym="BETA_III">Shift(Scale(D22(3.6684, 3.0110, 13.4931),5.550),0.085)</ShiftForm>
+	<ShiftForm Form="7" Synonym="BETA_III">Shift(Scale(D22(3.6688, 2.7003, 13.7324),5.550),0.085)</ShiftForm>
+	<Both Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.0953, 2.0351, 22.1953),6.800),0.118)</Both>
+	<Both Form="0.75" Synonym="BETA_III">Shift(Scale(D22(6.5437, 2.5007, 38.5262),6.000),0.07)</Both>
+	<Both Form="1" Synonym="BETA_III">Shift(Scale(D22(5.3576, 3.8690, 17.2148),4.2386),0.073)</Both>
+	<Both Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.5825, 5.3012, 7.9243),2.5555),0.0775)</Both>
+	<Both Form="2" Synonym="BETA_III">Shift(Scale(D22(4.7262, 4.6575, 9.4958),2.7171),0.0775)</Both>
+	<Both Form="3" Synonym="BETA_III">Shift(Scale(D22(5.2098, 3.5915, 16.7524),4.0000),0.070)</Both>
+	<Both Form="4" Synonym="BETA_III">Shift(Scale(D22(4.0113, 3.4057, 19.6395),6.2684),0.084)</Both>
+	<Both Form="5" Synonym="BETA_III">Shift(Scale(D22(4.1345, 3.0883, 22.0926),6.800),0.080)</Both>
+	<Both Form="7" Synonym="BETA_III">Shift(Scale(D22(4.1773, 2.7020, 22.9667),6.800),0.080)</Both>
+      </Двустороннее_экспоненциальное>
+      <Sb-Джонсона ID="D23">
+        <Form  Synonym="BETA_III">Shift(Scale(D22(4.2657, 4.3788, 11.4946),4.6551),0.084)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(4.1703, 2.3363, 42.0833),12.6019),0.088)</Form1>
+        <FormForm1 Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.000),0.082)</FormForm1>
+      </Sb-Джонсона>
+      <Sl-Джонсона ID="D24">
+        <Shift />
+        <Scale Synonym="BETA_III">Shift(Scale(D22(4.2657, 4.3788, 11.4946),4.6551),0.084)</Scale>
+        <Form  Synonym="BETA_III">Shift(Scale(D22(4.2657, 4.3788, 11.4946),4.6551),0.084)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(4.1703, 2.3363, 42.0833),12.6019),0.088)</Form1>
+        <ScaleForm  Synonym="BETA_III">Shift(Scale(D22(4.2657, 4.3788, 11.4946),4.6551),0.084)</ScaleForm>
+        <ScaleForm1 Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.000),0.082)</ScaleForm1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.000),0.082)</FormForm1>
+        <ScaleFormForm1 Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.000),0.082)</ScaleFormForm1>
+      </Sl-Джонсона>
+      <Su-Джонсона ID="D25">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(3.5597, 4.9656, 11.4180),6.5202),0.092)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(2.6348, 1.9774, 21.3842),7.75),0.125)</Scale>
+        <Form  Synonym="BETA_III">Shift(Scale(D22(4.2329, 4.5369, 10.8807),4.6551),0.082)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(4.1703, 2.3363, 42.0833),12.6019),0.088)</Form1>
+        <ShiftForm  Synonym="BETA_III">Shift(Scale(D22(5.6629, 3.4912, 25.1600),4.5052),0.07)</ShiftForm>
+        <ShiftForm1 Synonym="BETA_III">Shift(Scale(D22(4.6199, 5.2874, 19.2708),6.5610),0.074)</ShiftForm1>
+        <Both Synonym="BETA_III">Shift(Scale(D22(4.4276, 4.30288, 14.6688),3.7865),0.08)</Both>
+        <ScaleForm  Synonym="BETA_III">Shift(Scale(D22(5.5268, 4.9114, 13.1278),3.0625),0.07)</ScaleForm>
+        <ScaleForm1 Synonym="BETA_III">Shift(Scale(D22(3.8896, 1.6253, 31.1820),5.80),0.09)</ScaleForm1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.0000),0.082)</FormForm1>
+        <All Synonym="BETA_III">Shift(Scale(D22(5.7098, 6.8325, 7.9837),1.8803),0.06)</All>
+        <ShiftScaleForm1 Synonym="BETA_III">Shift(Scale(D22(5.1840, 3.2993, 19.3614),2.7865),0.073)</ShiftScaleForm1>
+        <ShiftFormForm1  Synonym="BETA_III">Shift(Scale(D22(5.3306, 5.8858, 10.7581),2.5087),0.065)</ShiftFormForm1>
+        <ScaleFormForm1  Synonym="BETA_III">Shift(Scale(D22(5.5158, 4.3512, 14.7750),2.6199),0.067)</ScaleFormForm1>
+        <AllForm1 Synonym="BETA_III">Shift(Scale(D22(7.1015, 5.8708, 7.1323),1.0517),0.05)</AllForm1>
+      </Su-Джонсона>
+    </OMP>
+    <MD Description="Метод использующий MD-оценки">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.6741,1.4068),0.0958),0.1230)</Scale>
+        <Both  />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.6752,1.3763),0.0952),0.1280)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.2734,1.3473),0.1101),0.1496)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.2759,1.3988),0.1171),0.1514)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.7267,1.4972),0.1044),0.1239)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.3884,1.0811),0.0948),0.1548)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.4334,1.6104),0.0902),0.1123)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.7639,1.5393),0.1102),0.1115)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.4180,1.0702),0.0957),0.1464)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.5746,1.7505),0.0979),0.1043)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form Synonym="SU_J">Shift(Scale(D25(-2.7639,1.5393),0.1102),0.1115)</Form>
+        <Form1 Synonym="SU_J">Shift(Scale(D25(-2.4180,1.0702),0.0957),0.1464)</Form1>
+        <FormForm1  Synonym="SU_J">Shift(Scale(D25(-2.5746,1.7505),0.0979),0.1043)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.7029,1.5179),0.1188),0.1100)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.5043,1.1355),0.1035),0.1384)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.1046,1.4364),0.0929),0.1301)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.6212,1.4318),0.0932),0.1370)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.3007,1.0135),0.0906),0.1593)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-3.0152,1.7751),0.0800),0.0898)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.6557,1.4282),0.1024),0.1254)</Scale>
+        <Form Synonym="SU_J">Shift(Scale(D25(-2.4454,1.1083),0.0968),0.1459)</Form>
+        <ScaleForm  Synonym="SU_J">Shift(Scale(D25(-2.1580,1.5446),0.0941),0.1279)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.6557,1.4282),0.1024),0.1254)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.4454,1.1083),0.0968),0.1459)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.1580,1.5446),0.0941),0.1279)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.6557,1.4282),0.1024),0.1254)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.4454,1.1083),0.0968),0.1459)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.1580,1.5446),0.0941),0.1279)</Both>
+      </Максимального_значения>
+    </MD>
+  </Criterion_GoodnessOfFitOmegaBig>
+  <Criterion_GoodnessOfFitAndersonDarlingMod>
+    <OMP Description="Метод максимального правдоподобия">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.8386, 1.3429),7.500),0.090)</Scale>
+        <Both  />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(4.2019, 1.2918),11.500),0.100)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.8386, 1.3429),7.500),0.090)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.9591, 1.3296),7.800),0.1010)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(4.0842, 1.7532, 28.1434),6.00),0.105)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(4.0842, 1.7532, 28.1434),6.00),0.105)</Scale>
+        <Both  Synonym="BETA_III">Shift(Scale(D22(5.3576, 3.8690, 17.2148),4.2386),0.073)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(4.1081, 5.0598, 16.9721),7.9065),0.09)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(3.4638, 2.330, 35.7115),12.603),0.105)</Scale>
+        <Both  Synonym="BETA_III">Shift(Scale(D22(4.7262, 4.6575, 9.4958),2.717),0.0775)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form Synonym="BETA_III">Shift(Scale(D22(3.4638, 2.330, 35.7115),12.603),0.105)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(4.1081, 5.0598, 16.9721),7.9065),0.09)</Form1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.7262, 4.6575, 9.4958),2.717),0.0775)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="SB_J">Shift(Scale(D23(3.4814, 1.2375),7.810),0.1)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.7830, 1.0678),18.0),0.11)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.290, 1.129),5.837),0.099)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="SB_J">Shift(Scale(D23(5.1316, 1.5681),10.0),0.065)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.516, 1.054),14.748),0.117)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.409, 1.434),2.448),0.095)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="SB_J">Shift(Scale(D23(4.799, 1.402),13.0),0.085)</Scale>
+        <Form Synonym="SB_J">Shift(Scale(D23(3.512, 1.064),14.496),0.125)</Form>
+        <ScaleForm  Synonym="SB_J">Shift(Scale(D23(3.4830, 1.5138),3.00),0.07)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="SB_J">Shift(Scale(D23(4.799, 1.402),13.0),0.085)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.512, 1.064),14.496),0.125)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.4830, 1.5138),3.00),0.07)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="SB_J">Shift(Scale(D23(4.799, 1.402),13.0),0.085)</Shift>
+        <Scale Synonym="SB_J">Shift(Scale(D23(3.512, 1.064),14.496),0.125)</Scale>
+        <Both  Synonym="SB_J">Shift(Scale(D23(3.4830, 1.5138),3.00),0.07)</Both>
+      </Максимального_значения>
+      <Гамма ID="D19">
+        <Shift />
+        <Scale Form="0.3" Synonym="BETA_III">Shift(Scale(D22(3.3848, 2.8829, 14.684),6.0416),0.1088)</Scale>
+        <Scale Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.0045, 2.9358, 18.8524),5.2436),0.077)</Scale>
+        <Scale Form="1.0" Synonym="BETA_III">Shift(Scale(D22(5.0314, 3.1848, 15.4626),4.3804),0.077)</Scale>
+        <Scale Form="2.0" Synonym="BETA_III">Shift(Scale(D22(4.9479, 3.3747, 13.0426),3.8304),0.077)</Scale>
+        <Scale Form="3.0" Synonym="BETA_III">Shift(Scale(D22(5.0367, 3.4129, 12.9013),3.6867),0.077)</Scale>
+        <Scale Form="4.0" Synonym="BETA_III">Shift(Scale(D22(4.9432, 3.5038, 12.2240),3.6302),0.077)</Scale>
+        <Scale Form="5.0" Synonym="BETA_III">Shift(Scale(D22(4.8810, 3.5762, 11.7894),3.6051),0.077)</Scale>
+        <Form  Form="0.3" Synonym="BETA_III">Shift(Scale(D22(3.1073, 3.7039, 8.6717),4.3439),0.1120)</Form>
+        <Form  Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.1104, 3.7292, 8.0678),4.0132),0.1120)</Form>
+        <Form  Form="1.0" Synonym="BETA_III">Shift(Scale(D22(3.1149, 3.7919, 7.4813),3.6770),0.1120)</Form>
+        <Form  Form="2.0" Synonym="BETA_III">Shift(Scale(D22(3.0434, 4.1620, 7.1516),3.8500),0.1120)</Form>
+        <Form  Form="3.0" Synonym="BETA_III">Shift(Scale(D22(3.0565, 3.9092, 6.7844),3.3972),0.1120)</Form>
+        <Form  Form="4.0" Synonym="BETA_III">Shift(Scale(D22(3.0531, 3.9437, 6.7619),3.3993),0.1120)</Form>
+        <Form  Form="5.0" Synonym="BETA_III">Shift(Scale(D22(3.0502, 3.9640, 6.7510),3.4024),0.1120)</Form>
+        <ScaleForm Form="0.3" Synonym="BETA_III">Shift(Scale(D22(4.5322, 4.060, 10.0718),2.9212),0.078)</ScaleForm>
+        <ScaleForm Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.0079, 4.056, 10.0292),2.5872),0.073)</ScaleForm>
+        <ScaleForm Form="1.0" Synonym="BETA_III">Shift(Scale(D22(5.0034, 4.1093, 9.1610),2.3427),0.073)</ScaleForm>
+        <ScaleForm Form="2.0" Synonym="BETA_III">Shift(Scale(D22(4.9237, 4.2091, 8.6643),2.2754),0.073)</ScaleForm>
+        <ScaleForm Form="3.0" Synonym="BETA_III">Shift(Scale(D22(4.9475, 4.2070, 8.6686),2.2512),0.073)</ScaleForm>
+        <ScaleForm Form="4.0" Synonym="BETA_III">Shift(Scale(D22(4.9274, 4.2279, 8.5573),2.2390),0.073)</ScaleForm>
+        <ScaleForm Form="5.0" Synonym="BETA_III">Shift(Scale(D22(4.9207, 4.2432, 8.4881),2.2314),0.073)</ScaleForm>
+      </Гамма>    
+      <Двустороннее_экспоненциальное ID="D26">      
+	<Form Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.1673, 1.7964, 33.1733),6.000),0.088)</Form>
+	<Form Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.5017, 1.7097, 32.6151),5.4000),0.09)</Form>
+	<Form Form="1" Synonym="BETA_III">Shift(Scale(D22(2.9208, 2.5613, 25.6028),12.5850),0.117)</Form>
+	<Form Form="1.6" Synonym="BETA_III">Shift(Scale(D22(3.7982, 2.4042, 26.2612),10.00),0.095)</Form>
+	<Form Form="2" Synonym="BETA_III">Shift(Scale(D22(3.0026, 2.7848, 21.7432),12.5565),0.111)</Form>
+	<Form Form="3" Synonym="BETA_III">Shift(Scale(D22(3.7511, 2.3357, 19.6979),8.000),0.095)</Form>
+	<Form Form="4" Synonym="BETA_III">Shift(Scale(D22(2.7055, 3.0084, 16.8946),12.5483),0.12)</Form>
+	<Form Form="5" Synonym="BETA_III">Shift(Scale(D22(3.2750, 2.7257, 19.7022),11.000),0.105)</Form>
+	<Form Form="7" Synonym="BETA_III">Shift(Scale(D22(3.3337, 2.7380, 19.7773),11.000),0.105)</Form>
+	<Scale Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.3595, 1.7388, 37.1241),6.000),0.087)</Scale>
+	<Scale Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.7288, 1.7042, 38.1627),5.700),0.085)</Scale>
+	<Scale Form="1" Synonym="BETA_III">Shift(Scale(D22(4.0842, 1.7532, 28.1434),6.00),0.105)</Scale>
+	<Scale Form="1.6" Synonym="BETA_III">Shift(Scale(D22(3.6908, 2.1990, 32.1310),10.00),0.10)</Scale>
+	<Scale Form="2" Synonym="BETA_III">Shift(Scale(D22(3.4638, 2.3300, 35.7115),12.6033),0.105)</Scale>
+	<Scale Form="3" Synonym="BETA_III">Shift(Scale(D22(4.1218, 2.1349, 30.0763),8.500),0.094)</Scale>
+	<Scale Form="4" Synonym="BETA_III">Shift(Scale(D22(2.6333, 2.6314, 22.5692),12.5941),0.125)</Scale>
+	<Scale Form="5" Synonym="BETA_III">Shift(Scale(D22(3.7185, 2.2262, 24.9194),8.500),0.10)</Scale>
+	<Scale Form="7" Synonym="BETA_III">Shift(Scale(D22(3.7496, 2.2445, 24.3153),8.500),0.09)</Scale>
+	<Shift Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.4953, 2.2898, 14.9125),6.400),0.116)</Shift>
+	<Shift Form="0.75" Synonym="BETA_III">Shift(Scale(D22(3.1406, 2.9653, 10.3579),5.500),0.12)</Shift>
+	<Shift Form="1" Synonym="BETA_III">Shift(Scale(D22(4.2270, 3.0430, 8.4289),3.000),0.09)</Shift>
+	<Shift Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.0782, 5.1594, 17.0570),7.900),0.09)</Shift>
+	<Shift Form="2" Synonym="BETA_III">Shift(Scale(D22(4.1081, 5.0598,16.9721),7.9065),0.09)</Shift>
+	<Shift Form="3" Synonym="BETA_III">Shift(Scale(D22(4.6108, 3.3193, 12.0931),4.000),0.079)</Shift>
+	<Shift Form="4" Synonym="BETA_III">Shift(Scale(D22(2.7800, 5.1280, 11.7638),10.5031),0.11)</Shift>
+	<Shift Form="5" Synonym="BETA_III">Shift(Scale(D22(3.8528, 2.9989, 12.7999),5.2000),0.09)</Shift>
+	<Shift Form="7" Synonym="BETA_III">Shift(Scale(D22(3.9524, 2.6173, 14.0679),5.2000),0.09)</Shift>
+	<All Form="0.5" Synonym="BETA_III">Shift(Scale(D22(4.5039, 2.0396, 37.0448),8.000),0.092)</All>
+	<All Form="0.75" Synonym="BETA_III">Shift(Scale(D22(6.2120, 2.1027, 40.3780),4.800),0.075)</All>
+	<All Form="1" Synonym="BETA_III">Shift(Scale(D22(5.2973, 3.3781, 27.5085),4.8145),0.073)</All>
+	<All Form="1.6" Synonym="BETA_III">Shift(Scale(D22(5.08840, 5.2459, 10.6760),2.4738),0.068)</All>
+	<All Form="2" Synonym="BETA_III">Shift(Scale(D22(4.3857, 5.7110, 17.3440),5.0052),0.075)</All>
+	<All Form="3" Synonym="BETA_III">Shift(Scale(D22(5.9548, 2.9777, 28.5342),3.800),0.069)</All>
+	<All Form="4" Synonym="BETA_III">Shift(Scale(D22(4.1564, 2.7774, 30.5627),6.0165),0.0822)</All>
+	<All Form="5" Synonym="BETA_III">Shift(Scale(D22(4.3601, 2.6164, 38.0670),7.4729),0.0785)</All>
+	<All Form="7" Synonym="BETA_III">Shift(Scale(D22(4.5480,2.1191, 28.5121),5.000),0.0785)</All>
+	<ScaleForm Form="0.5" Synonym="BETA_III">Shift(Scale(D22(5.786, 1.500, 45.3895),5.200),0.08)</ScaleForm>
+	<ScaleForm Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.7330, 1.5217, 44.0784),5.200),0.078)</ScaleForm>
+	<ScaleForm Form="1" Synonym="BETA_III">Shift(Scale(D22(3.7352, 1.5349, 29.4582),5.300),0.098)</ScaleForm>
+	<ScaleForm Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.6625, 1.4267, 33.5120),4.500),0.09)</ScaleForm>
+	<ScaleForm Form="2" Synonym="BETA_III">Shift(Scale(D22(4.2125, 1.5874, 32.6127),5.500),0.09)</ScaleForm>
+	<ScaleForm Form="3" Synonym="BETA_III">Shift(Scale(D22(6.0616, 1.6126, 47.4733),5.800),0.074)</ScaleForm>
+	<ScaleForm Form="4" Synonym="BETA_III">Shift(Scale(D22(2.0354, 2.3209, 23.5136),12.7679),0.132)</ScaleForm>
+	<ScaleForm Form="5" Synonym="BETA_III">Shift(Scale(D22(3.9441, 1.9099, 34.2183),8.000),0.085)</ScaleForm>
+	<ScaleForm Form="7" Synonym="BETA_III">Shift(Scale(D22(4.4259, 1.8843, 34.1400),7.30),0.085)</ScaleForm>
+	<ShiftForm Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.1191, 2.0392, 20.4775),6.600),0.116)</ShiftForm>
+	<ShiftForm Form="0.75" Synonym="BETA_III">Shift(Scale(D22(5.9765, 2.6769, 32.3123),6.400),0.070)</ShiftForm>
+	<ShiftForm Form="1" Synonym="BETA_III">Shift(Scale(D22(4.8431, 4.1424, 14.2651),4.6769),0.073)</ShiftForm>
+	<ShiftForm Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.5576, 4.2326, 10.9573),3.23142),0.08)</ShiftForm>
+	<ShiftForm Form="2" Synonym="BETA_III">Shift(Scale(D22(4.6827, 3.7977, 12.6413),3.4486),0.08)</ShiftForm>
+	<ShiftForm Form="3" Synonym="BETA_III">Shift(Scale(D22(4.7371, 3.2610, 13.7406),4.000),0.070)</ShiftForm>
+	<ShiftForm Form="4" Synonym="BETA_III">Shift(Scale(D22(3.6594, 3.4364, 13.5600),5.9140),0.084)</ShiftForm>
+	<ShiftForm Form="5" Synonym="BETA_III">Shift(Scale(D22(3.6684, 3.0110, 13.4931),5.550),0.085)</ShiftForm>
+	<ShiftForm Form="7" Synonym="BETA_III">Shift(Scale(D22(3.6688, 2.7003, 13.7324),5.550),0.085)</ShiftForm>
+	<Both Form="0.5" Synonym="BETA_III">Shift(Scale(D22(3.0953, 2.0351, 22.1953),6.800),0.118)</Both>
+	<Both Form="0.75" Synonym="BETA_III">Shift(Scale(D22(6.5437, 2.5007, 38.5262),6.000),0.07)</Both>
+	<Both Form="1" Synonym="BETA_III">Shift(Scale(D22(5.3576, 3.8690, 17.2148),4.2386),0.073)</Both>
+	<Both Form="1.6" Synonym="BETA_III">Shift(Scale(D22(4.5825, 5.3012, 7.9243),2.5555),0.0775)</Both>
+	<Both Form="2" Synonym="BETA_III">Shift(Scale(D22(4.7262, 4.6575, 9.4958),2.7171),0.0775)</Both>
+	<Both Form="3" Synonym="BETA_III">Shift(Scale(D22(5.2098, 3.5915, 16.7524),4.0000),0.070)</Both>
+	<Both Form="4" Synonym="BETA_III">Shift(Scale(D22(4.0113, 3.4057, 19.6395),6.2684),0.084)</Both>
+	<Both Form="5" Synonym="BETA_III">Shift(Scale(D22(4.1345, 3.0883, 22.0926),6.800),0.080)</Both>
+	<Both Form="7" Synonym="BETA_III">Shift(Scale(D22(4.1773, 2.7020, 22.9667),6.800),0.080)</Both>
+      </Двустороннее_экспоненциальное>
+      <Sb-Джонсона ID="D23">
+        <Form  Synonym="BETA_III">Shift(Scale(D22(4.2657, 4.3788, 11.4946),4.6551),0.084)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(4.1703, 2.3363, 42.0833),12.6019),0.088)</Form1>
+        <FormForm1 Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.000),0.082)</FormForm1>
+      </Sb-Джонсона>
+      <Sl-Джонсона ID="D24">
+        <Shift />
+        <Scale Synonym="BETA_III">Shift(Scale(D22(4.2657, 4.3788, 11.4946),4.6551),0.084)</Scale>
+        <Form  Synonym="BETA_III">Shift(Scale(D22(4.2657, 4.3788, 11.4946),4.6551),0.084)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(4.1703, 2.3363, 42.0833),12.6019),0.088)</Form1>
+        <ScaleForm  Synonym="BETA_III">Shift(Scale(D22(4.2657, 4.3788, 11.4946),4.6551),0.084)</ScaleForm>
+        <ScaleForm1 Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.000),0.082)</ScaleForm1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.000),0.082)</FormForm1>
+        <ScaleFormForm1 Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.000),0.082)</ScaleFormForm1>
+      </Sl-Джонсона>
+      <Su-Джонсона ID="D25">
+        <Shift Synonym="BETA_III">Shift(Scale(D22(3.5597, 4.9656, 11.4180),6.5202),0.092)</Shift>
+        <Scale Synonym="BETA_III">Shift(Scale(D22(2.6348, 1.9774, 21.3842),7.75),0.125)</Scale>
+        <Form  Synonym="BETA_III">Shift(Scale(D22(4.2329, 4.5369, 10.8807),4.6551),0.082)</Form>
+        <Form1 Synonym="BETA_III">Shift(Scale(D22(4.1703, 2.3363, 42.0833),12.6019),0.088)</Form1>
+        <ShiftForm  Synonym="BETA_III">Shift(Scale(D22(5.6629, 3.4912, 25.1600),4.5052),0.07)</ShiftForm>
+        <ShiftForm1 Synonym="BETA_III">Shift(Scale(D22(4.6199, 5.2874, 19.2708),6.5610),0.074)</ShiftForm1>
+        <Both Synonym="BETA_III">Shift(Scale(D22(4.4276, 4.30288, 14.6688),3.7865),0.08)</Both>
+        <ScaleForm  Synonym="BETA_III">Shift(Scale(D22(5.5268, 4.9114, 13.1278),3.0625),0.07)</ScaleForm>
+        <ScaleForm1 Synonym="BETA_III">Shift(Scale(D22(3.8896, 1.6253, 31.1820),5.80),0.09)</ScaleForm1>
+        <FormForm1  Synonym="BETA_III">Shift(Scale(D22(4.0891, 5.9708, 9.6497),4.0000),0.082)</FormForm1>
+        <All Synonym="BETA_III">Shift(Scale(D22(5.7098, 6.8325, 7.9837),1.8803),0.06)</All>
+        <ShiftScaleForm1 Synonym="BETA_III">Shift(Scale(D22(5.1840, 3.2993, 19.3614),2.7865),0.073)</ShiftScaleForm1>
+        <ShiftFormForm1  Synonym="BETA_III">Shift(Scale(D22(5.3306, 5.8858, 10.7581),2.5087),0.065)</ShiftFormForm1>
+        <ScaleFormForm1  Synonym="BETA_III">Shift(Scale(D22(5.5158, 4.3512, 14.7750),2.6199),0.067)</ScaleFormForm1>
+        <AllForm1 Synonym="BETA_III">Shift(Scale(D22(7.1015, 5.8708, 7.1323),1.0517),0.05)</AllForm1>
+      </Su-Джонсона>
+    </OMP>
+    <MD Description="Метод использующий MD-оценки">
+      <Экспоненциальное ID="D1">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.6741,1.4068),0.0958),0.1230)</Scale>
+        <Both  />
+      </Экспоненциальное>
+      <Полунормальное ID="D2">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.6752,1.3763),0.0952),0.1280)</Scale>
+        <Both  />
+      </Полунормальное>
+      <Релея ID="D3">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.2734,1.3473),0.1101),0.1496)</Scale>
+        <Both  />
+      </Релея>
+      <Максвелла ID="D4">
+        <Shift />
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.2759,1.3988),0.1171),0.1514)</Scale>
+        <Both  />
+      </Максвелла>
+      <Лапласа ID="D8">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.7267,1.4972),0.1044),0.1239)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.3884,1.0811),0.0948),0.1548)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.4334,1.6104),0.0902),0.1123)</Both>
+      </Лапласа>
+      <Нормальное ID="D9">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.7639,1.5393),0.1102),0.1115)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.4180,1.0702),0.0957),0.1464)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.5746,1.7505),0.0979),0.1043)</Both>
+      </Нормальное>
+      <Логарифмически_ln__Нормальное ID="D10">
+        <Form Synonym="SU_J">Shift(Scale(D25(-2.7639,1.5393),0.1102),0.1115)</Form>
+        <Form1 Synonym="SU_J">Shift(Scale(D25(-2.4180,1.0702),0.0957),0.1464)</Form1>
+        <FormForm1  Synonym="SU_J">Shift(Scale(D25(-2.5746,1.7505),0.0979),0.1043)</FormForm1>
+      </Логарифмически_ln__Нормальное>
+      <Коши ID="D12">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.7029,1.5179),0.1188),0.1100)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.5043,1.1355),0.1035),0.1384)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.1046,1.4364),0.0929),0.1301)</Both>
+      </Коши>
+      <Логистическое ID="D13">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.6212,1.4318),0.0932),0.1370)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.3007,1.0135),0.0906),0.1593)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-3.0152,1.7751),0.0800),0.0898)</Both>
+      </Логистическое>
+      <Вейбулла ID="D14">
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.6557,1.4282),0.1024),0.1254)</Scale>
+        <Form Synonym="SU_J">Shift(Scale(D25(-2.4454,1.1083),0.0968),0.1459)</Form>
+        <ScaleForm  Synonym="SU_J">Shift(Scale(D25(-2.1580,1.5446),0.0941),0.1279)</ScaleForm>
+      </Вейбулла>
+      <Минимального_значения ID="D15">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.6557,1.4282),0.1024),0.1254)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.4454,1.1083),0.0968),0.1459)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.1580,1.5446),0.0941),0.1279)</Both>
+      </Минимального_значения>
+      <Максимального_значения ID="D16">
+        <Shift Synonym="SU_J">Shift(Scale(D25(-2.6557,1.4282),0.1024),0.1254)</Shift>
+        <Scale Synonym="SU_J">Shift(Scale(D25(-2.4454,1.1083),0.0968),0.1459)</Scale>
+        <Both  Synonym="SU_J">Shift(Scale(D25(-2.1580,1.5446),0.0941),0.1279)</Both>
+      </Максимального_значения>
+    </MD>
+  </Criterion_GoodnessOfFitAndersonDarlingMod>
+</Tables>

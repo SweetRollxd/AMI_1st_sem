@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="Windows-1251" standalone="true" ?>
+<parameters>
+    <parameter>
+        <name>TestSampleList</name>
+        <value type="6">
+            <item>
+                <index>0</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>0</type>
+                    <volume_n>100</volume_n>
+                    <observation>0.522014878993433</observation>
+                    <observation>0.613995703137153</observation>
+                    <observation>0.425819083490415</observation>
+                    <observation>0.412457921644152</observation>
+                    <observation>0.426626436630655</observation>
+                    <observation>0.533760042450835</observation>
+                    <observation>0.439177545074097</observation>
+                    <observation>0.447328079159247</observation>
+                    <observation>0.503218216926567</observation>
+                    <observation>0.531370123883595</observation>
+                    <observation>0.532811874465967</observation>
+                    <observation>0.411428654744882</observation>
+                    <observation>0.484548116706746</observation>
+                    <observation>0.588829458318339</observation>
+                    <observation>0.384202401375359</observation>
+                    <observation>0.568882044664746</observation>
+                    <observation>0.485549412007698</observation>
+                    <observation>0.498087043954791</observation>
+                    <observation>0.436561831017783</observation>
+                    <observation>0.500255288718736</observation>
+                    <observation>0.385285106579103</observation>
+                    <observation>0.454455775971685</observation>
+                    <observation>0.437976002858165</observation>
+                    <observation>0.595529004521871</observation>
+                    <observation>0.618709627391037</observation>
+                    <observation>0.534147979367794</observation>
+                    <observation>0.678189134910728</observation>
+                    <observation>0.584332285162495</observation>
+                    <observation>0.342425671999763</observation>
+                    <observation>0.385646545496398</observation>
+                    <observation>0.428635182521989</observation>
+                    <observation>0.488496161897627</observation>
+                    <observation>0.55582051905845</observation>
+                    <observation>0.501790568258319</observation>
+                    <observation>0.549242406740111</observation>
+                    <observation>0.534070184626233</observation>
+                    <observation>0.438608632193605</observation>
+                    <observation>0.630614087558649</observation>
+                    <observation>0.504349980930207</observation>
+                    <observation>0.657681347065613</observation>
+                    <observation>0.432586909635817</observation>
+                    <observation>0.41742939766817</observation>
+                    <observation>0.447882166283131</observation>
+                    <observation>0.390487800381154</observation>
+                    <observation>0.488274806533756</observation>
+                    <observation>0.742414151801318</observation>
+                    <observation>0.569769088803535</observation>
+                    <observation>0.514641880446069</observation>
+                    <observation>0.507375751974855</observation>
+                    <observation>0.514785276369198</observation>
+                    <observation>0.522110849009112</observation>
+                    <observation>0.557966751421232</observation>
+                    <observation>0.409106412528644</observation>
+                    <observation>0.555184964598535</observation>
+                    <observation>0.473134894251227</observation>
+                    <observation>0.323297299389543</observation>
+                    <observation>0.673692712703202</observation>
+                    <observation>0.443942875157386</observation>
+                    <observation>0.351996537213307</observation>
+                    <observation>0.485094510470466</observation>
+                    <observation>0.554083654640412</observation>
+                    <observation>0.410620222284522</observation>
+                    <observation>0.44794516750292</observation>
+                    <observation>0.343283055633839</observation>
+                    <observation>0.50517440007512</observation>
+                    <observation>0.549523342625067</observation>
+                    <observation>0.582821558290934</observation>
+                    <observation>0.511380031674189</observation>
+                    <observation>0.842601986544209</observation>
+                    <observation>0.505088544882282</observation>
+                    <observation>0.571120289017272</observation>
+                    <observation>0.602295658167566</observation>
+                    <observation>0.524569545998358</observation>
+                    <observation>0.672424257526917</observation>
+                    <observation>0.397756995841534</observation>
+                    <observation>0.426799730024845</observation>
+                    <observation>0.441295552219301</observation>
+                    <observation>0.409053866676207</observation>
+                    <observation>0.345834871877681</observation>
+                    <observation>0.343114615612063</observation>
+                    <observation>0.401642933216366</observation>
+                    <observation>0.440432908095954</observation>
+                    <observation>0.531858059732433</observation>
+                    <observation>0.41437251332883</observation>
+                    <observation>0.559970959934719</observation>
+                    <observation>0.426340698974727</observation>
+                    <observation>0.546208708339711</observation>
+                    <observation>0.440306318150982</observation>
+                    <observation>0.63813702257253</observation>
+                    <observation>0.331906390870285</observation>
+                    <observation>0.526910841585708</observation>
+                    <observation>0.490178295134468</observation>
+                    <observation>0.450106153012021</observation>
+                    <observation>0.480777117069837</observation>
+                    <observation>0.461386712431872</observation>
+                    <observation>0.703102249404369</observation>
+                    <observation>0.443350412429911</observation>
+                    <observation>0.518891914718583</observation>
+                    <observation>0.644946202000812</observation>
+                    <observation>0.586121467181545</observation>
+                </value>
+            </item>
+            <item>
+                <index>1</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>1</type>
+                    <volume_k>100</volume_k>
+                    <abs_err>0.1</abs_err>
+                    <rel_err>0.2</rel_err>
+                    <observation>0.402920001955851</observation>
+                    <observation>0.572160205812517</observation>
+                    <observation>0.561489954848297</observation>
+                    <observation>0.479735555792309</observation>
+                    <observation>0.515774606042668</observation>
+                    <observation>0.499579361517256</observation>
+                    <observation>0.340984162941838</observation>
+                    <observation>0.471991723353455</observation>
+                    <observation>0.565680860566466</observation>
+                    <observation>0.471213795156184</observation>
+                    <observation>0.578812580370346</observation>
+                    <observation>0.324553840404585</observation>
+                    <observation>0.424709563057141</observation>
+                    <observation>0.418404411174488</observation>
+                    <observation>0.346608143440726</observation>
+                    <observation>0.660260075650174</observation>
+                    <observation>0.517517650456091</observation>
+                    <observation>0.53869472208935</observation>
+                    <observation>0.376917063458661</observation>
+                    <observation>0.386359318400406</observation>
+                    <observation>0.485757410600113</observation>
+                    <observation>0.473043680904647</observation>
+                    <observation>0.449478064778884</observation>
+                    <observation>0.599398279346225</observation>
+                    <observation>0.646048038516572</observation>
+                    <observation>0.6057663109859</observation>
+                    <observation>0.77456667135005</observation>
+                    <observation>0.766665779688119</observation>
+                    <observation>0.416631458332065</observation>
+                    <observation>0.352883445483977</observation>
+                    <observation>0.5285000364931</observation>
+                    <observation>0.476401260854722</observation>
+                    <observation>0.528962749182915</observation>
+                    <observation>0.380054741722666</observation>
+                    <observation>0.670212619690833</observation>
+                    <observation>0.42734028104457</observation>
+                    <observation>0.315543233615118</observation>
+                    <observation>0.715950956288044</observation>
+                    <observation>0.614069273237921</observation>
+                    <observation>0.7182744161809</observation>
+                    <observation>0.499614392402004</observation>
+                    <observation>0.406366517384536</observation>
+                    <observation>0.533911755799824</observation>
+                    <observation>0.357732160015463</observation>
+                    <observation>0.555382575953738</observation>
+                    <observation>0.866419676617151</observation>
+                    <observation>0.676764864099765</observation>
+                    <observation>0.458919934863995</observation>
+                    <observation>0.505156057770772</observation>
+                    <observation>0.597094582825103</observation>
+                    <observation>0.352214290568784</observation>
+                    <observation>0.706327919622643</observation>
+                    <observation>0.450244365198776</observation>
+                    <observation>0.631247909449363</observation>
+                    <observation>0.4234808913219</observation>
+                    <observation>0.383128927638412</observation>
+                    <observation>0.656769628742475</observation>
+                    <observation>0.407273040035479</observation>
+                    <observation>0.395273397723004</observation>
+                    <observation>0.338865192739038</observation>
+                    <observation>0.451131646737689</observation>
+                    <observation>0.274287125461986</observation>
+                    <observation>0.427128891159141</observation>
+                    <observation>0.323433174088819</observation>
+                    <observation>0.409284577276247</observation>
+                    <observation>0.565927206458992</observation>
+                    <observation>0.566502237032672</observation>
+                    <observation>0.512884486415472</observation>
+                    <observation>0.719264539754153</observation>
+                    <observation>0.443914414889626</observation>
+                    <observation>0.419421128620996</observation>
+                    <observation>0.43935901719276</observation>
+                    <observation>0.403600361051938</observation>
+                    <observation>0.759502617316334</observation>
+                    <observation>0.528074353017422</observation>
+                    <observation>0.473968550017153</observation>
+                    <observation>0.555191779364413</observation>
+                    <observation>0.430976301125746</observation>
+                    <observation>0.282552884706344</observation>
+                    <observation>0.46889503599446</observation>
+                    <observation>0.470892732491682</observation>
+                    <observation>0.435475579357655</observation>
+                    <observation>0.519880394820021</observation>
+                    <observation>0.442728488717257</observation>
+                    <observation>0.677857396853305</observation>
+                    <observation>0.342440809517213</observation>
+                    <observation>0.462265143912985</observation>
+                    <observation>0.456198085528977</observation>
+                    <observation>0.605091288143525</observation>
+                    <observation>0.385701532785589</observation>
+                    <observation>0.597697064632327</observation>
+                    <observation>0.446563275580296</observation>
+                    <observation>0.438436282958016</observation>
+                    <observation>0.425569174417245</observation>
+                    <observation>0.402475672347523</observation>
+                    <observation>0.854826434051068</observation>
+                    <observation>0.436089210897423</observation>
+                    <observation>0.588866772078942</observation>
+                    <observation>0.711557350357711</observation>
+                    <observation>0.653927918098295</observation>
+                </value>
+            </item>
+            <item>
+                <index>2</index>
+                <value>
+                    <title>Частично группированная выборка</title>
+                    <type>2</type>
+                    <volume_k>3</volume_k>
+                    <volume_n>4</volume_n>
+                    <n_i>10</n_i>
+                    <n_i>3</n_i>
+                    <n_i>4</n_i>
+                    <x_i>0.4</x_i>
+                    <x_i>0.6</x_i>
+                    <observation>4.5</observation>
+                    <observation>6.7</observation>
+                    <observation>8.9</observation>
+                    <observation>1.7</observation>
+                </value>
+            </item>
+            <item>
+                <index>3</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>3</type>
+                    <volume_k>7</volume_k>
+                    <n_i>7</n_i>
+                    <n_i>13</n_i>
+                    <n_i>25</n_i>
+                    <n_i>1</n_i>
+                    <n_i>32</n_i>
+                    <n_i>10</n_i>
+                    <n_i>12</n_i>
+                    <x_i>0.3831</x_i>
+                    <x_i>0.4206</x_i>
+                    <x_i>0.4853</x_i>
+                    <x_i>0.4869</x_i>
+                    <x_i>0.5581</x_i>
+                    <x_i>0.6136</x_i>
+                </value>
+            </item>
+            <item>
+                <index>4</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>4</type>
+                    <volume_n>88</volume_n>
+                    <n_i>12</n_i>
+                    <x_i>0.4</x_i>
+                    <observation>0.522014878993433</observation>
+                    <observation>0.613995703137153</observation>
+                    <observation>0.425819083490415</observation>
+                    <observation>0.412457921644152</observation>
+                    <observation>0.426626436630655</observation>
+                    <observation>0.533760042450835</observation>
+                    <observation>0.439177545074097</observation>
+                    <observation>0.447328079159247</observation>
+                    <observation>0.503218216926567</observation>
+                    <observation>0.531370123883595</observation>
+                    <observation>0.532811874465967</observation>
+                    <observation>0.411428654744882</observation>
+                    <observation>0.484548116706746</observation>
+                    <observation>0.588829458318339</observation>
+                    <observation>0.568882044664746</observation>
+                    <observation>0.485549412007698</observation>
+                    <observation>0.498087043954791</observation>
+                    <observation>0.436561831017783</observation>
+                    <observation>0.500255288718736</observation>
+                    <observation>0.454455775971685</observation>
+                    <observation>0.437976002858165</observation>
+                    <observation>0.595529004521871</observation>
+                    <observation>0.618709627391037</observation>
+                    <observation>0.534147979367794</observation>
+                    <observation>0.678189134910728</observation>
+                    <observation>0.584332285162495</observation>
+                    <observation>0.428635182521989</observation>
+                    <observation>0.488496161897627</observation>
+                    <observation>0.55582051905845</observation>
+                    <observation>0.501790568258319</observation>
+                    <observation>0.549242406740111</observation>
+                    <observation>0.534070184626233</observation>
+                    <observation>0.438608632193605</observation>
+                    <observation>0.630614087558649</observation>
+                    <observation>0.504349980930207</observation>
+                    <observation>0.657681347065613</observation>
+                    <observation>0.432586909635817</observation>
+                    <observation>0.41742939766817</observation>
+                    <observation>0.447882166283131</observation>
+                    <observation>0.488274806533756</observation>
+                    <observation>0.742414151801318</observation>
+                    <observation>0.569769088803535</observation>
+                    <observation>0.514641880446069</observation>
+                    <observation>0.507375751974855</observation>
+                    <observation>0.514785276369198</observation>
+                    <observation>0.522110849009112</observation>
+                    <observation>0.557966751421232</observation>
+                    <observation>0.409106412528644</observation>
+                    <observation>0.555184964598535</observation>
+                    <observation>0.473134894251227</observation>
+                    <observation>0.673692712703202</observation>
+                    <observation>0.443942875157386</observation>
+                    <observation>0.485094510470466</observation>
+                    <observation>0.554083654640412</observation>
+                    <observation>0.410620222284522</observation>
+                    <observation>0.44794516750292</observation>
+                    <observation>0.50517440007512</observation>
+                    <observation>0.549523342625067</observation>
+                    <observation>0.582821558290934</observation>
+                    <observation>0.511380031674189</observation>
+                    <observation>0.842601986544209</observation>
+                    <observation>0.505088544882282</observation>
+                    <observation>0.571120289017272</observation>
+                    <observation>0.602295658167566</observation>
+                    <observation>0.524569545998358</observation>
+                    <observation>0.672424257526917</observation>
+                    <observation>0.426799730024845</observation>
+                    <observation>0.441295552219301</observation>
+                    <observation>0.409053866676207</observation>
+                    <observation>0.401642933216366</observation>
+                    <observation>0.440432908095954</observation>
+                    <observation>0.531858059732433</observation>
+                    <observation>0.41437251332883</observation>
+                    <observation>0.559970959934719</observation>
+                    <observation>0.426340698974727</observation>
+                    <observation>0.546208708339711</observation>
+                    <observation>0.440306318150982</observation>
+                    <observation>0.63813702257253</observation>
+                    <observation>0.526910841585708</observation>
+                    <observation>0.490178295134468</observation>
+                    <observation>0.450106153012021</observation>
+                    <observation>0.480777117069837</observation>
+                    <observation>0.461386712431872</observation>
+                    <observation>0.703102249404369</observation>
+                    <observation>0.443350412429911</observation>
+                    <observation>0.518891914718583</observation>
+                    <observation>0.644946202000812</observation>
+                    <observation>0.586121467181545</observation>
+                </value>
+            </item>
+            <item>
+                <index>5</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>5</type>
+                    <volume_n>97</volume_n>
+                    <n_i>3</n_i>
+                    <x_i>0.7</x_i>
+                    <observation>0.522014878993433</observation>
+                    <observation>0.613995703137153</observation>
+                    <observation>0.425819083490415</observation>
+                    <observation>0.412457921644152</observation>
+                    <observation>0.426626436630655</observation>
+                    <observation>0.533760042450835</observation>
+                    <observation>0.439177545074097</observation>
+                    <observation>0.447328079159247</observation>
+                    <observation>0.503218216926567</observation>
+                    <observation>0.531370123883595</observation>
+                    <observation>0.532811874465967</observation>
+                    <observation>0.411428654744882</observation>
+                    <observation>0.484548116706746</observation>
+                    <observation>0.588829458318339</observation>
+                    <observation>0.384202401375359</observation>
+                    <observation>0.568882044664746</observation>
+                    <observation>0.485549412007698</observation>
+                    <observation>0.498087043954791</observation>
+                    <observation>0.436561831017783</observation>
+                    <observation>0.500255288718736</observation>
+                    <observation>0.385285106579103</observation>
+                    <observation>0.454455775971685</observation>
+                    <observation>0.437976002858165</observation>
+                    <observation>0.595529004521871</observation>
+                    <observation>0.618709627391037</observation>
+                    <observation>0.534147979367794</observation>
+                    <observation>0.678189134910728</observation>
+                    <observation>0.584332285162495</observation>
+                    <observation>0.342425671999763</observation>
+                    <observation>0.385646545496398</observation>
+                    <observation>0.428635182521989</observation>
+                    <observation>0.488496161897627</observation>
+                    <observation>0.55582051905845</observation>
+                    <observation>0.501790568258319</observation>
+                    <observation>0.549242406740111</observation>
+                    <observation>0.534070184626233</observation>
+                    <observation>0.438608632193605</observation>
+                    <observation>0.630614087558649</observation>
+                    <observation>0.504349980930207</observation>
+                    <observation>0.657681347065613</observation>
+                    <observation>0.432586909635817</observation>
+                    <observation>0.41742939766817</observation>
+                    <observation>0.447882166283131</observation>
+                    <observation>0.390487800381154</observation>
+                    <observation>0.488274806533756</observation>
+                    <observation>0.569769088803535</observation>
+                    <observation>0.514641880446069</observation>
+                    <observation>0.507375751974855</observation>
+                    <observation>0.514785276369198</observation>
+                    <observation>0.522110849009112</observation>
+                    <observation>0.557966751421232</observation>
+                    <observation>0.409106412528644</observation>
+                    <observation>0.555184964598535</observation>
+                    <observation>0.473134894251227</observation>
+                    <observation>0.323297299389543</observation>
+                    <observation>0.673692712703202</observation>
+                    <observation>0.443942875157386</observation>
+                    <observation>0.351996537213307</observation>
+                    <observation>0.485094510470466</observation>
+                    <observation>0.554083654640412</observation>
+                    <observation>0.410620222284522</observation>
+                    <observation>0.44794516750292</observation>
+                    <observation>0.343283055633839</observation>
+                    <observation>0.50517440007512</observation>
+                    <observation>0.549523342625067</observation>
+                    <observation>0.582821558290934</observation>
+                    <observation>0.511380031674189</observation>
+                    <observation>0.505088544882282</observation>
+                    <observation>0.571120289017272</observation>
+                    <observation>0.602295658167566</observation>
+                    <observation>0.524569545998358</observation>
+                    <observation>0.672424257526917</observation>
+                    <observation>0.397756995841534</observation>
+                    <observation>0.426799730024845</observation>
+                    <observation>0.441295552219301</observation>
+                    <observation>0.409053866676207</observation>
+                    <observation>0.345834871877681</observation>
+                    <observation>0.343114615612063</observation>
+                    <observation>0.401642933216366</observation>
+                    <observation>0.440432908095954</observation>
+                    <observation>0.531858059732433</observation>
+                    <observation>0.41437251332883</observation>
+                    <observation>0.559970959934719</observation>
+                    <observation>0.426340698974727</observation>
+                    <observation>0.546208708339711</observation>
+                    <observation>0.440306318150982</observation>
+                    <observation>0.63813702257253</observation>
+                    <observation>0.331906390870285</observation>
+                    <observation>0.526910841585708</observation>
+                    <observation>0.490178295134468</observation>
+                    <observation>0.450106153012021</observation>
+                    <observation>0.480777117069837</observation>
+                    <observation>0.461386712431872</observation>
+                    <observation>0.443350412429911</observation>
+                    <observation>0.518891914718583</observation>
+                    <observation>0.644946202000812</observation>
+                    <observation>0.586121467181545</observation>
+                </value>
+            </item>
+            <item>
+                <index>6</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>6</type>
+                    <volume_n>85</volume_n>
+                    <n_i>12</n_i>
+                    <n_i>3</n_i>
+                    <x_i>0.4</x_i>
+                    <x_i>0.7</x_i>
+                    <observation>0.522014878993433</observation>
+                    <observation>0.613995703137153</observation>
+                    <observation>0.425819083490415</observation>
+                    <observation>0.412457921644152</observation>
+                    <observation>0.426626436630655</observation>
+                    <observation>0.533760042450835</observation>
+                    <observation>0.439177545074097</observation>
+                    <observation>0.447328079159247</observation>
+                    <observation>0.503218216926567</observation>
+                    <observation>0.531370123883595</observation>
+                    <observation>0.532811874465967</observation>
+                    <observation>0.411428654744882</observation>
+                    <observation>0.484548116706746</observation>
+                    <observation>0.588829458318339</observation>
+                    <observation>0.568882044664746</observation>
+                    <observation>0.485549412007698</observation>
+                    <observation>0.498087043954791</observation>
+                    <observation>0.436561831017783</observation>
+                    <observation>0.500255288718736</observation>
+                    <observation>0.454455775971685</observation>
+                    <observation>0.437976002858165</observation>
+                    <observation>0.595529004521871</observation>
+                    <observation>0.618709627391037</observation>
+                    <observation>0.534147979367794</observation>
+                    <observation>0.678189134910728</observation>
+                    <observation>0.584332285162495</observation>
+                    <observation>0.428635182521989</observation>
+                    <observation>0.488496161897627</observation>
+                    <observation>0.55582051905845</observation>
+                    <observation>0.501790568258319</observation>
+                    <observation>0.549242406740111</observation>
+                    <observation>0.534070184626233</observation>
+                    <observation>0.438608632193605</observation>
+                    <observation>0.630614087558649</observation>
+                    <observation>0.504349980930207</observation>
+                    <observation>0.657681347065613</observation>
+                    <observation>0.432586909635817</observation>
+                    <observation>0.41742939766817</observation>
+                    <observation>0.447882166283131</observation>
+                    <observation>0.488274806533756</observation>
+                    <observation>0.569769088803535</observation>
+                    <observation>0.514641880446069</observation>
+                    <observation>0.507375751974855</observation>
+                    <observation>0.514785276369198</observation>
+                    <observation>0.522110849009112</observation>
+                    <observation>0.557966751421232</observation>
+                    <observation>0.409106412528644</observation>
+                    <observation>0.555184964598535</observation>
+                    <observation>0.473134894251227</observation>
+                    <observation>0.673692712703202</observation>
+                    <observation>0.443942875157386</observation>
+                    <observation>0.485094510470466</observation>
+                    <observation>0.554083654640412</observation>
+                    <observation>0.410620222284522</observation>
+                    <observation>0.44794516750292</observation>
+                    <observation>0.50517440007512</observation>
+                    <observation>0.549523342625067</observation>
+                    <observation>0.582821558290934</observation>
+                    <observation>0.511380031674189</observation>
+                    <observation>0.505088544882282</observation>
+                    <observation>0.571120289017272</observation>
+                    <observation>0.602295658167566</observation>
+                    <observation>0.524569545998358</observation>
+                    <observation>0.672424257526917</observation>
+                    <observation>0.426799730024845</observation>
+                    <observation>0.441295552219301</observation>
+                    <observation>0.409053866676207</observation>
+                    <observation>0.401642933216366</observation>
+                    <observation>0.440432908095954</observation>
+                    <observation>0.531858059732433</observation>
+                    <observation>0.41437251332883</observation>
+                    <observation>0.559970959934719</observation>
+                    <observation>0.426340698974727</observation>
+                    <observation>0.546208708339711</observation>
+                    <observation>0.440306318150982</observation>
+                    <observation>0.63813702257253</observation>
+                    <observation>0.526910841585708</observation>
+                    <observation>0.490178295134468</observation>
+                    <observation>0.450106153012021</observation>
+                    <observation>0.480777117069837</observation>
+                    <observation>0.461386712431872</observation>
+                    <observation>0.443350412429911</observation>
+                    <observation>0.518891914718583</observation>
+                    <observation>0.644946202000812</observation>
+                    <observation>0.586121467181545</observation>
+                </value>
+            </item>
+            <item>
+                <index>7</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>7</type>
+                    <volume_n>90</volume_n>
+                    <n_i>10</n_i>
+                    <x_i>0.385646545496398</x_i>
+                    <observation>0.390487800381154</observation>
+                    <observation>0.397756995841534</observation>
+                    <observation>0.401642933216366</observation>
+                    <observation>0.409053866676207</observation>
+                    <observation>0.409106412528644</observation>
+                    <observation>0.410620222284522</observation>
+                    <observation>0.411428654744882</observation>
+                    <observation>0.412457921644152</observation>
+                    <observation>0.41437251332883</observation>
+                    <observation>0.41742939766817</observation>
+                    <observation>0.425819083490415</observation>
+                    <observation>0.426340698974727</observation>
+                    <observation>0.426626436630655</observation>
+                    <observation>0.426799730024845</observation>
+                    <observation>0.428635182521989</observation>
+                    <observation>0.432586909635817</observation>
+                    <observation>0.436561831017783</observation>
+                    <observation>0.437976002858165</observation>
+                    <observation>0.438608632193605</observation>
+                    <observation>0.439177545074097</observation>
+                    <observation>0.440306318150982</observation>
+                    <observation>0.440432908095954</observation>
+                    <observation>0.441295552219301</observation>
+                    <observation>0.443350412429911</observation>
+                    <observation>0.443942875157386</observation>
+                    <observation>0.447328079159247</observation>
+                    <observation>0.447882166283131</observation>
+                    <observation>0.44794516750292</observation>
+                    <observation>0.450106153012021</observation>
+                    <observation>0.454455775971685</observation>
+                    <observation>0.461386712431872</observation>
+                    <observation>0.473134894251227</observation>
+                    <observation>0.480777117069837</observation>
+                    <observation>0.484548116706746</observation>
+                    <observation>0.485094510470466</observation>
+                    <observation>0.485549412007698</observation>
+                    <observation>0.488274806533756</observation>
+                    <observation>0.488496161897627</observation>
+                    <observation>0.490178295134468</observation>
+                    <observation>0.498087043954791</observation>
+                    <observation>0.500255288718736</observation>
+                    <observation>0.501790568258319</observation>
+                    <observation>0.503218216926567</observation>
+                    <observation>0.504349980930207</observation>
+                    <observation>0.505088544882282</observation>
+                    <observation>0.50517440007512</observation>
+                    <observation>0.507375751974855</observation>
+                    <observation>0.511380031674189</observation>
+                    <observation>0.514641880446069</observation>
+                    <observation>0.514785276369198</observation>
+                    <observation>0.518891914718583</observation>
+                    <observation>0.522014878993433</observation>
+                    <observation>0.522110849009112</observation>
+                    <observation>0.524569545998358</observation>
+                    <observation>0.526910841585708</observation>
+                    <observation>0.531370123883595</observation>
+                    <observation>0.531858059732433</observation>
+                    <observation>0.532811874465967</observation>
+                    <observation>0.533760042450835</observation>
+                    <observation>0.534070184626233</observation>
+                    <observation>0.534147979367794</observation>
+                    <observation>0.546208708339711</observation>
+                    <observation>0.549242406740111</observation>
+                    <observation>0.549523342625067</observation>
+                    <observation>0.554083654640412</observation>
+                    <observation>0.555184964598535</observation>
+                    <observation>0.55582051905845</observation>
+                    <observation>0.557966751421232</observation>
+                    <observation>0.559970959934719</observation>
+                    <observation>0.568882044664746</observation>
+                    <observation>0.569769088803535</observation>
+                    <observation>0.571120289017272</observation>
+                    <observation>0.582821558290934</observation>
+                    <observation>0.584332285162495</observation>
+                    <observation>0.586121467181545</observation>
+                    <observation>0.588829458318339</observation>
+                    <observation>0.595529004521871</observation>
+                    <observation>0.602295658167566</observation>
+                    <observation>0.613995703137153</observation>
+                    <observation>0.618709627391037</observation>
+                    <observation>0.630614087558649</observation>
+                    <observation>0.63813702257253</observation>
+                    <observation>0.644946202000812</observation>
+                    <observation>0.657681347065613</observation>
+                    <observation>0.672424257526917</observation>
+                    <observation>0.673692712703202</observation>
+                    <observation>0.678189134910728</observation>
+                    <observation>0.703102249404369</observation>
+                    <observation>0.742414151801318</observation>
+                    <observation>0.842601986544209</observation>
+                </value>
+            </item>
+            <item>
+                <index>8</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>8</type>
+                    <volume_n>90</volume_n>
+                    <n_i>10</n_i>
+                    <x_i>0.630614087558649</x_i>
+                    <observation>0.323297299389543</observation>
+                    <observation>0.331906390870285</observation>
+                    <observation>0.342425671999763</observation>
+                    <observation>0.343114615612063</observation>
+                    <observation>0.343283055633839</observation>
+                    <observation>0.345834871877681</observation>
+                    <observation>0.351996537213307</observation>
+                    <observation>0.384202401375359</observation>
+                    <observation>0.385285106579103</observation>
+                    <observation>0.385646545496398</observation>
+                    <observation>0.390487800381154</observation>
+                    <observation>0.397756995841534</observation>
+                    <observation>0.401642933216366</observation>
+                    <observation>0.409053866676207</observation>
+                    <observation>0.409106412528644</observation>
+                    <observation>0.410620222284522</observation>
+                    <observation>0.411428654744882</observation>
+                    <observation>0.412457921644152</observation>
+                    <observation>0.41437251332883</observation>
+                    <observation>0.41742939766817</observation>
+                    <observation>0.425819083490415</observation>
+                    <observation>0.426340698974727</observation>
+                    <observation>0.426626436630655</observation>
+                    <observation>0.426799730024845</observation>
+                    <observation>0.428635182521989</observation>
+                    <observation>0.432586909635817</observation>
+                    <observation>0.436561831017783</observation>
+                    <observation>0.437976002858165</observation>
+                    <observation>0.438608632193605</observation>
+                    <observation>0.439177545074097</observation>
+                    <observation>0.440306318150982</observation>
+                    <observation>0.440432908095954</observation>
+                    <observation>0.441295552219301</observation>
+                    <observation>0.443350412429911</observation>
+                    <observation>0.443942875157386</observation>
+                    <observation>0.447328079159247</observation>
+                    <observation>0.447882166283131</observation>
+                    <observation>0.44794516750292</observation>
+                    <observation>0.450106153012021</observation>
+                    <observation>0.454455775971685</observation>
+                    <observation>0.461386712431872</observation>
+                    <observation>0.473134894251227</observation>
+                    <observation>0.480777117069837</observation>
+                    <observation>0.484548116706746</observation>
+                    <observation>0.485094510470466</observation>
+                    <observation>0.485549412007698</observation>
+                    <observation>0.488274806533756</observation>
+                    <observation>0.488496161897627</observation>
+                    <observation>0.490178295134468</observation>
+                    <observation>0.498087043954791</observation>
+                    <observation>0.500255288718736</observation>
+                    <observation>0.501790568258319</observation>
+                    <observation>0.503218216926567</observation>
+                    <observation>0.504349980930207</observation>
+                    <observation>0.505088544882282</observation>
+                    <observation>0.50517440007512</observation>
+                    <observation>0.507375751974855</observation>
+                    <observation>0.511380031674189</observation>
+                    <observation>0.514641880446069</observation>
+                    <observation>0.514785276369198</observation>
+                    <observation>0.518891914718583</observation>
+                    <observation>0.522014878993433</observation>
+                    <observation>0.522110849009112</observation>
+                    <observation>0.524569545998358</observation>
+                    <observation>0.526910841585708</observation>
+                    <observation>0.531370123883595</observation>
+                    <observation>0.531858059732433</observation>
+                    <observation>0.532811874465967</observation>
+                    <observation>0.533760042450835</observation>
+                    <observation>0.534070184626233</observation>
+                    <observation>0.534147979367794</observation>
+                    <observation>0.546208708339711</observation>
+                    <observation>0.549242406740111</observation>
+                    <observation>0.549523342625067</observation>
+                    <observation>0.554083654640412</observation>
+                    <observation>0.555184964598535</observation>
+                    <observation>0.55582051905845</observation>
+                    <observation>0.557966751421232</observation>
+                    <observation>0.559970959934719</observation>
+                    <observation>0.568882044664746</observation>
+                    <observation>0.569769088803535</observation>
+                    <observation>0.571120289017272</observation>
+                    <observation>0.582821558290934</observation>
+                    <observation>0.584332285162495</observation>
+                    <observation>0.586121467181545</observation>
+                    <observation>0.588829458318339</observation>
+                    <observation>0.595529004521871</observation>
+                    <observation>0.602295658167566</observation>
+                    <observation>0.613995703137153</observation>
+                    <observation>0.618709627391037</observation>
+                </value>
+            </item>
+            <item>
+                <index>9</index>
+                <value>
+                    <title>Бета 3-го рода (6.6889,8.1712,2.3857) с масштабом 0.9291 со сдвигом 0.2500</title>
+                    <type>9</type>
+                    <volume_n>80</volume_n>
+                    <n_i>10</n_i>
+                    <n_i>10</n_i>
+                    <x_i>0.385646545496398</x_i>
+                    <x_i>0.630614087558649</x_i>
+                    <observation>0.390487800381154</observation>
+                    <observation>0.397756995841534</observation>
+                    <observation>0.401642933216366</observation>
+                    <observation>0.409053866676207</observation>
+                    <observation>0.409106412528644</observation>
+                    <observation>0.410620222284522</observation>
+                    <observation>0.411428654744882</observation>
+                    <observation>0.412457921644152</observation>
+                    <observation>0.41437251332883</observation>
+                    <observation>0.41742939766817</observation>
+                    <observation>0.425819083490415</observation>
+                    <observation>0.426340698974727</observation>
+                    <observation>0.426626436630655</observation>
+                    <observation>0.426799730024845</observation>
+                    <observation>0.428635182521989</observation>
+                    <observation>0.432586909635817</observation>
+                    <observation>0.436561831017783</observation>
+                    <observation>0.437976002858165</observation>
+                    <observation>0.438608632193605</observation>
+                    <observation>0.439177545074097</observation>
+                    <observation>0.440306318150982</observation>
+                    <observation>0.440432908095954</observation>
+                    <observation>0.441295552219301</observation>
+                    <observation>0.443350412429911</observation>
+                    <observation>0.443942875157386</observation>
+                    <observation>0.447328079159247</observation>
+                    <observation>0.447882166283131</observation>
+                    <observation>0.44794516750292</observation>
+                    <observation>0.450106153012021</observation>
+                    <observation>0.454455775971685</observation>
+                    <observation>0.461386712431872</observation>
+                    <observation>0.473134894251227</observation>
+                    <observation>0.480777117069837</observation>
+                    <observation>0.484548116706746</observation>
+                    <observation>0.485094510470466</observation>
+                    <observation>0.485549412007698</observation>
+                    <observation>0.488274806533756</observation>
+                    <observation>0.488496161897627</observation>
+                    <observation>0.490178295134468</observation>
+                    <observation>0.498087043954791</observation>
+                    <observation>0.500255288718736</observation>
+                    <observation>0.501790568258319</observation>
+                    <observation>0.503218216926567</observation>
+                    <observation>0.504349980930207</observation>
+                    <observation>0.505088544882282</observation>
+                    <observation>0.50517440007512</observation>
+                    <observation>0.507375751974855</observation>
+                    <observation>0.511380031674189</observation>
+                    <observation>0.514641880446069</observation>
+                    <observation>0.514785276369198</observation>
+                    <observation>0.518891914718583</observation>
+                    <observation>0.522014878993433</observation>
+                    <observation>0.522110849009112</observation>
+                    <observation>0.524569545998358</observation>
+                    <observation>0.526910841585708</observation>
+                    <observation>0.531370123883595</observation>
+                    <observation>0.531858059732433</observation>
+                    <observation>0.532811874465967</observation>
+                    <observation>0.533760042450835</observation>
+                    <observation>0.534070184626233</observation>
+                    <observation>0.534147979367794</observation>
+                    <observation>0.546208708339711</observation>
+                    <observation>0.549242406740111</observation>
+                    <observation>0.549523342625067</observation>
+                    <observation>0.554083654640412</observation>
+                    <observation>0.555184964598535</observation>
+                    <observation>0.55582051905845</observation>
+                    <observation>0.557966751421232</observation>
+                    <observation>0.559970959934719</observation>
+                    <observation>0.568882044664746</observation>
+                    <observation>0.569769088803535</observation>
+                    <observation>0.571120289017272</observation>
+                    <observation>0.582821558290934</observation>
+                    <observation>0.584332285162495</observation>
+                    <observation>0.586121467181545</observation>
+                    <observation>0.588829458318339</observation>
+                    <observation>0.595529004521871</observation>
+                    <observation>0.602295658167566</observation>
+                    <observation>0.613995703137153</observation>
+                    <observation>0.618709627391037</observation>
+                </value>
+            </item>
+            <item>
+                <index>10</index>
+                <value>
+                    <title>Интервальная выборка из интервальных наблюдений</title>
+                    <type>10</type>
+                    <volume_k>7</volume_k>
+                    <observation>
+                        <a_i>1</a_i>
+                        <b_i>2</b_i>
+                    </observation>
+                    <observation>
+                        <a_i>2</a_i>
+                        <b_i>3</b_i>
+                    </observation>
+                    <observation>
+                        <a_i>3</a_i>
+                        <b_i>4</b_i>
+                    </observation>
+                    <observation>
+                        <a_i>4</a_i>
+                        <b_i>5</b_i>
+                    </observation>
+                    <observation>
+                        <a_i>5</a_i>
+                        <b_i>6</b_i>
+                    </observation>
+                    <observation>
+                        <a_i>6</a_i>
+                        <b_i>7</b_i>
+                    </observation>
+                    <observation>
+                        <a_i>7</a_i>
+                        <b_i>8</b_i>
+                    </observation>
+                </value>
+            </item>
+            <item>
+                <index>11</index>
+                <value>
+                    <title>Группированная с пересечениями</title>
+                    <type>11</type>
+                    <volume_k>7</volume_k>
+                    <abs_err>0.01</abs_err>
+                    <rel_err>0.02</rel_err>
+                    <n_i>7</n_i>
+                    <n_i>13</n_i>
+                    <n_i>25</n_i>
+                    <n_i>1</n_i>
+                    <n_i>32</n_i>
+                    <n_i>10</n_i>
+                    <n_i>12</n_i>
+                    <x_i>0.3831</x_i>
+                    <x_i>0.4206</x_i>
+                    <x_i>0.4853</x_i>
+                    <x_i>0.4869</x_i>
+                    <x_i>0.5581</x_i>
+                    <x_i>0.6136</x_i>
+                </value>
+            </item>
+        </value>
+    </parameter>
+    <parameter>
+        <name>TestDouble</name>
+        <value type="2">23.5</value>
+    </parameter>
+    <parameter>
+        <name>TestString</name>
+        <value type="4">isw</value>
+    </parameter>
+    <parameter>
+        <name>TestVectorInt</name>
+        <value type="1">
+            <item>
+                <index>0</index>
+                <value>4</value>
+            </item>
+            <item>
+                <index>1</index>
+                <value>5</value>
+            </item>
+        </value>
+    </parameter>
+    <parameter>
+        <name>TestInt</name>
+        <value type="0">17</value>
+    </parameter>
+    <parameter>
+        <name>TestVectorDouble</name>
+        <value type="3">
+            <item>
+                <index>0</index>
+                <value>1.5</value>
+            </item>
+            <item>
+                <index>1</index>
+                <value>2.5</value>
+            </item>
+        </value>
+    </parameter>
+    <parameter>
+        <name>TestDistributionsList</name>
+        <value type="7">
+            <item>
+                <index>0</index>
+                <value>Shift(Scale(D9(),1.000000000000000000),0.000000000000000000)</value>
+            </item>
+            <item>
+                <index>1</index>
+                <value>Shift(Scale(D8(),10.000000000000000000),-1.000000000000000000)</value>
+            </item>
+        </value>
+    </parameter>
+    <parameter>
+        <name>TestVectorString</name>
+        <value type="5">
+            <item>
+                <index>0</index>
+                <value>yes</value>
+            </item>
+            <item>
+                <index>1</index>
+                <value>no</value>
+            </item>
+        </value>
+    </parameter>
+    <parameter>
+        <name>TestVectorCriterion</name>
+        <value type="8">
+            <item>
+                <index>0</index>
+                <type>Criterion_GoodnessOfFitKolmogorov</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Колмогорова</name>
+                    <filename>Критерий Колмогорова</filename>
+                    <note>Универсальный критерий согласия</note>
+                    <group>4</group>
+                </info>
+            </item>
+            <item>
+                <index>1</index>
+                <type>Criterion_GoodnessOfFitSmirnov</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Смирнова</name>
+                    <filename>Критерий Смирнова</filename>
+                    <note>Универсальный критерий согласия</note>
+                    <group>4</group>
+                </info>
+            </item>
+            <item>
+                <index>2</index>
+                <type>Criterion_GoodnessOfFitOmegaSmall</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Омега малое</name>
+                    <filename>Критерий Омега малое</filename>
+                    <note>Критерий Омега малое</note>
+                    <group>4</group>
+                </info>
+            </item>
+            <item>
+                <index>3</index>
+                <type>Criterion_GoodnessOfFitOmegaBig</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Омега большое</name>
+                    <filename>Критерий Омега большое</filename>
+                    <note>Критерий Омега большое</note>
+                    <group>4</group>
+                </info>
+            </item>
+            <item>
+                <index>4</index>
+                <type>Criterion_NormalitySkewness</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Симметрии</name>
+                    <filename>Критерий Симметрии</filename>
+                    <note>Данный критерий возвращает значение Симметрии</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>5</index>
+                <type>Criterion_NormalityKurtosis</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Эксцесса</name>
+                    <filename>Критерий Эксцесса</filename>
+                    <note>Данный критерий возвращает значение Эксцесса</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>6</index>
+                <type>Criterion_NormalityEppsPalli</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Эппса-Палли</name>
+                    <filename>Критерий Эппса-Палли</filename>
+                    <note>Проверка нормальности критерием Эппса-Палли</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>7</index>
+                <type>Criterion_NormalityShapiroWilk</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Шапиро-Уилка</name>
+                    <filename>Критерий Шапиро-Уилка</filename>
+                    <note>Проверка нормальности критерием Шапиро-Уилка</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>8</index>
+                <type>Criterion_NormalityShapiroWilkModif</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Шапиро-Уилка Модиф.</name>
+                    <filename>Критерий Шапиро-Уилка Модиф.</filename>
+                    <note>Проверка нормальности модифицированным критерием Шапиро-Уилка</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>9</index>
+                <type>Criterion_NormalityDAgoustinoSkewnessToZ1</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий ДАгустино Симметрии Z1</name>
+                    <filename>Критерий ДАгустино Симметрии Z1</filename>
+                    <note>Проверка нормальности преобразованием ДАгустино критерия симметрии</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>10</index>
+                <type>Criterion_NormalityDAgoustinoKurtosisToZ2</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий ДАгустино Эксцесса Z2</name>
+                    <filename>Критерий ДАгустино Эксцесса Z2</filename>
+                    <note>Проверка нормальности преобразованием ДАгустино критерия Эксцесса Z2</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>11</index>
+                <type>Criterion_NormalityB1B2</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Симметрии и Эксцесса</name>
+                    <filename>Критерий Симметрии и Эксцесса</filename>
+                    <note>Проверка нормальности совместным критерием Симметрии и Эксцесса</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>12</index>
+                <type>Criterion_NormalityZ1Z2</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий ДАгустино Z1^2+Z2^2</name>
+                    <filename>Критерий ДАгустино Z1Z2</filename>
+                    <note>Проверка нормальности совместным критерием ДАгустино Z1Z2</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>13</index>
+                <type>Criterion_NormalityFrosiniBn</type>
+                <checked>0</checked>
+                <info>
+                    <name>Крит.норм-ти Фросини Bn</name>
+                    <filename>Крит.норм-ти Фросини Bn</filename>
+                    <note>Проверка нормальности критерием Фросини Bn</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>14</index>
+                <type>Criterion_NormalityHegazyGreenT1</type>
+                <checked>0</checked>
+                <info>
+                    <name>Крит.норм-ти Хегази-Грина T1</name>
+                    <filename>Крит.норм-ти Хегази-Грина T1</filename>
+                    <note>Проверка нормальности критерием Хегази-Грина T1</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>15</index>
+                <type>Criterion_NormalityHegazyGreenT2</type>
+                <checked>0</checked>
+                <info>
+                    <name>Крит.норм-ти Хегази-Грина T2</name>
+                    <filename>Крит.норм-ти Хегази-Грина T2</filename>
+                    <note>Проверка нормальности критерием Хегази-Грина T2</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>16</index>
+                <type>Criterion_NormalityGeary</type>
+                <checked>0</checked>
+                <info>
+                    <name>Крит.норм-ти Гири</name>
+                    <filename>Крит. норм-ти Гири</filename>
+                    <note>Проверка нормальности критерием Гири</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>17</index>
+                <type>Criterion_NormalityDavidHartleyPearson</type>
+                <checked>0</checked>
+                <info>
+                    <name>Крит.норм-ти Дэвида-Хартли-Пирсона</name>
+                    <filename>Крит. норм-ти Дэвида-Хартли-Пирсона</filename>
+                    <note>Проверка нормальности критерием Дэвида-Хартли-Пирсона</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>18</index>
+                <type>Criterion_NormalitySpiegelhalterTshtrih</type>
+                <checked>0</checked>
+                <info>
+                    <name>Крит.норм-ти Шпигельхальтера T&apos;</name>
+                    <filename>Крит.норм-ти Шпигельхальтера T&apos;</filename>
+                    <note>Проверка нормальности критерием Шпигельхальтера T&apos;</note>
+                    <group>0</group>
+                </info>
+            </item>
+            <item>
+                <index>19</index>
+                <type>Criterion_HomogenitySmirnov</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий однородности Смирнова</name>
+                    <filename>Критерий однородности Смирнова</filename>
+                    <note>Проверка критерием однородности Смирнова</note>
+                    <group>1</group>
+                </info>
+            </item>
+            <item>
+                <index>20</index>
+                <type>Criterion_HomogenitySmirnovModif</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий однородности Смирнова модифицированный</name>
+                    <filename>Критерий однородности Смирнова модифицированный</filename>
+                    <note>Критерий однородности Смирнова модифицированный</note>
+                    <group>1</group>
+                </info>
+            </item>
+            <item>
+                <index>21</index>
+                <type>Criterion_HomogenityLemanRozenblatt</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий однородности Лемана-Розенблатта</name>
+                    <filename>Критерий однородности Лемана-Розенблатта</filename>
+                    <note>Проверка однородности Лемана-Розенблатта</note>
+                    <group>1</group>
+                </info>
+            </item>
+            <item>
+                <index>22</index>
+                <type>Criterion_HomogenityUnknownSameDispersion</type>
+                <checked>0</checked>
+                <info>
+                    <name>t-критерий Стьюдента (при неизвестных, но равных дисперсиях)</name>
+                    <filename>t-критерий Стьюдента (при неизвестных, но равных дисперсиях)</filename>
+                    <note>t-критерий Стьюдента (при неизвестных, но равных дисперсиях)</note>
+                    <group>2</group>
+                </info>
+            </item>
+            <item>
+                <index>23</index>
+                <type>Criterion_HomogenityUnknownDiferentDispersion</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий сравнения средних при известных дисперсиях</name>
+                    <filename>Критерий сравнения средних при известных дисперсиях</filename>
+                    <note>Критерий сравнения средних при известных дисперсиях</note>
+                    <group>2</group>
+                </info>
+            </item>
+            <item>
+                <index>24</index>
+                <type>Criterion_HomogenityKnownDispersion</type>
+                <checked>0</checked>
+                <info>
+                    <name>F-критерий Фишера (при примерно равных дисперсиях)</name>
+                    <filename>F-критерий Фишера (при примерно равных дисперсиях)</filename>
+                    <note>F-критерий Фишера (при примерно равных дисперсиях)</note>
+                    <group>2</group>
+                </info>
+            </item>
+            <item>
+                <index>25</index>
+                <type>Criterion_HomogenityUMannUitni</type>
+                <checked>0</checked>
+                <info>
+                    <name>U-критерий Манна-Уитни</name>
+                    <filename>U-критерий Манна-Уитни</filename>
+                    <note>U-критерий Манна-Уитни</note>
+                    <group>2</group>
+                </info>
+            </item>
+            <item>
+                <index>26</index>
+                <type>Criterion_HomogenityUMannuUitniWilkoxonn</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Манна-Уитни-Уилкоксона</name>
+                    <filename>Критерий Манна-Уитни-Уилкоксона</filename>
+                    <note>Критерий Манна-Уитни-Уилкоксона</note>
+                    <group>2</group>
+                </info>
+            </item>
+            <item>
+                <index>27</index>
+                <type>Criterion_HomogenityAnsaryBredly</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Ансари-Бредли</name>
+                    <filename>Критерий Ансари-Бредли</filename>
+                    <note>Проверка Ансари-Бредли</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>28</index>
+                <type>Criterion_HomogenitySigelTyuki</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Сижела-Тьюки</name>
+                    <filename>Критерий Сижела-Тьюки</filename>
+                    <note>Проверка Сижела-Тьюки</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>29</index>
+                <type>Criterion_HomogenityMuda</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Муда</name>
+                    <filename>Критерий Муда</filename>
+                    <note>Проверка Муда</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>30</index>
+                <type>Criterion_HomogenityAnsaryBredlyNorm</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Ансари-Бредли (Нормированный)</name>
+                    <filename>Критерий Ансари-Бредли (Нормированный)</filename>
+                    <note>Проверка Ансари-Бредли (Нормированный)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>31</index>
+                <type>Criterion_HomogenitySigelTyukiNorm</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Сижела-Тьюки (Нормированный)</name>
+                    <filename>Критерий Сижела-Тьюки (Нормированный)</filename>
+                    <note>Проверка Сижела-Тьюки (Нормированный)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>32</index>
+                <type>Criterion_HomogenityMudaNorm</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Муда (Нормированный)</name>
+                    <filename>Критерий Муда (Нормированный)</filename>
+                    <note>Проверка Муда (Нормированный)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>33</index>
+                <type>Criterion_HomogenityZigelTyuki</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Зигеля-Тьюки</name>
+                    <filename>Критерий Зигеля-Тьюки</filename>
+                    <note>Проверка Зигеля-Тьюки</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>34</index>
+                <type>Criterion_HomogenityZigelTyukiNorm</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Зигеля-Тьюки (Нормированный)</name>
+                    <filename>Критерий Зигеля-Тьюки (Нормированный)</filename>
+                    <note>Проверка Зигеля-Тьюки (Нормированный)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>35</index>
+                <type>Criterion_HomogenityKrackelaYallisa</type>
+                <checked>0</checked>
+                <info>
+                    <name>H-критерий Краскела-Уаллиса</name>
+                    <filename>H-критерий Краскела-Уаллиса</filename>
+                    <note>H-критерий Краскела-Уаллиса</note>
+                    <group>2</group>
+                </info>
+            </item>
+            <item>
+                <index>36</index>
+                <type>Criterion_HomogenityHartlycriterion</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Хартли</name>
+                    <filename>Критерий Хартли</filename>
+                    <note>Проверка Хартли</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>37</index>
+                <type>Criterion_HomogenityLeveneMean</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Левене (со средним)</name>
+                    <filename>Критерий Левене (со средним)</filename>
+                    <note>Критерий Левене (со средним)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>38</index>
+                <type>Criterion_HomogenityLeveneMedian</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Левене (с медианой)</name>
+                    <filename>Критерий Левене (с медианой)</filename>
+                    <note>Критерий Левене (с медианой)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>39</index>
+                <type>Criterion_HomogenityLeveneUsechenie</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Левене (с усеченным средним)</name>
+                    <filename>Критерий Левене (с усеченным средним)</filename>
+                    <note>Критерий Левене (с усеченным средним)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>40</index>
+                <type>Criterion_HomogenityFcriterion</type>
+                <checked>0</checked>
+                <info>
+                    <name>F-критерий Фишера</name>
+                    <filename>F-критерий Фишера</filename>
+                    <note>F-критерий Фишера</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>41</index>
+                <type>Criterion_HomogenityKohren</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Кокрена</name>
+                    <filename>Критерий Кокрена</filename>
+                    <note>Критерий Кокрена</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>42</index>
+                <type>Criterion_HomogenityBartlet</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Бартлетта</name>
+                    <filename>Критерий Бартлетта</filename>
+                    <note>Критерий Бартлетта</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>43</index>
+                <type>Criterion_HomogenityKeipen</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Кейпена</name>
+                    <filename>Критерий Кейпена</filename>
+                    <note>Проверка Кейпена</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>44</index>
+                <type>Criterion_HomogenityKeipenNorm</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Кейпена (Нормированный)</name>
+                    <filename>Критерий Кейпена (Нормированный)</filename>
+                    <note>Проверка Кейпена (Нормированный)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>45</index>
+                <type>Criterion_HomogenityKlotc</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Клотца</name>
+                    <filename>Критерий Клотца</filename>
+                    <note>Проверка Клотца</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>46</index>
+                <type>Criterion_HomogenityKlotcNorm</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий Клотца (Нормированный)</name>
+                    <filename>Критерий Клотца (Нормированный)</filename>
+                    <note>Проверка Клотца (Нормированный)</note>
+                    <group>3</group>
+                </info>
+            </item>
+            <item>
+                <index>47</index>
+                <type>Criterion_ExponentialityBolshev</type>
+                <checked>0</checked>
+                <info>
+                    <name>Критерий показательности Большева</name>
+                    <filename>Критерий показательности Большева</filename>
+                    <note>Критерий показательности Большева</note>
+                    <group>5</group>
+                </info>
+            </item>
+            <item>
+                <index>48</index>
+                <type>Criterion_Tree</type>
+                <checked>0</checked>
+                <info>
+                    <name>MyFormula</name>
+                    <formula>17^2+23</formula>
+                    <filename>MyFormula</filename>
+                    <note>Проверка по критерию, основанному на дереве</note>
+                    <group>1</group>
+                </info>
+            </item>
+        </value>
+    </parameter>
+</parameters>

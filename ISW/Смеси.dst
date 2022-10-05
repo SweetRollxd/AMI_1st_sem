@@ -1,0 +1,13 @@
+[Distributions]
+* Смесь Лапласа и Лапласа
+Mixt(Shift(Scale(D8())),Shift(Scale(D8())))
+* Смесь нормального и нормального
+Mixt(Shift(Scale(D9())),Shift(Scale(D9())))
+* Смесь нормального и Лапласа
+Mixt(Shift(Scale(D8())),Shift(Scale(D9())))
+* Смесь Логистического и Логистического
+Mixt(Shift(Scale(D13())),Shift(Scale(D13())))
+* Смесь Логистического и нормального
+Mixt(Shift(Scale(D13())),Shift(Scale(D9())))
+* Смесь Логистического и Лапласа
+Mixt(Shift(Scale(D13())),Shift(Scale(D8())))

@@ -1,0 +1,58 @@
+[Distributions]
+Shift(Scale(D0())))
+Shift(Scale(D1())))
+Shift(Scale(D2())))
+Shift(Scale(D3())))
+Shift(Scale(D4())))
+Shift(Scale(D5(1))))
+D6()
+Shift(Scale(D7()))
+Shift(Scale(D8()))
+d9=Shift(Scale(D9()))
+D10()
+Shift(Scale(D12()))
+Shift(Scale(D13()))
+Shift(Scale(D14()))
+Shift(Scale(D15()))
+Shift(Scale(D16()))
+Shift(Scale(D17()))
+Shift(Scale(D18()))
+Shift(Scale(D19()))
+d20=Shift(Scale(D20()))
+Shift(Scale(D21()))
+Shift(Scale(D22()))
+Shift(Scale(D23()))
+Shift(Scale(D24()))
+Shift(Scale(D25()))
+d26=Shift(Scale(D26()))
+Shift(Scale(D27()))
+Shift(Scale(D28()))
+Shift(Scale(D29()))
+Shift(Scale(D30()))
+Shift(Scale(D32()))
+Shift(Scale(D50()))
+
+* Распределение статистики Омега-квадрат малое
+a1()
+* Распределение статистики Омега-квадрат большое
+a2()
+* Распределение статистики Колмогорова
+Kolmogorov()
+* Хи-квалат с 1 степенью свободы
+Scale(D19(0.5),2)
+* Хи-квалат с 2 степенями свободы
+Scale(D19(1),2)
+* Хи-квалат с 3 степенями свободы
+Scale(D19(1.5),2)
+* Хи-квалат с 4 степенями свободы
+Scale(D19(2),2)
+* Хи-квалат с 5 степенями свободы
+Scale(D19(2.5),2)
+* Хи-квалат с 6 степенями свободы
+Scale(D19(3),2)
+* Хи-квалат с 7 степенями свободы
+Scale(D19(3.5),2)
+* Стьюдента с 29 степенями свободы
+DStudent(29)
+*Распределение статистики Реньи L(x)
+RENI()
