@@ -1,1 +1,5 @@
-SIT/lab1/project-files
+/project-files
+*.log
+*.md
+/ISW/AutoTestData
+*.res
