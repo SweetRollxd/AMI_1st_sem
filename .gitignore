@@ -1,3 +1,4 @@
 *.log
 /ISW/AutoTestData
 *.res
+/ISW/traceLevel().txt
