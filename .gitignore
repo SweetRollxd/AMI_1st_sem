@@ -2,3 +2,4 @@
 /ISW/AutoTestData
 *.res
 /ISW/traceLevel().txt
+*-Desktop-Debug
