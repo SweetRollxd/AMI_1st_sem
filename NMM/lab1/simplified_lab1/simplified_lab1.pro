@@ -8,3 +8,5 @@ SOURCES += \
 
 HEADERS += \
     gnuplot-iostream.h
+
+LIBS += -lboost_iostreams -lboost_system -lboost_filesystem
