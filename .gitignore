@@ -3,3 +3,4 @@
 *.res
 /ISW/traceLevel().txt
 *-Desktop-Debug
+.~lock
