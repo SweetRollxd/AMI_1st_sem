@@ -6,11 +6,11 @@ import traceback
 from logger import FileLogger
 
 log_filename = "smtp_3.log"
-# host = 'mail2.nstu.ru'
-host = 'smtp.gmx.com'
+host = 'mail2.nstu.ru'
+# host = 'smtp.gmx.com'
 port = 587
 login = 'suxix.2018@corp.nstu.ru'
-password = 'lol'
+# password = ''
 
 """
 Разработайте клиентское приложение для отправки текстовых сообщений по протоколу SMTP с учетом следующих требований:
@@ -29,48 +29,66 @@ class SMTPClientException(Exception):
 class SMTPClient:
     __logfile = FileLogger(log_filename)
 
-    def __init__(self, server_host, server_port):
+    def __init__(self, server_host, server_port, use_tls=False):
         self.client_sock = socket.socket()
-        # self.client_sock.settimeout(10)
+        self.client_sock.settimeout(10)
 
         self.client_sock.connect((server_host, server_port))
         self.__logfile.write_log(f"Connected to {server_host}:{server_port}")
         server_response = self.client_sock.recv(1024).decode('utf-8')
         server_log = f"Server: {server_response}"
-        print(server_log)
         self.__logfile.write_log(server_log)
+
+        self.use_tls = use_tls
+        # self.use_tls = use_tls
+        # if self.use_tls:
+        #     ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
+        #     self.ssl_client_sock = ssl_context.wrap_socket(sock=self.client_sock, server_hostname=host)
+        #     self.__logfile.write_log("SSL socket created")
 
     def __send_cmd(self, command):
         client_log = f"Client: {command}"
-        print(client_log)
+        # print(client_log)
         self.__logfile.write_log(client_log)
         self.client_sock.send((command + "\r\n").encode())
 
         server_response = self.client_sock.recv(1024).decode('utf-8')
-        response_code = server_response[0:3]
+        status_code = server_response[0:3]
         server_log = f"Server: {server_response}"
-        print(server_log)
+        # print(server_log)
         self.__logfile.write_log(server_log)
-        if response_code[0] != '2':
-            raise SMTPClientException(f"Error while sending command {command}. Response from server: {server_response}")
+        if status_code[0] not in ('2', '3'):
+            raise SMTPClientException(f"Error while sending command {command}. Status code: {status_code} Response from server: {server_response}")
         return server_response
 
-    def __send_cmd_ssl(self, command):
+    def __send_cmd_ssl(self, command, b64encode_cmd=False, no_response=False ):
+        if b64encode_cmd is True:
+            command = base64.b64encode(command.encode()) + b'\r\n'
+        else:
+            command = (command + "\r\n").encode()
         client_log = f"Client: {command}"
-        print(client_log)
         self.__logfile.write_log(client_log)
-        self.ssl_client_sock.send((command + "\r\n").encode())
+        self.ssl_client_sock.send(command)
+        if not no_response:
+            server_response = self.ssl_client_sock.recv(1024).decode('utf-8')
+            # server_response = self.ssl_client_sock.recv(1024)
+            status_code = server_response[0:3]
 
-        server_response = base64.b64decode(self.ssl_client_sock.recv(1024) + b'==').decode('utf-8')
-        response_code = server_response[0:3]
-        server_log = f"Server: {server_response}"
-        print(server_log)
-        self.__logfile.write_log(server_log)
-        if response_code[0] not in ('2', '3'):
-            raise SMTPClientException(f"Error while sending command {command}. Response from server: {server_response}")
-        return server_response
+            # if b64decode_response is True:
+            #     server_response = base64.b64decode(server_response[4:] + b'==').decode('utf-8')
+            # else:
+            #     server_response = server_response.decode('utf-8')
 
-    def send_letter(self, from_addr, to_addr, message, start_tls=False):
+            server_log = f"Server: {server_response}"
+            # print(server_log)
+            self.__logfile.write_log(server_log)
+            if status_code[0] not in ('2', '3'):
+                raise SMTPClientException(f"Error while sending command {command}.\nStatus code: {status_code}.\nResponse from server: {server_response}")
+            return server_response
+        else:
+            return 0
+
+    def send_letter(self, from_addr, to_addr, message):
         """
         Отправка письма
 
@@ -82,25 +100,38 @@ class SMTPClient:
         """
         try:
             self.__send_cmd("EHLO localhost")
-            if start_tls is True:
+            if self.use_tls is True:
                 self.__send_cmd("STARTTLS")
-                # self.__send_cmd("AUTH GSSAPI")
-                context = ssl.SSLContext(ssl.PROTOCOL_SSLv23)
-                self.ssl_client_sock = context.wrap_socket(sock=self.client_sock,  server_hostname=host)
+                ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
+                self.ssl_client_sock = ssl_context.wrap_socket(sock=self.client_sock, server_hostname=host)
                 self.__send_cmd_ssl("EHLO localhost")
                 self.__send_cmd_ssl("AUTH LOGIN")
-                # self.__send_cmd("EHLO")
-                self.__send_cmd_ssl(base64.b64encode(login.encode()).decode())
+                self.__send_cmd_ssl(login, b64encode_cmd=True)
+                print("Input your password:")
+                password = input()
+                self.__logfile.change_active_state(False)
+                self.__send_cmd_ssl(password, b64encode_cmd=True)
+                self.__logfile.change_active_state(True)
+                self.__send_cmd_ssl(f"MAIL FROM:{from_addr}")
+                self.__send_cmd_ssl(f"RCPT TO:{to_addr}")
+                self.__send_cmd_ssl("DATA")
+                # TODO: тело письма уходит пустое
+                self.__send_cmd_ssl(message, no_response=True)
+                self.__send_cmd_ssl(".")
+                self.__send_cmd_ssl("QUIT")
+
 
             # self.__send_cmd(f"MAIL FROM:{from_addr}")
             # self.__send_cmd(f"RCPT TO:{to_addr}")
             # self.__send_cmd("DATA")
         except SMTPClientException as e:
-            print("SMTPClientException:", e)
+            self.__logfile.write_log(f"SMTPClientException: {e}", msg_type="ERROR")
         except TimeoutError:
-            print("SMTP command timeout")
+            self.__logfile.write_log("SMTP command timeout", msg_type="ERROR")
+            # print()
         except Exception as e:
-            print("Unexpected exception:", e)
+            # print("Unexpected exception:", e)
+            self.__logfile.write_log(f"Unexpected exception: {e}", msg_type="ERROR")
             print(traceback.format_exc())
             self.close()
             exit()
@@ -113,53 +144,8 @@ class SMTPClient:
         self.__logfile.close()
 
 
-
-# client = SMTPClient(host, port)
-
-client = SMTPClient(host, port)
-# client.send_letter("suxix.2018@stud.nstu.ru", "sukharik0720@gmail.com", "lol")
-client.send_letter("b4@cn.ami.nstu.ru", "b10@cn.ami.nstu.ru", "lol", True)
+client = SMTPClient(host, port, True)
+client.send_letter(from_addr="suxix.2018@stud.nstu.ru", to_addr="sukharik0720@gmail.com", message="Some text")
+# client.send_letter("b4@cn.ami.nstu.ru", "b10@cn.ami.nstu.ru", "lol", True)
 client.close()
 # client.
-
-
-"""
-print("CLIENT: MAIL FROM:b4@cn.ami.nstu.ru CRLF")
-client.send('MAIL FROM:b4@cn.ami.nstu.ru \r\n'.encode())
-data = client.recv(1024)
-print("Server: %s" % data.decode('utf-8'))
-
-print("CLIENT: RCPT TO:b10@cn.ami.nstu.ru CRLF")
-client.send('RCPT TO:b10@cn.ami.nstu.ru \r\n'.encode())
-data = client.recv(1024)
-print("Server: %s" % data.decode('utf-8'))
-
-print("CLIENT: DATA CRLF")
-client.send('DATA \r\n'.encode())
-data = client.recv(1024)^
-print("Server: %s" % data.decode('utf-8'))
-message = 'FROM: b4@cn.ami.nstu.ru\r\n' + \
-    'TO: b10@cn.ami.nstu.ru\r\n' + \
-    'SUBJECT: Test message\r\n'
-
-print("CLIENT: %s CRLF" % message)
-client.send(message.encode())
-
-print("CLIENT: ")
-client.send(''.encode())
-
-print("CLIENT: This is a test message! CRLF")
-client.send('This is a test message!\r\n'.encode())
-
-print("CLIENT: . CRLF")
-client.send('.\r\n'.encode())
-data = client.recv(1024)
-print("Server: %s" % data.decode('utf-8'))
-
-print("CLIENT: QUIT CRLF")
-client.send('QUIT\r\n'.encode())
-data = client.recv(1024)
-print("Server: %s" % data.decode('utf-8'))
-
-client.close()
-"""
