@@ -7,7 +7,7 @@ from logger import FileLogger
 
 log_filename = "smtp_3.log"
 host = 'mail2.nstu.ru'
-# host = 'smtp.gmx.com'
+# host = 'smtp.freesmtpservers.com'
 port = 587
 login = 'suxix.2018@corp.nstu.ru'
 # password = ''
@@ -40,41 +40,23 @@ class SMTPClient:
         self.__logfile.write_log(server_log)
 
         self.use_tls = True if server_port == 587 else False
-        # self.use_tls = use_tls
-        # if self.use_tls:
-        #     ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
-        #     self.ssl_client_sock = ssl_context.wrap_socket(sock=self.client_sock, server_hostname=host)
-        #     self.__logfile.write_log("SSL socket created")
 
-    def __send_cmd(self, command):
+    def __create_ssl_socket(self):
+        ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+        tmp_sock = self.client_sock
+        self.client_sock = ssl_context.wrap_socket(sock=self.client_sock, server_hostname=host)
+        tmp_sock.close()
+
+    def __send_cmd(self, command, secure=False, no_response=False):
+        # sock = self.client_sock if not secure else self.ssl_client_sock
+
         client_log = f"Client: {command}"
-        # print(client_log)
         self.__logfile.write_log(client_log)
         self.client_sock.send((command + "\r\n").encode())
-
-        server_response = self.client_sock.recv(1024).decode('utf-8')
-        status_code = server_response[0:3]
-        server_log = f"Server: {server_response}"
-        # print(server_log)
-        self.__logfile.write_log(server_log)
-        if status_code[0] not in ('2', '3'):
-            raise SMTPClientException(
-                f"Error while sending command {command}. Status code: {status_code} Response from server: {server_response}")
-        return server_response
-
-    def __send_cmd_ssl(self, command, b64encode_cmd=False, no_response=False):
-        if b64encode_cmd is True:
-            command = base64.b64encode(command.encode()) + b'\r\n'
-        else:
-            command = (command + "\r\n").encode()
-        client_log = f"Client: {command}"
-        self.__logfile.write_log(client_log)
-        self.ssl_client_sock.send(command)
         if no_response:
             return 0
         else:
-            server_response = self.ssl_client_sock.recv(1024).decode('utf-8')
-            # server_response = self.ssl_client_sock.recv(1024)
+            server_response = self.client_sock.recv(1024).decode('utf-8')
             status_code = server_response[0:3]
 
             # if b64decode_response is True:
@@ -91,49 +73,35 @@ class SMTPClient:
             return server_response
 
     def send_letter(self, from_addr, to_addr, subject, message):
-        """
-        Отправка письма
 
-        :param from_addr:
-        :param to_addr:
-        :param message:
-        :param start_tls:
-        :return:
-        """
         try:
             self.__send_cmd("EHLO localhost")
             if self.use_tls is True:
                 self.__send_cmd("STARTTLS")
-                ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
-                self.ssl_client_sock = ssl_context.wrap_socket(sock=self.client_sock, server_hostname=host)
-                self.__send_cmd_ssl("EHLO localhost")
-                self.__send_cmd_ssl("AUTH LOGIN")
-                self.__send_cmd_ssl(login, b64encode_cmd=True)
-                print("Input your password:")
-                password = input()
+                self.__create_ssl_socket()
+                self.__send_cmd("EHLO localhost", secure=False)
+                self.__send_cmd("AUTH LOGIN", secure=True)
+                self.__send_cmd(base64.b64encode(login.encode()).decode(), secure=True)
+                password = input("Input your password:")
                 self.__logfile.change_active_state(False)
-                self.__send_cmd_ssl(password, b64encode_cmd=True)
+                self.__send_cmd(base64.b64encode(password.encode()).decode(), secure=True)
                 self.__logfile.change_active_state(True)
-                self.__send_cmd_ssl(f"MAIL FROM:{from_addr}")
-                self.__send_cmd_ssl(f"RCPT TO:{to_addr}")
-                self.__send_cmd_ssl("DATA")
-                self.__send_cmd_ssl(f"FROM:{from_addr}\r\n" +
-                                    f"TO:{to_addr}\r\n" +
-                                    f"SUBJECT:{subject}", no_response=True)
-                self.__send_cmd_ssl(f"\n{message}", no_response=True)
-                self.__send_cmd_ssl(".")
-                self.__send_cmd_ssl("QUIT")
 
-            # self.__send_cmd(f"MAIL FROM:{from_addr}")
-            # self.__send_cmd(f"RCPT TO:{to_addr}")
-            # self.__send_cmd("DATA")
+            self.__send_cmd(f"MAIL FROM:{from_addr}", secure=self.use_tls)
+            self.__send_cmd(f"RCPT TO:{to_addr}", secure=self.use_tls)
+            self.__send_cmd("DATA", secure=self.use_tls)
+            self.__send_cmd(f"FROM:{from_addr}\r\n" +
+                                f"TO:{to_addr}\r\n" +
+                                f"SUBJECT:{subject}", secure=self.use_tls, no_response=True)
+            self.__send_cmd(f"\n{message}", secure=self.use_tls, no_response=True)
+            self.__send_cmd(".", secure=self.use_tls)
+            self.__send_cmd("QUIT", secure=self.use_tls)
+
         except SMTPClientException as e:
             self.__logfile.write_log(f"SMTPClientException: {e}", msg_type="ERROR")
         except TimeoutError:
             self.__logfile.write_log("SMTP command timeout", msg_type="ERROR")
-            # print()
         except Exception as e:
-            # print("Unexpected exception:", e)
             self.__logfile.write_log(f"Unexpected exception: {e}", msg_type="ERROR")
             print(traceback.format_exc())
             self.close()
@@ -144,12 +112,26 @@ class SMTPClient:
         print("Connection closed")
         self.__logfile.write_log("Connection closed\n___________________\n\n\n")
         self.client_sock.close()
-        self.ssl_client_sock.close()
         self.__logfile.close()
 
 
 client = SMTPClient(host, port)
-client.send_letter(from_addr="suxix.2018@stud.nstu.ru", to_addr="sukharik0720@gmail.com", subject="SMTP test message",
-                   message="Some text")
+print("Welcome to SMTP Client!")
+from_address = input("From: ")
+to_address = input("To: ")
+subject = input("Subject: ")
+print("Enter your letter body. To save the message type 'EOF' line.")
+message = ""
+while True:
+    line = input()
+    if line == "EOF":
+        break
+
+    message += line + "\n"
+
+client.send_letter(from_addr=from_address,
+                   to_addr=to_address,
+                   subject=subject,
+                   message=message)
+
 # client.send_letter("b4@cn.ami.nstu.ru", "b10@cn.ami.nstu.ru", "lol", True)
-client.close()
