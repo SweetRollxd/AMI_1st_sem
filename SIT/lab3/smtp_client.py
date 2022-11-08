@@ -58,10 +58,11 @@ class SMTPClient:
         # print(server_log)
         self.__logfile.write_log(server_log)
         if status_code[0] not in ('2', '3'):
-            raise SMTPClientException(f"Error while sending command {command}. Status code: {status_code} Response from server: {server_response}")
+            raise SMTPClientException(
+                f"Error while sending command {command}. Status code: {status_code} Response from server: {server_response}")
         return server_response
 
-    def __send_cmd_ssl(self, command, b64encode_cmd=False, no_response=False ):
+    def __send_cmd_ssl(self, command, b64encode_cmd=False, no_response=False):
         if b64encode_cmd is True:
             command = base64.b64encode(command.encode()) + b'\r\n'
         else:
@@ -69,7 +70,9 @@ class SMTPClient:
         client_log = f"Client: {command}"
         self.__logfile.write_log(client_log)
         self.ssl_client_sock.send(command)
-        if not no_response:
+        if no_response:
+            return 0
+        else:
             server_response = self.ssl_client_sock.recv(1024).decode('utf-8')
             # server_response = self.ssl_client_sock.recv(1024)
             status_code = server_response[0:3]
@@ -83,12 +86,11 @@ class SMTPClient:
             # print(server_log)
             self.__logfile.write_log(server_log)
             if status_code[0] not in ('2', '3'):
-                raise SMTPClientException(f"Error while sending command {command}.\nStatus code: {status_code}.\nResponse from server: {server_response}")
+                raise SMTPClientException(
+                    f"Error while sending command {command}.\nStatus code: {status_code}.\nResponse from server: {server_response}")
             return server_response
-        else:
-            return 0
 
-    def send_letter(self, from_addr, to_addr, message):
+    def send_letter(self, from_addr, to_addr, subject, message):
         """
         Отправка письма
 
@@ -115,11 +117,12 @@ class SMTPClient:
                 self.__send_cmd_ssl(f"MAIL FROM:{from_addr}")
                 self.__send_cmd_ssl(f"RCPT TO:{to_addr}")
                 self.__send_cmd_ssl("DATA")
-                # TODO: тело письма уходит пустое
-                self.__send_cmd_ssl(message, no_response=True)
+                self.__send_cmd_ssl(f"FROM:{from_addr}\r\n" +
+                                    f"TO:{to_addr}\r\n" +
+                                    f"SUBJECT:{subject}", no_response=True)
+                self.__send_cmd_ssl(f"\n{message}", no_response=True)
                 self.__send_cmd_ssl(".")
                 self.__send_cmd_ssl("QUIT")
-
 
             # self.__send_cmd(f"MAIL FROM:{from_addr}")
             # self.__send_cmd(f"RCPT TO:{to_addr}")
@@ -141,11 +144,12 @@ class SMTPClient:
         print("Connection closed")
         self.__logfile.write_log("Connection closed\n___________________\n\n\n")
         self.client_sock.close()
+        self.ssl_client_sock.close()
         self.__logfile.close()
 
 
 client = SMTPClient(host, port, True)
-client.send_letter(from_addr="suxix.2018@stud.nstu.ru", to_addr="sukharik0720@gmail.com", message="Some text")
+client.send_letter(from_addr="suxix.2018@stud.nstu.ru", to_addr="sukharik0720@gmail.com", subject="SMTP test message",
+                   message="Some text")
 # client.send_letter("b4@cn.ami.nstu.ru", "b10@cn.ami.nstu.ru", "lol", True)
 client.close()
-# client.
