@@ -29,7 +29,7 @@ class SMTPClientException(Exception):
 class SMTPClient:
     __logfile = FileLogger(log_filename)
 
-    def __init__(self, server_host, server_port, use_tls=False):
+    def __init__(self, server_host, server_port):
         self.client_sock = socket.socket()
         self.client_sock.settimeout(10)
 
@@ -39,7 +39,7 @@ class SMTPClient:
         server_log = f"Server: {server_response}"
         self.__logfile.write_log(server_log)
 
-        self.use_tls = use_tls
+        self.use_tls = True if server_port == 587 else False
         # self.use_tls = use_tls
         # if self.use_tls:
         #     ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
@@ -148,7 +148,7 @@ class SMTPClient:
         self.__logfile.close()
 
 
-client = SMTPClient(host, port, True)
+client = SMTPClient(host, port)
 client.send_letter(from_addr="suxix.2018@stud.nstu.ru", to_addr="sukharik0720@gmail.com", subject="SMTP test message",
                    message="Some text")
 # client.send_letter("b4@cn.ami.nstu.ru", "b10@cn.ami.nstu.ru", "lol", True)
