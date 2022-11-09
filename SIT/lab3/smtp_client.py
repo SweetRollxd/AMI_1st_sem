@@ -10,8 +10,6 @@ log_filename = "smtp_3.log"
 host = 'mail2.nstu.ru'
 # host = 'smtp.freesmtpservers.com'
 port = 587
-# login = 'suxix.2018@stud.nstu.ru'
-# password = ''
 
 """
 Разработайте клиентское приложение для отправки текстовых сообщений по протоколу SMTP с учетом следующих требований:
@@ -34,39 +32,71 @@ class SMTPClient:
     """
     Класс SMTP клиента.
     Атрибуты класса:
-    __logfile - объект класса FileLogger для логирования сообщений между клиентом и сервером
+    __logfile - объект класса FileLogger для логирования сообщений между клиентом и сервером;
+    server_host - адрес SMTP сервера;
+    server_port - порт SMTP сервера;
+    login - логин пользователя отправителя;
+    password - его пароль
+    client_sock - сокет клиента
+    use_tls - признак использования шифрования
+    Двойное подчеркивание __ означает приватный атрибут или метод
     """
     __logfile = FileLogger(log_filename)
 
     def __init__(self, server_host, server_port, login, password):
+        """
+        Конструктор класса. Инициализирует объект класса при вызове SMTPClient() c переданными параметрами
+
+        :param server_host: адрес сервера
+        :param server_port: порт сервера
+        :param login: логин пользователя
+        :param password: пароль
+        """
+        self.server_host = server_host
+        self.server_port = server_port
         self.login = login
         self.password = password
-        self.client_sock = socket.socket()
-        self.client_sock.settimeout(10)
 
-        self.client_sock.connect((server_host, server_port))
-        self.__logfile.write_log(f"Successfully connected to {server_host}:{server_port}")
-        server_response = self.client_sock.recv(1024).decode('utf-8')
+    def __create_socket_connection(self):
+        """
+        Создание сокета и подключение к серверу
+        """
+        self.__client_sock = socket.socket()
+        self.__client_sock.settimeout(10)
+
+        self.__client_sock.connect((self.server_host, self.server_port))
+        self.__logfile.write_log(f"Successfully connected to {self.server_host}:{self.server_port}")
+        server_response = self.__client_sock.recv(1024).decode('utf-8')
         server_log = f"Server: {server_response}"
         self.__logfile.write_log(server_log)
 
-        self.use_tls = True if server_port == 587 else False
+        # использовать шифрование или нет определяется по порту
+        self.use_tls = True if self.server_port == 587 else False
 
     def __create_ssl_socket(self):
+        """
+        Заменить обычный сокет на TLS сокет
+        """
         ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-        tmp_sock = self.client_sock
-        self.client_sock = ssl_context.wrap_socket(sock=self.client_sock, server_hostname=host)
+        tmp_sock = self.__client_sock
+        self.__client_sock = ssl_context.wrap_socket(sock=self.__client_sock, server_hostname=host)
         tmp_sock.close()
 
-    def __send_cmd(self, command, secure=False, no_response=False):
+    def __send_cmd(self, command, no_response=False):
+        """
+        Отправить команду на сервер
 
+        :param command: команда в виде строки
+        :param no_response: признак "не ждать ответа от сервера"
+        :return: ответ от сервера
+        """
         client_log = f"Client: {command}"
         self.__logfile.write_log(client_log)
-        self.client_sock.send((command + "\r\n").encode())
+        self.__client_sock.send((command + "\r\n").encode())
         if no_response:
             return
         else:
-            server_response = self.client_sock.recv(1024).decode('utf-8')
+            server_response = self.__client_sock.recv(1024).decode('utf-8')
             status_code = server_response[0:3]
 
             # if b64decode_response is True:
@@ -75,7 +105,6 @@ class SMTPClient:
             #     server_response = server_response.decode('utf-8')
 
             server_log = f"Server: {server_response}"
-            # print(server_log)
             self.__logfile.write_log(server_log)
             if status_code[0] not in ('2', '3'):
                 raise SMTPClientException(
@@ -85,32 +114,33 @@ class SMTPClient:
     def send_letter(self, sender, recipients, subj, msg):
 
         try:
+            self.__create_socket_connection()
             self.__send_cmd("EHLO localhost")
             if self.use_tls is True:
                 self.__send_cmd("STARTTLS")
                 self.__create_ssl_socket()
-                self.__send_cmd("EHLO localhost", secure=False)
+                self.__send_cmd("EHLO localhost")
 
-                self.__send_cmd("AUTH LOGIN", secure=True)
-                self.__send_cmd(base64.b64encode(self.login.encode()).decode(), secure=True)
+                self.__send_cmd("AUTH LOGIN")
+                self.__send_cmd(base64.b64encode(self.login.encode()).decode())
 
                 # TODO: отключить логирование только на момент передачи сообщение клиента о пароле. Ответ от сервера должен логироваться
                 self.__logfile.change_active_state(False)
-                self.__send_cmd(base64.b64encode(self.password.encode()).decode(), secure=True)
+                self.__send_cmd(base64.b64encode(self.password.encode()).decode())
                 self.__logfile.change_active_state(True)
 
-            self.__send_cmd(f"MAIL FROM:{sender}", secure=self.use_tls)
+            self.__send_cmd(f"MAIL FROM:{sender}")
 
             for recipient in recipients:
-                self.__send_cmd(f"RCPT TO:{recipient}", secure=self.use_tls)
+                self.__send_cmd(f"RCPT TO:{recipient}")
 
-            self.__send_cmd("DATA", secure=self.use_tls)
+            self.__send_cmd("DATA")
             self.__send_cmd(f"FROM:{sender}\r\n" +
                             f"TO:{', '.join(recipients)}\r\n" +
-                            f"SUBJECT:{subj}", secure=self.use_tls, no_response=True)
-            self.__send_cmd(f"\n{msg}", secure=self.use_tls, no_response=True)
-            self.__send_cmd(".", secure=self.use_tls)
-            self.__send_cmd("QUIT", secure=self.use_tls)
+                            f"SUBJECT:{subj}", no_response=True)
+            self.__send_cmd(f"\n{msg}", no_response=True)
+            self.__send_cmd(".")
+            self.__send_cmd("QUIT")
             self.__logfile.write_log("Letter was sent successfully!")
 
             return 0
@@ -131,7 +161,7 @@ class SMTPClient:
     def close(self):
         print("Connection closed")
         self.__logfile.write_log("Connection closed\n___________________\n\n\n")
-        self.client_sock.close()
+        self.__client_sock.close()
         self.__logfile.close()
 
 
