@@ -18,7 +18,6 @@ class FileLogger:
             self.write_log("Disable logging...")
             self.active = False
 
-
     def write_log(self, message, msg_type="INFO"):
         log_string = f'{current_time()} [{msg_type}]: {message}\n'
         print(log_string)
