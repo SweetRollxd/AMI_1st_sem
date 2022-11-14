@@ -9,8 +9,8 @@
 using namespace std;
 
 struct point {
-    int x;
-    int y;
+    float x;
+    float y;
 };
 
 struct elem {
@@ -19,8 +19,9 @@ struct elem {
     vector<point> values;
 };
 
-float baseFunc(int x1, int x2, int h){
-  return (x2 - x1) / h;
+float baseFunc(float x1, float x2, float x, float func_index){
+ if (func_index == 0) return (x2 - x) / (x2 - x1);
+         else return (x - x1) / (x2 - x1);
 };
 
 void print_elem(elem element){
@@ -30,15 +31,18 @@ void print_elem(elem element){
     cout << endl;
 }
 
+//void print_matrix(int size, int [size][size]){
+
+//}
 
 void draw_data(vector<point> vec) {
     Gnuplot gp;
 
-    vector<pair<int,int>> plot_data;
+    vector<pair<float,float>> plot_data;
     for (int i = 0; i  < vec.size(); i++){
 //        point pnt;
 //        pnt.x = i; pnt.y = vec[i];
-        plot_data.push_back(pair<int,int>(vec[i].x, vec[i].y));
+        plot_data.push_back(pair<float,float>(vec[i].x, vec[i].y));
     }
     gp << "plot '-' with points'\n";
     gp.send1d(plot_data);
@@ -101,35 +105,46 @@ int main()
 //        cout << "Value: " << val << endl;
         for (int j = 0; j < elemArr.size(); j++){
             if (x >= elemArr[j].n1 && x <= elemArr[j].n2){
+                if (j != elemArr.size() - 1 &&  x == elemArr[j].n2) continue;
                 elemArr[j].values.push_back(pnt);
             }
         }
 
     }
     dataFile.close();
-
+    // TODO: граничные элементы должны попадать только в один из интервалов
     cout << "Filled elements:" << endl;
     for(auto it = elemArr.begin(); it != elemArr.end(); it++)
         print_elem(*it);
 //    elemArr
     for (int i = 0; i < elemArr.size(); i++){
-        int localMatrix[2][2];
+        float localMatrix[2][2];
         for (int nu = 0; nu < 2; nu++){
             for (int mu = 0; mu < 2; mu++){
 
                 float matrixCell = 0;
                 // починить: вместо исков берутся значения данных
                 for (auto dataInElement = elemArr[i].values.begin(); dataInElement != elemArr[i].values.end(); dataInElement++){
-//                    matrixCell += 1.0 * baseFunc();
-                    matrixCell += 1 * (elemArr[i].n2 - dataInElement->x) / (elemArr[i].n2 - elemArr[i].n1)
-                            * (dataInElement->x - elemArr[i].n2) / (elemArr[i].n2 - elemArr[i].n1);
+
+                    float psi1 = baseFunc(elemArr[i].n1, elemArr[i].n2, dataInElement->x, nu);
+                    float psi2 = baseFunc(elemArr[i].n1, elemArr[i].n2, dataInElement->x, mu);
+
+                    matrixCell += 1 * psi1 * psi2;
+//                    cout << "Matrix cell " << "[" << nu << "][" << mu << "] = " << matrixCell << endl;
                 }
                 localMatrix[nu][mu] = matrixCell;
             }
         }
+        cout << "Local matrix " << i << ":" << endl;
+        for (int m = 0; m < 2; m++){
+            for (int n = 0; n < 2; n++){
+                cout << localMatrix[m][n] << " ";
+            }
+            cout << endl;
+        }
 
     }
 
-    draw_data(elemArr[0].values);
+//    draw_data(elemArr[0].values);
     return 0;
 }

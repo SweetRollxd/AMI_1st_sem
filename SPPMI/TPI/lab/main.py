@@ -1,7 +1,9 @@
 # importing the required module
 import math
 import random as rand
-from scipy.stats import gaussian_kde
+import numpy as np
+import scipy.stats as stats
+# import gaussian_kde, norm
 
 import matplotlib.pyplot as plt
 
@@ -37,19 +39,30 @@ def cos_exp_clean(v, b1, b4):
             if r3 <= math.pow(math.cos(b1 * x1), 2):
                 return x1
 
-res = []
-for i in range(0, CAPACITY):
-    res_value = cos_exp_clean(V_FORM, B1, B4)
-    # print(f'{i}-ая итерация. Результат: {res_value}')
-    res.append(res_value)
+# def norm_pdf(x, mu, sigma):
+#     return 1.0 / (sigma * math.sqrt(2.0 * math.pi)) * math.exp(-(pow((x - mu)/sigma, 2)/2.0))
 
-    # print(cos_exp_distribution())
-# print(res)
-density = gaussian_kde(res)
+
+# res = []
+# for i in range(0, CAPACITY):
+#     res_value = cos_exp_clean(V_FORM, B1, B4)
+#
+#     # print(f'{i}-ая итерация. Результат: {res_value}')
+#     res.append(res_value)
+
+res = np.random.normal(0, 1, 1000)
+
+print(res)
+mu = 0
+variance = 1
+sigma = math.sqrt(variance)
+x = np.linspace(mu - 3*sigma, mu + 3*sigma, 100)
+plt.plot(x, stats.norm.pdf(x, mu, sigma))
+# density = gaussian_kde(res)
 # # plotting the points
-plt.plot(density)
+# plt.plot(density)
 # plt.hist(res, histtype='step', density=True, cumulative=True, bins=len(res))
-#plt.hist(res, density=True, histtype='stepfilled', bins=len(res))
+# plt.hist(res, density=True, bins=len(res))
 # naming the x axis
 plt.xlabel('x - axis')
 # naming the y axis
