@@ -2,41 +2,31 @@
 
 void WebServer::handleRequest(int client_socket)
 {
-    std::cout << "New thread started!" << std::endl;
-    std::string msg = recvAll(client_socket);
-    std::cout << "Response: " << msg << std::endl;
+    try{
+        std::cout << "================\r\nNew thread started!" << std::endl;
+        std::string msg = recvAll(client_socket);
+        std::cout << "Request: " << msg << std::endl;
 
-    http_request req_data = parseRequest(msg);
-    std::cout << req_data["method"] << " " << req_data["path"] << " " << req_data["version"] << std::endl;
+        http_request req_data = parseRequest(msg);
+//        std::cout << req_data["method"] << " " << req_data["path"] << " " << req_data["version"] << std::endl;
 
-    std::string response_body;
-    std::ifstream fp;
-    std::string buf;
+        if ((req_data["method"]).compare("GET") != 0){
+            errorResponse(client_socket, HttpCode::methodNotAllowed);
+            return;
+        }
 
-    fp.open("../index.html");
-    while (getline (fp, buf)) response_body.append(buf);
+        std::string path = workDir;
+        path.append(req_data["path"]);
+        std::cout << "Full path:" << path << std::endl;
 
-    std::string response = "HTTP/1.1 200 OK\r\n";
-    response.append("Version: HTTP/1.1\r\n");
-    response.append("Content-Type: text/html; charset=utf-8\r\n");
-    response.append("Content-length: " + std::to_string(response_body.length()));
-    response.append("\r\n\r\n");
-    response.append(response_body);
-//      <<
-//      <<
-//      << "" << response_body.str().length()
-//      << "\r\n\r\n"
+        sendResponse(client_socket, path);
 
 
-    std::cout << "Reponse: " << response << std::endl;
-    int n = sendAll(client_socket, response);
-    if (n < 0){
-        perror("sending");
+    }
+    catch(std::exception e){
+        errorResponse(client_socket, HttpCode::internalServerError);
         close(client_socket);
     }
-    std::cout << "Sent " << n << " bytes" << std::endl;
-    close(client_socket);
-    std::cout << "Socket closed, returning..." << std::endl;
 
     return;
 }
@@ -53,11 +43,14 @@ http_request WebServer::parseRequest(std::string request)
     end++;
     head = end;
     while (*end != ' ') end++;
-    req_data["path"] = std::string(head, end);
+
+    if(std::string(head, end).compare("/") != 0)
+        req_data["path"] = std::string(head, end);
+    else req_data["path"] = "/index.html";
 
     end++;
     head = end;
-    while (*end !=  ' ') end++;
+    while (*end !=  '\r') end++;
     req_data["version"] = std::string(head, end);
 
     return req_data;
@@ -79,13 +72,8 @@ std::string WebServer::recvAll(int client_socket)
 
 int WebServer::sendAll(int client_socket, std::string message)
 {
-    std::cout << "Send msg" << std::endl;
     const char* buf = message.c_str();
-//    message.copy(buf, message.length(), 0);
-//    buf[message.length()] = '\0';
-    std::cout << "Message copied to C-string" << std::endl;
 
-//    int n = BUF_SIZE;
     int total = 0;
     int bytes_sent = 0;
     while (total < message.length()) {
@@ -94,6 +82,93 @@ int WebServer::sendAll(int client_socket, std::string message)
         total += bytes_sent;
     }
     return (bytes_sent == -1 ? -1 : total);
+}
+
+std::string WebServer::httpPhrase(HttpCode code)
+{
+    switch(code){
+        case 200: return "OK";
+        case 400: return "Bad Request";
+        case 404: return "Not Found";
+        case 405: return "Method Not Allowed";
+        case 500: return "Internal Server Error";
+        default: return std::string();
+    }
+}
+
+std::string WebServer::contentTypeHeader(mimeTypes type)
+{
+    switch(type){
+        case mimeTypes::TEXT: return "application/text; charset=utf8";
+        case mimeTypes::HTML: return "text/html; charset=utf8";
+        case mimeTypes::PDF: return "applcation/pdf";
+        default: return std::string();
+    }
+}
+
+int WebServer::sendResponse(int client_socket, std::string path)
+{
+
+    std::ifstream fp;
+    fp.open(path);
+    if (!fp.good()){
+        errorResponse(client_socket, HttpCode::notFound);
+        return -1;
+    }
+
+    auto it = path.begin();
+    std::string format;
+
+    while (*it !=  '.') it++;
+    format = std::string(it, path.end());
+
+    mimeTypes type;
+    if (format.compare(".html") == 0)
+        type = mimeTypes::HTML;
+    else if (format.compare(".pdf") == 0)
+        type = mimeTypes::PDF;
+    else
+        errorResponse(client_socket, HttpCode::badRequest);
+
+    std::string response_body;
+    std::string buf;
+    while (getline (fp, buf)) response_body.append(buf);
+
+    std::stringstream response;
+    response << "HTTP/1.1 200 OK\r\n"
+             << "Version: HTTP/1.1\r\n"
+             << "Content-Type: " << contentTypeHeader(type) << "\r\n"
+             << "Content-length: " << std::to_string(response_body.length()) << "\r\n\r\n"
+             << response_body;
+
+
+//    std::cout << "Response: " << response.str() << std::endl;
+    int n = sendAll(client_socket, response.str());
+    if (n < 0){
+        perror("sending");
+        close(client_socket);
+    }
+    std::cout << "Sent " << n << " bytes" << std::endl;
+    fp.close();
+    close(client_socket);
+    std::cout << "Socket closed, returning...\r\n====================\r\n\r\n" << std::endl;
+}
+
+void WebServer::errorResponse(int client_socket, HttpCode code)
+{
+    std::cout << "Sending error with code " << code;
+    std::stringstream response;
+    std::stringstream response_body;
+    response_body << "<html><head><title>" << code << " " << httpPhrase(code) << "</title></head>"
+                  << "<body><h1>" << httpPhrase(code) << "</h1></body></html>";
+    response << "HTTP/1.1 " << code << " " << httpPhrase(code) << "\r\n"
+             << "Content-Type: text/html; charset=utf-8\r\n"
+             << "Content-length: " << std::to_string(response_body.str().length()) << "\r\n\r\n"
+             << response_body.str();
+    sendAll(client_socket, response.str());
+    close(client_socket);
+    std::cout << "Socket closed, returning...\r\n====================\r\n\r\n" << std::endl;
+    return;
 }
 
 WebServer::WebServer(int port)
@@ -107,6 +182,11 @@ WebServer::WebServer(int port)
     this->address.sin_addr.s_addr = htonl(INADDR_ANY);
     this->address.sin_port = htons(port);
     this->address.sin_family = AF_INET;
+
+    // Включаем возможность переиспользовать порт, чтобы не приходилось ждать пока он освободится после закрытия сервера
+    int enable = 1;
+    if (setsockopt(listenSocket, SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(int)) < 0)
+        perror("setsockopt(SO_REUSEADDR) failed");
 
     if (bind(listenSocket, (sockaddr *) &address, sizeof(address)) < 0) {
         perror("bind");
@@ -144,7 +224,13 @@ int WebServer::run()
     }
 }
 
+void WebServer::stop()
+{
+    close(listenSocket);
+//    freeaddrinfo()
+}
+
 WebServer::~WebServer()
 {
-
+    stop();
 }
