@@ -9,4 +9,6 @@ SOURCES += \
 HEADERS += \
     gnuplot-iostream.h
 
+INCLUDEPATH += /home/andrew/Ucheba/cpp_libs/eigen/
+
 LIBS += -lboost_iostreams -lboost_system -lboost_filesystem
