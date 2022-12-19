@@ -7,15 +7,19 @@
 
 #include <gnuplot-iostream.h>
 
+#define MAX_DEVIATION_TIMES 2
+
 using namespace std;
 
 struct Point {
     float x;
     float y;
+    float weight;
 
-    Point(float x_in, float y_in){
+    Point(float x_in, float y_in, float w_in = 1){
         x = x_in;
         y = y_in;
+        weight = w_in;
     }
 
 };
@@ -54,27 +58,53 @@ vector<pair<float, float>> vectorPointsToPairs(vector<Point> pointValues){
     return pairValues;
 }
 
-void draw_data(vector<Point> vec) {
-    Gnuplot gp;
-
-    vector<pair<float,float>> plot_data;
-    for (int i = 0; i < vec.size(); i++){
-//        point pnt;
-//        pnt.x = i; pnt.y = vec[i];
-        plot_data.push_back(pair<float,float>(vec[i].x, vec[i].y));
-    }
-
-    gp << "plot '-' with points ps 1 pt 7\n";
-    gp.send1d(plot_data);
-
-}
-
 float getSplineValue(float x){
 
 }
 
-vector<float> findQVector(vector<Point> elements){
+vector<float> findQVector(vector<elem> elements){
+    int nodeCount = elements.size() + 1;
+    Eigen::MatrixXf globalMatrix(nodeCount, nodeCount);
+    Eigen::VectorXf globalVector(nodeCount);
+    globalMatrix.setZero();
+    globalVector.setZero();
 
+    // рассчет матрицы A
+    for (int i = 0; i < elements.size(); i++){
+        for (int nu = 0; nu < 2; nu++){
+            for (int mu = 0; mu < 2; mu++){
+                float matrixCell = 0;
+                for (auto dataInElement = elements[i].values.begin(); dataInElement != elements[i].values.end(); dataInElement++){
+                    // рассчет ячейки матрицы
+                    float psinu = baseFunc(elements[i].n1, elements[i].n2, dataInElement->x, nu);
+                    float psimu = baseFunc(elements[i].n1, elements[i].n2, dataInElement->x, mu);
+                    matrixCell += dataInElement->weight * psinu * psimu;
+                }
+                globalMatrix(i + nu, i + mu) += matrixCell;
+            }
+        }
+    }
+    cout << "Global matrix A:" << endl;
+    cout << globalMatrix << endl;
+    // рассчет вектора b
+    for (int i = 0; i < elements.size(); i++){
+        for (int nu = 0; nu < 2; nu++){
+            for (auto dataInElement = elements[i].values.begin(); dataInElement != elements[i].values.end(); dataInElement++){
+                // рассчет ячейки вектора
+                float psinu = baseFunc(elements[i].n1, elements[i].n2, dataInElement->x, nu);
+                globalVector(i + nu) += dataInElement->weight * psinu * dataInElement->y;
+            }
+
+        }
+    }
+    cout << "Global vector b:" << endl;
+    cout << globalVector << endl;
+
+    Eigen::VectorXf resVector = globalMatrix.colPivHouseholderQr().solve(globalVector);
+    cout << "Result Q vector:" << resVector << endl;
+    vector<float> qVector(resVector.data(), resVector.data() + resVector.size());
+
+    return qVector;
 }
 
 int main()
@@ -131,7 +161,6 @@ int main()
         int val = stoi(buf.substr(space_pos, buf.length() - 1));
         Point pnt(x, val);
         rawData.push_back(pnt);
-//        cout << "Value: " << val << endl;
         for (int j = 0; j < elemArr.size(); j++){
             if (x >= elemArr[j].n1 && x <= elemArr[j].n2){
                 if (j != elemArr.size() - 1 &&  x == elemArr[j].n2) continue;
@@ -144,44 +173,43 @@ int main()
     cout << "Filled elements:" << endl;
     for(auto it = elemArr.begin(); it != elemArr.end(); it++)
         print_elem(*it);
-    Eigen::MatrixXf globalMatrix(nodeCount, nodeCount);
-    Eigen::VectorXf globalVector(nodeCount);
-    globalMatrix.setZero();
-    globalVector.setZero();
 
-    // рассчет матрицы A
-    for (int i = 0; i < elemArr.size(); i++){
-        for (int nu = 0; nu < 2; nu++){
-            for (int mu = 0; mu < 2; mu++){
-                float matrixCell = 0;
-                for (auto dataInElement = elemArr[i].values.begin(); dataInElement != elemArr[i].values.end(); dataInElement++){
-                    // рассчет ячейки матрицы
-                    float psinu = baseFunc(elemArr[i].n1, elemArr[i].n2, dataInElement->x, nu);
-                    float psimu = baseFunc(elemArr[i].n1, elemArr[i].n2, dataInElement->x, mu);
-                    matrixCell += 1 * psinu * psimu;
-                }
-                globalMatrix(i + nu, i + mu) += matrixCell;
-            }
-        }
-    }
-    cout << "Global matrix A:" << endl;
-    cout << globalMatrix << endl;
-    // рассчет вектора b
-    for (int i = 0; i < elemArr.size(); i++){
-        for (int nu = 0; nu < 2; nu++){
+    vector<float> qVector;
+    vector<vector<float>> deltaVector;
+    deltaVector.resize(elemCount);
+    int countDelta = 0;
+    do {
+        float deltaSumm = 0;
+        qVector = findQVector(elemArr);
+        for (int i = 0; i < elemArr.size(); i++){
+            deltaVector[i].resize(elemArr[i].values.size());
+            int j = 0;
             for (auto dataInElement = elemArr[i].values.begin(); dataInElement != elemArr[i].values.end(); dataInElement++){
-                // рассчет ячейки вектора
-                float psinu = baseFunc(elemArr[i].n1, elemArr[i].n2, dataInElement->x, nu);
-                globalVector(i + nu) += 1 * psinu * dataInElement->y;
+                float splineY = 0;
+                for (int nu = 0; nu < 2; nu++)
+                    splineY += qVector[i + nu] * baseFunc(elemArr[i].n1, elemArr[i].n2, dataInElement->x, nu);
+                float delta = abs(splineY - dataInElement->y);
+
+                deltaVector[i][j] = delta;
+                deltaSumm += delta;
+                j++;
             }
 
         }
-    }
-    cout << "Global vector b:" << endl;
-    cout << globalVector << endl;
-
-    Eigen::VectorXf qVector = globalMatrix.colPivHouseholderQr().solve(globalVector);
-    cout << "Result q vector:\n" << qVector << endl;
+        countDelta = 0;
+        float avgDelta = deltaSumm / rawData.size();
+        cout << "Average delta: " << avgDelta << endl;
+        for(int i = 0; i < deltaVector.size(); i++){
+            for(int j = 0; j < deltaVector[i].size(); j++){
+                if (deltaVector[i][j] >= avgDelta * MAX_DEVIATION_TIMES && elemArr[i].values[j].weight == 1){
+                    countDelta++;
+                    elemArr[i].values[j].weight /= MAX_DEVIATION_TIMES;
+                }
+            }
+        }
+        cout << "Count delta: " << countDelta << endl;
+    } while(countDelta > 0);
+//    qVector.
 
 
     int splinePointsNumber = 1000;
@@ -196,7 +224,7 @@ int main()
         for (int i = 0; i < elemArr.size(); i++){
             if (x >= elemArr[i].n1 && x <= elemArr[i].n2){
                 for (int nu = 0; nu < 2; nu++)
-                    y += qVector(i + nu) * baseFunc(elemArr[i].n1, elemArr[i].n2, x, nu);
+                    y += qVector[i + nu] * baseFunc(elemArr[i].n1, elemArr[i].n2, x, nu);
             }
         }
 //        cout << "x: " << x << ", y: " << y << endl;
