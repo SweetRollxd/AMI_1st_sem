@@ -15,7 +15,7 @@ std::ostream& operator<< (std::ostream &os, const Element &elem){
 }
 
 
-Spline::Spline(std::vector<Point> sourcePoints, std::vector<float> nodes)
+Spline::Spline(std::vector<Point> sourcePoints, std::vector<float> nodes, float regAlfa)
 {
     int nodeCount = nodes.size();
     int elemCount = nodeCount - 1;
@@ -45,6 +45,7 @@ Spline::Spline(std::vector<Point> sourcePoints, std::vector<float> nodes)
     for(auto it = elements.begin(); it != elements.end(); it++)
         std::cout << *it;
 
+    regularizationAlfa = regAlfa;
     splineWeights = findSplineWeightsVector();
 
 }
@@ -165,8 +166,7 @@ std::vector<float> Spline::findSplineWeightsVector()
                     float psimu = basisFunc(elements[i].n1, elements[i].n2, dataInElement->x, mu);
                     matrixCell += dataInElement->weight * psinu * psimu;
                 }
-                matrixA(2 * i + nu, 2 * i + mu) += matrixCell;
-//                matrixA(2 * i + nu, 2 * i + mu) += matrixCell + regMatrix(nu, mu);
+                matrixA(2 * i + nu, 2 * i + mu) += matrixCell + regularizationAlfa * regMatrix(nu, mu);
 
             }
         }
