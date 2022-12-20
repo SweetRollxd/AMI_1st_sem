@@ -74,7 +74,6 @@ std::vector<Point> Spline::getSplineData(int splinePointsNumber)
 
 void Spline::filterSpline()
 {
-//    std::vector<float> qVector;
     std::vector<std::vector<float>> deltaVector;
     deltaVector.resize(elements.size());
     int countDelta = 0;
@@ -118,7 +117,7 @@ void Spline::filterSpline()
 // x1 - первая X-координата элемента
 // x2 - вторая X-координата
 // x - X-координата в промежутке между x1 и x2
-// func_index - индекс базисной функции (при нуле пси1, иначе пси2)
+// func_index - индекс базисной функции
 float Spline::basisFunc(float x1, float x2, float x, int func_index){
     float h = x2 - x1;
     float ksi = (x - x1) / h;
@@ -129,9 +128,6 @@ float Spline::basisFunc(float x1, float x2, float x, int func_index){
         case 3: return -pow(ksi, 2) + pow(ksi, 3);
     default: throw ("Incorrect index of Basis function");
     }
-
-//    if (func_index == 0) return (x2 - x) / (x2 - x1);
-    //    else return (x - x1) / (x2 - x1);
 }
 
 Eigen::Matrix4f Spline::regularizationAlfaMatrix(float x1, float x2)

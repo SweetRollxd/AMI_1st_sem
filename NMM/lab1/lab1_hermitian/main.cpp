@@ -66,15 +66,15 @@ void splineFromFunction(int pointsCount, int elementsCount, float noiseLevel, fl
     std::normal_distribution<float> dist(0,1);
 
     std::vector<Point> data(pointsCount);
-//    float xmin = -M_PI;
-//    float xmax = M_PI;
-    float xmin = -5;
-    float xmax = 1;
+    float xmin = -M_PI;
+    float xmax = M_PI;
+//    float xmin = -5;
+//    float xmax = 1;
     float step = (xmax - xmin) / pointsCount;
     float x = xmin;
     for (int i = 0; i < pointsCount; i++){
-//        data[i] = Point(x, sin(x) + dist(gen)*noiseLevel);
-        data[i] = Point(x, exp(x) + dist(gen)*noiseLevel);
+        data[i] = Point(x, sin(x) + dist(gen)*noiseLevel);
+//        data[i] = Point(x, exp(x) + dist(gen)*noiseLevel);
         x += step;
         std::cout << "data[" << i << "] = (" << data[i].first << ", " << data[i].second << ")" << std::endl;
     }
@@ -145,12 +145,12 @@ void regularizationTest(int pointsCount, int elementsCount, float noiseLevel){
 int main()
 {
     try{
-//        std::ifstream dataFile("../simplified_lab1/data.txt");
-//        if(!dataFile.good()) throw std::runtime_error("Data file not found");
-//        std::ifstream splineFile("../simplified_lab1/spline.txt");
-//        if(!splineFile.good()) throw std::runtime_error("Spline file not found");
+        std::ifstream dataFile("../simplified_lab1/data.txt");
+        if(!dataFile.good()) throw std::runtime_error("Data file not found");
+        std::ifstream splineFile("../simplified_lab1/spline.txt");
+        if(!splineFile.good()) throw std::runtime_error("Spline file not found");
 
-//        splineFromFile(dataFile, splineFile);
+        splineFromFile(dataFile, splineFile);
 
         splineFromFunction(30, 5, 0.2);
 //        regularizationTest(30, 5, 0.2);

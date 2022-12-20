@@ -21,9 +21,6 @@ struct Element {
     float n1;
     float n2;
     std::vector<SplinePoint> values;
-
-//    std::ostream& operator<< (std::ostream &os);
-//    std::ostream& operator<< (std::ostream &os, const Element &elem);
 };
 
 class Spline
