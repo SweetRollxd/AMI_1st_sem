@@ -87,7 +87,6 @@ def find_parameter(current_source, receivers, parameter_type, initial_value):
             print('Stagnation')
             break
 
-        print(new_potentials)
         a = 0
         b = 0
         for i in range(len(receivers)):
@@ -96,8 +95,8 @@ def find_parameter(current_source, receivers, parameter_type, initial_value):
 
             b -= (receivers[i].weight ** 2) * derivative * (new_potentials[i] - receivers[i].synthetic_potential)
 
-        print("A11:", a)
-        print("b1:", b)
+        # print("A11:", a)
+        # print("b1:", b)
         step = b / a
         param_var += step
         prev_residual = residual
@@ -128,7 +127,7 @@ if __name__ == '__main__':
     receivers[1].set_synthetic_potential(current_source, TRUE_CONDUCTIVITY, 0.0)
     receivers[2].set_synthetic_potential(current_source, TRUE_CONDUCTIVITY, 0.0)
     conduct = find_parameter(current_source, receivers, CONDUCTIVITY_PARAMETER_TYPE, initial_value=INITIAL_CONDUCTIVITY)
-    print(f'True conductivity: {TRUE_CONDUCTIVITY}, experimental conductivity: {conduct}')
+    print(f'True conductivity: {TRUE_CONDUCTIVITY}, experimental result conductivity: {conduct}')
 
     current = find_parameter(current_source, receivers, POWER_PARAMETER_TYPE, initial_value=INITIAL_POWER)
-    print(f'True I: {I}, experimental I: {current}')
+    print(f'True power: {I}, experimental result power: {current}')
