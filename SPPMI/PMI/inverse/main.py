@@ -2,7 +2,7 @@ import math
 
 R0 = 1
 R = 10
-TRUE_CONDUCTIVITY = 0.01
+TRUE_CONDUCTIVITY = 0.1
 I = 10
 
 INITIAL_CONDUCTIVITY = 0.001
@@ -79,7 +79,7 @@ def find_parameter(current_source, receivers, parameter_type, initial_value):
             new_potentials.append(new_potential)
             residual += math.pow(receiver.weight * (new_potential - receiver.synthetic_potential), 2)
         print(f"Iteration {iterations_cnt}. Parameter value: {param_var}. Residual: {residual}")
-        if residual < MINIMAL_RESID or iterations_cnt > 100:
+        if residual < MINIMAL_RESID:
             print('Solution: ', param_var)
             break
 
@@ -123,11 +123,11 @@ if __name__ == '__main__':
     receivers.append(Receiver(M2, N2))
     receivers.append(Receiver(M3, N3))
 
-    receivers[0].set_synthetic_potential(current_source, TRUE_CONDUCTIVITY, 0.1)
-    receivers[1].set_synthetic_potential(current_source, TRUE_CONDUCTIVITY, 0.0)
+    receivers[0].set_synthetic_potential(current_source, TRUE_CONDUCTIVITY, 0.0)
+    receivers[1].set_synthetic_potential(current_source, TRUE_CONDUCTIVITY, 0.1)
     receivers[2].set_synthetic_potential(current_source, TRUE_CONDUCTIVITY, 0.0)
     conduct = find_parameter(current_source, receivers, CONDUCTIVITY_PARAMETER_TYPE, initial_value=INITIAL_CONDUCTIVITY)
     print(f'True conductivity: {TRUE_CONDUCTIVITY}, experimental result conductivity: {conduct}')
 
-    current = find_parameter(current_source, receivers, POWER_PARAMETER_TYPE, initial_value=INITIAL_POWER)
-    print(f'True power: {I}, experimental result power: {current}')
+    power = find_parameter(current_source, receivers, POWER_PARAMETER_TYPE, initial_value=INITIAL_POWER)
+    print(f'True power: {I}, experimental result power: {power}')

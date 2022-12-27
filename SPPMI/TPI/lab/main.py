@@ -51,6 +51,13 @@ def cos_exp_density(x):
         return B3 * math.exp(-B4 * abs(x))
 
 
+def cos_exp_density_derivative(x):
+    if abs(x) <= 1:
+        return -B1 * B2 * math.sin(2 * B1 * x)
+    else:
+        return -B4 * B3 * math.exp(-B4 * abs(x))
+
+
 def generate_data(n: int, shift: float = 0, scale: float = 1):
     data = [shift + scale * cos_exp_dist(V_FORM, B1, B4) for x in range(n)]
     data.sort()
@@ -72,19 +79,25 @@ def generate_noisy_data(n: int, shift: float, scale, noise_level: float):
     return noisy_data, noisy_density
 
 
-def calculate_estimations(data):
+def calculate_estimations(data, density):
     estimations = dict()
     estimations['mean'] = statistics.mean(data)
     estimations['median'] = statistics.median(data)
     estimations['variance'] = statistics.variance(data, estimations['mean'])
     estimations['skewness'] = stats.skew(data)
     estimations['kurtosis'] = stats.kurtosis(data)
+    estimations['trim_mean'] = []
+    for param in (0.05, 0.1, 0.15):
+        estimations['trim_mean'].append(stats.trim_mean(data, param))
+    # estimations['mle'] = stats.norm.fit(data)#stats.fit(stats.norm, data)
     # среднее арифметическое;
     # выборочная медиана;
     # дисперсия
     # коэф ассиметрии
     # коэф эксцесса
     # ОМП
+    losses_function = [math.log(x) for x in density]
+    estimations['mle'] = min(losses_function)
     # Усеченное среднее (0.05, 0.1, 0.15)
     # обобщенные радикальные оценки (0.1, 0.5, 1)
     return estimations
@@ -92,7 +105,7 @@ def calculate_estimations(data):
 
 clean_data, clean_density = generate_data(CAPACITY)
 
-print(calculate_estimations(clean_data))
+
 
 scale = 1
 shift = -5
@@ -101,6 +114,7 @@ dirty_data, dirty_density = generate_data(CAPACITY, shift=shift, scale=scale)
 
 noisy_data, noisy_density = generate_noisy_data(CAPACITY, shift=shift, scale=scale, noise_level=0.15)
 
+print(calculate_estimations(clean_data, clean_density))
 plt.plot(clean_data, clean_density, dirty_data, dirty_density, noisy_data, noisy_density)
 # plt.plot(dirty_data, dirty_density)
 plt.grid()
