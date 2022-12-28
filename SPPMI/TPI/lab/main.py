@@ -1,37 +1,42 @@
-# importing the required module
 import math
 import random as rand
-import numpy as np
+import numpy
 import statistics
-import scipy.stats as stats
-# import gaussian_kde, norm
 
-import matplotlib.pyplot as plt
+import numpy as np
+import scipy.stats as stats
+from scipy.optimize import minimize as scipy_minimize
+from scipy import integrate
+
 
 V_FORM = 0.1
 B1 = 1.03
 DISPERSION = 0.39
 EXCESS = 3.36
-CAPACITY = 10 ** 3
 
 B4 = 2 * B1 * math.tan(B1)
 B3 = V_FORM * B4 / 2 * math.exp(B4)
 B2 = B4 / (2 + B4)
 
+TRIM_MEAN_PARAMETERS = (0.05, 0.1, 0.15)
+ROBUSTNESS_PARAMETERS = (0.1, 0.5, 1)
 
-def cos_exp_dist(v, b1, b4):
+STANDARD_SCALE = 1
+STANDARD_SHIFT = 0
+
+results_folder = "./estimation_results/"
+
+
+def cos_exp_dist():
     """
     Генерация случайной величины на основе косинусно-эконенциального распределения
-    :param v: параметр формы
-    :param b1: параметр b1
-    :param b4: параметр b4
     :return: значение случайной величины
     """
     r1 = rand.random()
-    if r1 < v:
+    if r1 < V_FORM:
         r4 = rand.random()
-        x2 = 1 - math.log(r4) / b4
-        if r1 < v / 2:
+        x2 = 1 - math.log(r4) / B4
+        if r1 < V_FORM / 2:
             return x2
         else:
             return -x2
@@ -40,7 +45,7 @@ def cos_exp_dist(v, b1, b4):
             r2 = rand.random()
             r3 = rand.random()
             x1 = 2 * r2 - 1
-            if r3 <= math.pow(math.cos(b1 * x1), 2):
+            if r3 <= math.pow(math.cos(B1 * x1), 2):
                 return x1
 
 
@@ -58,8 +63,22 @@ def cos_exp_density_derivative(x):
         return -B4 * B3 * math.exp(-B4 * abs(x))
 
 
-def generate_data(n: int, shift: float = 0, scale: float = 1):
-    data = [shift + scale * cos_exp_dist(V_FORM, B1, B4) for x in range(n)]
+def mle_loss_function(shift, data, scale):
+    q = 0
+    for x in data:
+        q += -math.log(cos_exp_density((x - shift) / scale))
+    return q
+
+
+def radical_loss_function(shift, data, scale, delta):
+    q = 0
+    for x in data:
+        q += -1 / pow(cos_exp_density(0), delta) * pow(cos_exp_density((x - shift) / scale), delta)
+    return q
+
+
+def generate_data(n: int, shift: float = STANDARD_SHIFT, scale: float = STANDARD_SCALE):
+    data = [shift + scale * cos_exp_dist() for x in range(n)]
     data.sort()
     return data, [cos_exp_density((x - shift) / scale) / scale for x in data]
 
@@ -71,54 +90,96 @@ def generate_noisy_data(n: int, shift: float, scale, noise_level: float):
     for i in range(n):
         r = rand.random()
         if r <= 1 - noise_level:
-            noisy_data.append(cos_exp_dist(V_FORM, B1, B4))
+            noisy_data.append(cos_exp_dist())
         else:
-            noisy_data.append(shift + scale * cos_exp_dist(V_FORM, B1, B4))
+            noisy_data.append(shift + scale * cos_exp_dist())
     noisy_data.sort()
-    noisy_density = [(1 - noise_level) * cos_exp_density(x) + noise_level * cos_exp_density((x - shift) / scale) / scale for x in noisy_data]
+    noisy_density = [((1 - noise_level) * cos_exp_density(x) + noise_level * cos_exp_density((x - shift) / scale) / scale) for x in noisy_data]
     return noisy_data, noisy_density
 
 
-def calculate_estimations(data, density):
+def calculate_estimations(data, scale, estimate_shift=False):
     estimations = dict()
     estimations['mean'] = statistics.mean(data)
+    print(f"Среднее: {estimations['mean']}")
     estimations['median'] = statistics.median(data)
+    print(f"Медиана: {estimations['median']}")
     estimations['variance'] = statistics.variance(data, estimations['mean'])
+    print(f"Дисперсия: {estimations['variance']}")
     estimations['skewness'] = stats.skew(data)
-    estimations['kurtosis'] = stats.kurtosis(data)
+    print(f"Коэффициент асимметрии: {estimations['skewness']}")
+    estimations['kurtosis'] = stats.kurtosis(data, fisher=False)
+    print(f"Коэффициент эксцесса: {estimations['kurtosis']}")
+
+
     estimations['trim_mean'] = []
-    for param in (0.05, 0.1, 0.15):
+    for param in TRIM_MEAN_PARAMETERS:
         estimations['trim_mean'].append(stats.trim_mean(data, param))
-    # estimations['mle'] = stats.norm.fit(data)#stats.fit(stats.norm, data)
-    # среднее арифметическое;
-    # выборочная медиана;
-    # дисперсия
-    # коэф ассиметрии
-    # коэф эксцесса
-    # ОМП
-    losses_function = [math.log(x) for x in density]
-    estimations['mle'] = min(losses_function)
-    # Усеченное среднее (0.05, 0.1, 0.15)
-    # обобщенные радикальные оценки (0.1, 0.5, 1)
+    print(f"Усеченное среднее: {estimations['trim_mean']}")
+
+    if estimate_shift:
+        result = scipy_minimize(mle_loss_function, estimations['mean'], (data, scale), method='Nelder-Mead')
+        if result.success:
+            estimations['mle'] = result.x[0]
+        else:
+            print("MLE estimation error: ", result)
+        print(f"ОМП: {estimations['mle']}")
+
+        estimations['radical_estimates'] = list()
+        for param in ROBUSTNESS_PARAMETERS:
+            result = scipy_minimize(radical_loss_function, estimations['mean'], (data, scale, param), method='Nelder-Mead')
+            estimations['radical_estimates'].append(result.x[0])
+
+        print(f"Обобщенные радикальные оценки: {estimations['radical_estimates']}")
     return estimations
 
 
-clean_data, clean_density = generate_data(CAPACITY)
+def mle_integrate_function(x):
+    return math.pow(cos_exp_density_derivative(x), 2) / cos_exp_density(x)
 
+def rad_integrate_function(x, delta=1):
+    return math.pow(cos_exp_density_derivative(x), 2) * pow(cos_exp_density(x), delta-1)
 
+def calculate_influence_functions_data(data, shift, scale):
+    mean_influence = [y - shift for y in data]
+    median_influence = [scale * math.copysign(1, y - shift) / (2 * cos_exp_density(0)) for y in data]
 
-scale = 1
-shift = -5
+    trim_mean_influence = list()
+    for param in TRIM_MEAN_PARAMETERS:
+        k = numpy.quantile(generate_data(1000), (1-param))
+        trim_param_inf = list()
+        for y in data:
+            value = (y - shift) / scale
+            if value <= -k:
+                inf = -k
+            elif value >= k:
+                inf = k
+            else:
+                inf = value
+            inf *= 1 / (1 - 2 * param)
+            trim_param_inf.append(inf)
 
-dirty_data, dirty_density = generate_data(CAPACITY, shift=shift, scale=scale)
+        trim_mean_influence.append(trim_param_inf)
 
-noisy_data, noisy_density = generate_noisy_data(CAPACITY, shift=shift, scale=scale, noise_level=0.15)
+    # v = integrate.quad(mle_integrate_function, -np.inf, np.inf)
+    # mle_influence = [(-scale * cos_exp_density_derivative((y-shift)/scale)
+    #                     / cos_exp_density((y-shift)/scale))
+    #                 / v[0] for y in data]
 
-print(calculate_estimations(clean_data, clean_density))
-plt.plot(clean_data, clean_density, dirty_data, dirty_density, noisy_data, noisy_density)
-# plt.plot(dirty_data, dirty_density)
-plt.grid()
-plt.xlabel('x')
-plt.ylabel('f(x)')
-plt.title('Косинусно-экспоненциальное распределение')
-plt.savefig('cos_exp_clean.png')
+    # v = integrate.quad(rad_integrate_function, -np.inf, np.inf, args=(ROBUSTNESS_PARAMETERS[0],))
+    # rad_influence = [-scale * cos_exp_density_derivative((y - shift) / scale)
+    #        * pow(cos_exp_density((y - shift) / scale), ROBUSTNESS_PARAMETERS[0]-1)
+    #        / v[0] for y in data]
+
+    return mean_influence, median_influence, trim_mean_influence
+
+def estimations_to_file(estimations: dict, output_file: str):
+    with open(results_folder + output_file, 'w') as out_file:
+        for estimation in estimations:
+            if estimation in ('trim_mean', 'radical_estimates'):
+                out_file.write(f"{estimation}:\n")
+                for i, param in enumerate(TRIM_MEAN_PARAMETERS if estimation == 'trim_mean' else ROBUSTNESS_PARAMETERS):
+                    out_file.write(f"{param} -> {estimations[estimation][i]}; ")
+                out_file.write('\n')
+            else:
+                out_file.write(f"{estimation}: {estimations[estimation]}\n".capitalize())
