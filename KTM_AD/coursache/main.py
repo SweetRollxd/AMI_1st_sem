@@ -1,9 +1,8 @@
-import random
+import math
 import numpy
+from matplotlib import pyplot
 
-
-def gen_sample(capacity, mu=0, sigma=1):
-    return [random.normalvariate(mu=0, sigma=1) for _ in range(0, capacity)]
+from sample_generator import gen_sample
 
 def calculate_criteria_stat(sample):
     sample_range = max(sample) - min(sample)
@@ -15,33 +14,50 @@ def calculate_criteria_stat(sample):
 
     dispersion_estimate = 1 / (len(sample) - 1) * sum
 
-    return sample_range / dispersion_estimate
+    return sample_range / math.sqrt(dispersion_estimate)
 
-def sample_to_file(sample, mu, sigma, path):
-    with open(path, 'w') as f:
-        n = len(sample)
-        f.write(f"Нормальное распределение с масштабом {sigma} и сдвигом {mu}\n")
-        f.write(f"0 {n}\n")
-        for x in sample:
-            f.write(f"{x}\n")
+def calculate_p_value(sample, iterations):
+    m = 0
+    n = len(sample)
+    x_stat = calculate_criteria_stat(sample)
+    print(f"X-статистика критерия: {x_stat}")
+    for i in range(0, iterations):
+        y_sample = gen_sample(n)
+        y_stat = calculate_criteria_stat(y_sample)
+        if y_stat > x_stat:
+            m += 1
+    if m / iterations < (1 - m / iterations):
+        return 2 * m / iterations
+    else:
+        return 2 * (1 - m / iterations)
 
-capacity = 100
-x_sample = gen_sample(capacity)
-sample_to_file(x_sample, 0, 1, 'sample.dat')
-iterations = 100
-m = 0
-x_stat = calculate_criteria_stat(x_sample)
-print(f"X-статистика критерия: {x_stat}")
-for i in range(0, iterations):
-    y_sample = gen_sample(capacity)
-    y_stat = calculate_criteria_stat(y_sample)
-    # print(f"Y-статистика критерия: {y_stat}")
-    if y_stat > x_stat:
-        m += 1
-print("m:", m)
-if m / iterations < (1 - m / iterations):
-    p = 2 * m / iterations
-else:
-    p = 2 * (1 - m / iterations)
+def sample_from_file(path):
+    with open(path, 'r', encoding='cp1251') as f:
+        name = f.readline()
+        n = int(f.readline().split(' ')[1])
+        sample = list()
+        for i in range(0, n):
+            sample.append(float(f.readline()))
 
-print("p-value:", p)
+    return sample
+
+
+if __name__ == "__main__":
+    print("Проверка нормальности выборки критерием Дэвида-Хартли-Пирсона.")
+    filename = input("Файл с выборкой: ")
+    alfa = float(input("Вероятность ошибки первого рода: "))
+    iterations = int(input("Количество повторений в методе Монте-Карло: "))
+
+    x_sample = sample_from_file(filename)
+    pyplot.hist(x_sample, bins=len(x_sample))
+    pyplot.savefig("sample.png")
+    p_value = calculate_p_value(x_sample, iterations)
+
+    print("p-value:", p_value)
+
+    if p_value < alfa:
+        print("Достигаемый уровень значимости менее вероятности ошибки первого рода. Гипотеза ОТКЛОНЯЕТСЯ.")
+    else:
+        print("Достигаемый уровень значимости более вероятности ошибки первого рода. Гипотеза НЕ ОТКЛОНЯЕТСЯ.")
+
+
