@@ -52,7 +52,8 @@ if __name__ == "__main__":
     iterations = int(input("Количество повторений в методе Монте-Карло: "))
 
     x_sample = sample_from_file(filename)
-    pyplot.hist(x_sample, bins=len(x_sample))
+    pyplot.hist(x_sample, bins=len(x_sample), histtype='step')
+    pyplot.grid()
     pyplot.savefig("sample.png")
     p_value = calculate_p_value(x_sample, iterations, mu, sigma)
 
