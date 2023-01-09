@@ -16,13 +16,14 @@ def calculate_criteria_stat(sample):
 
     return sample_range / math.sqrt(dispersion_estimate)
 
-def calculate_p_value(sample, iterations):
+
+def calculate_p_value(sample, iterations, mu=0, sigma=1):
     m = 0
     n = len(sample)
     x_stat = calculate_criteria_stat(sample)
     print(f"X-статистика критерия: {x_stat}")
     for i in range(0, iterations):
-        y_sample = gen_sample(n)
+        y_sample = gen_sample(n, mu=mu, sigma=sigma)
         y_stat = calculate_criteria_stat(y_sample)
         if y_stat > x_stat:
             m += 1
@@ -45,13 +46,15 @@ def sample_from_file(path):
 if __name__ == "__main__":
     print("Проверка нормальности выборки критерием Дэвида-Хартли-Пирсона.")
     filename = input("Файл с выборкой: ")
+    mu = int(input("Сдвиг: "))
+    sigma = int(input("Масштаб: "))
     alfa = float(input("Вероятность ошибки первого рода: "))
     iterations = int(input("Количество повторений в методе Монте-Карло: "))
 
     x_sample = sample_from_file(filename)
     pyplot.hist(x_sample, bins=len(x_sample))
     pyplot.savefig("sample.png")
-    p_value = calculate_p_value(x_sample, iterations)
+    p_value = calculate_p_value(x_sample, iterations, mu, sigma)
 
     print("p-value:", p_value)
 
