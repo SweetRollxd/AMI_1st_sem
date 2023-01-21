@@ -1,0 +1,10 @@
+example
+new
+Palace
+follow
+new monarch
+King Charles
+King
+Charles
+proclaimed
+monarch

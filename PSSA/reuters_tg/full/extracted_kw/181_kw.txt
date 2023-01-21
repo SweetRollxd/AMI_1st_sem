@@ -1,0 +1,10 @@
+accept
+price
+price cap
+cap
+accept oil
+reported
+accept oil price
+oil
+oil price cap
+response

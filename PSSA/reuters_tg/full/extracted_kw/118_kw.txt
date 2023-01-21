@@ -1,0 +1,10 @@
+missiles
+North
+South
+coast
+Korea
+fired
+waters
+North Korea
+South Korean
+Korean

@@ -1,0 +1,1594 @@
+Forest Ecology and Management 531 (2023) 120754
+
+Contents lists available at ScienceDirect
+
+Forest Ecology and Management
+journal homepage: www.elsevier.com/locate/foreco
+
+Within and between population phenotypic variation in growth vigor and
+sensitivity to drought stress in five temperate tree species
+Victor Fririon a, *, Hendrik Davi a, Sylvie Oddou-Muratorio a, b, François Lebourgeois c,
+François Lefèvre a
+a
+
+INRAE, UR 629 Ecologie des Forêts Méditerranéennes (URFM), Domaine Saint Paul–Site Agroparc, 228, route de l’Aérodrome, 84000 Avignon, France
+INRAE, UMR 1224 Ecologie Comportementale et Biologie des Populations de Poissons (ECOBIOP), Aquapôle, 173, Route de Saint-Jean-de-Luz, 64310 Saint-Pée-surNivelle, France
+c
+Université de Lorraine, AgroParisTech, INRAE, UMR 1434 Silva, 14, rue Girardet, 54000, Nancy, France
+b
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Growth–climate relationships
+Drought stress
+Forest dynamics
+Tree rings
+Dendro-phenotypes
+Plasticity
+
+Within-population variation in individual tree growth and response to climate has an impact on forest dynamics,
+resilience and adaptation to environmental change.
+Combining dendrochronological analyses with a process-based ecophysiological model simulating drought
+stress at the stand scale, we studied the phenotypic variation of two growth-related traits within 22 pure stands of
+five contrasted tree species sampled in the RENECOFOR network over a wide range of ecological conditions.
+First, we computed the annual stress level from soil, climate and stand inventory data. Second, we computed
+individual sensitivity as the quantitative growth response to drought stress level and individual vigor as the
+capacity to grow in favorable years relative to an average stand-level growth model. We analyzed withinpopulation variation and covariation of individual vigor and sensitivity, their temporal changes during stand
+development, as well as the effect of environmental conditions on population-level means, variances and
+correlation.
+Our results show that within-population variances in sensitivity and vigor exceed the between-population
+variances for all species. The populations located in more stressful environments, i.e., low summer precipita­
+tion and extractable soil water, showed lower mean and variance of sensitivity, suggesting possible multiscale
+adaptation at the population level and within populations. None of the environmental factors considered had an
+effect on the average population vigor or on the within-population variance of vigor. We found a general positive
+correlation between individual growth sensitivity and vigor in 17 out of 22 populations, potentially revealing a
+growth performance trade-off. The correlation was more pronounced in low extractable soil water environments,
+which may be related to a need for stressful conditions to reveal the trade-off or be the consequence of adaptive
+processes, i.e., acclimation and selection.
+If high within-population stand phenotypic variation in growth traits contributes to the resilience and adaptive
+capacity of forests to climate change, a trade-off could represent a constraint on selection. We provide genetic
+and environmental arguments supporting the hypothesis of a trade-off, then we highlight the importance of
+integrating it into the management process, especially during selective thinning, to avoid indirectly increasing
+population sensitivity by selecting the most vigorous trees.
+
+1. Introduction
+Climate change is associated with increasing drought stress in all
+forest biomes around the world (Allen et al., 2010; Choat et al., 2012;
+Allen et al., 2015), with a potentially major impact on their role as
+
+carbon sinks (Ma et al., 2012; Anderegg et al., 2015). Drought stress
+reduces tree growth (Lempereur et al., 2015) and photosynthesis (Cornic
+& Massacci 1996), and when drought is intense and/or long, drought
+stress can cause hydraulic failures and lead to defoliation and tree death
+(Brodribb & Cochard 2009). Tree rings analysis is a widely recognized
+
+* Corresponding author.
+E-mail addresses: victor.fririon@inrae.fr (V. Fririon), hendrik.davi@inrae.fr (H. Davi), sylvie.muratorio@inrae.fr (S. Oddou-Muratorio), francois.lebourgeois@
+agroparistech.fr (F. Lebourgeois), francois.lefevre.2@inrae.fr (F. Lefèvre).
+https://doi.org/10.1016/j.foreco.2022.120754
+Received 20 January 2022; Received in revised form 12 December 2022; Accepted 22 December 2022
+Available online 12 January 2023
+0378-1127/© 2023 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/bync/4.0/).
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+approach to assess the effect of climate on tree growth (Fritts, 1971,
+Cook, 1985, Giguère-Croteau et al., 2019) and detect early-warning
+signs of mortality (Cailleret et al., 2019). Dendroecological approaches
+proved successful in investigating the impact of drought stress on the
+average radial growth of stands or cohorts and highlighting important
+variations in this impact with life history traits (DeSoto et al., 2020),
+social status (Mérian & Lebourgeois, 2011), stand structure and
+geographical location within the species distribution range (Camarero
+2021). Moreover, introducing the interindividual variability in treering–climate relationships allows for a more in-depth assessment of the
+effect of climate on stand growth that could improve the quality of
+ecological inferences (Carrer et al., 2011).
+Within-population interindividual phenotypic variation of growth
+results from the combination of extrinsic factors, such as resource
+availability and competition, and intrinsic factors, such as genotype,
+acclimation, microsite, age, size and social status (Aranda et al., 2010;
+Corcuera et al., 2011). In the context of climate change, two growth
+traits are useful to distinguish: the sensitivity to drought stress, i.e. the
+response of tree growth to stress level, and the growth potential, here­
+inafter referred to as vigor. Sensitivity and vigor both contribute to tree
+size and therefore to competitive and possibly reproductive perfor­
+mances. In comparison to the precisely defined drought sensitivity and
+its extensive use in ecophysiological and dendrometrical studies, vigor
+has been defined more loosely and mainly used in applied genetic
+studies with little consideration of stand dynamics effects. Withinpopulation variation and covariation of individual vigor and sensi­
+tivity to drought are factors of resilience in the face of climate change.
+Phenotypic variations in drought tolerance may buffer the short-term
+impacts of drought on the ecological functions of forests (Bréda et al.,
+2006; Aitken et al., 2008; Grady et al., 2011; Alfaro et al., 2014). In the
+long term, within-population variance and correlations of growth traits
+determine their take on selection and the evolutionary potential of
+populations. On different time scales, acclimation and selection are
+likely to jointly influence the sensitivity and vigor of the populations as
+well as the phenotypic variation, with both processes being subject to
+local environmental constraints. Previous works revealed the genetic
+basis of within-population variation for sensitivity to climate (Liepe
+2014; Bansal et al., 2015; Depardieu et al., 2020).
+Among tree populations, a genetic trade-off between vigor and
+sensitivity to climate has been reported in multisite common garden
+experiments: those populations that grow better in favorable sites
+generally grow less than others in stressful conditions (e.g., Pinus con­
+torta and P. sylvestris in Rehfeldt et al., 2001; 2002). The genetic
+component of this trade-off may result from a balancing selection pro­
+cess for contrasting ecological strategies, such as a water economy
+strategy in which plants maintain low growth rates and low rates of gas
+exchange during droughts or a water uptake strategy in which plants
+have more rapid instant growth through higher rates of gas exchange
+when water is available, allowing them to complete important biological
+functions before drought onset (Arntz & Delph 2001). At the withinpopulation scale, a phenotypic trade-off between vigor and sensitivity
+was observed in Abies alba by Nourtier et al., (2014) and in Cedrus
+atlantica by Fallour-Rubio et al., (2009). In a Fagus sylvatica population
+facing summer droughts, Bontemps et al., (2017) observed phenotypic
+trade-offs in the phenology, growth dynamics and anatomy among trees
+related to vigor and sensitivity. This trade-off can be due to environ­
+mental variability: individuals with higher water resources are expected
+to be more vigorous but also more sensitive to drought stress (Nourtier
+et al., 2014; Cailleret et al., 2019). Within-population trade-offs may
+also be under genetic control, which could explain the changes in cor­
+relation observed between cohorts within a single Cedrus atlantica forest
+(Fallour-Rubio et al., 2009).
+Ring width data provide repeated growth measures over time, i.e.,
+under different climates, of the trees that survived competition and
+hazards until sampling. Hence, they are very valuable data for disen­
+tangling individuals from environmental effects on growth vigor and
+
+sensitivity in situ, which can be achieved by using an individual-based
+growth analysis model that explicitly considers the factors of tree age,
+size, social status, the overall site environment and an individual
+random effect that captures the genetic and microsite effects (FallourRubio et al., 2009). Additionally, tree growth vigor and sensitivity to
+drought stress need to be considered dynamic phenotypic traits (Peltier
+& Ogle, 2020). Indeed, these traits are driven not only by static factors
+such as tree genotype or microsite conditions but also by dynamically
+changing factors such as tree age, size and social status (Cook, 1985;
+Trouvé et al., 2014; Perin et al., 2017; Forrester, 2019; Peltier & Ogle
+2020; Mašek et al., 2021). These individual features may change dras­
+tically over the potential long lifespan of trees in relation to stand
+development and forest management. To our knowledge, however, no
+study to date has combined a growth analysis model at the tree scale
+with a dynamic perspective of vigor and sensitivity.
+Another challenge when investigating tree growth sensitivity to
+environmental stress is to qualify and quantify the stress level. Some
+approaches, such as the resistance, recovery and resilience indices
+proposed by Lloret et al., (2011), bypass the quantitative level of stress
+and focus on the temporal sequence of growth variation. In this way,
+Depardieu et al., (2020) estimated within-population genetic variation
+in Lloret indices based on common garden experiments. However, in
+natural stands, this approach raises the question of comparability be­
+tween individuals, sites and species, since the observed response is
+specific to a given water stress level in a given background stress, both of
+which are often not measured (Schwarz et al., 2020). Other den­
+droecological studies explicitly consider the individual pedoclimatic
+variables driving intra- and interannual variation in tree growth (e.g.,
+Fritts, 1971, Mérian et al., 2011). As it can be challenging to generalize
+the relation between tree-ring widths and any single pedoclimatic var­
+iable, another related approach consists of using synthetic drought
+indices, such as the Palmer drought severity index or standardized
+precipitation evapotranspiration index (PDSI: Palmer, 1965; SPEI:
+Vicente-Serrano et al., 2010). Such indices precisely account for the
+environmental factors of stress but are irrespective of the physiological
+reaction of the plant and neglect the crucial importance of soil proper­
+ties, stand density and species functional traits, which may either
+amplify or buffer drought stress. In other words, they may not appro­
+priately inform the effective intensity and duration of drought stress
+(Zang et al., 2020).
+In this study, we combined dendrochronological analyses with an
+ecophysiological process-based model assessing the drought stress level
+and an individual-based growth model to investigate the phenotypic
+variation in growth sensitivity and vigor. We took advantage of the
+RENECOFOR dataset, an extensive tree-ring dataset that includes 61
+pure stands of five temperate tree species, i.e., Fagus sylvatica, Pseu­
+dotsuga menziesii, Pinus pinaster, Quercus petraea and Quercus robur,
+sampled over a wide range of ecological conditions, thus covering a
+broad range of climate–growth relationships that have been shown to
+vary among species, stands and social cohorts (Lebourgeois et al., 2005,
+Lebourgeois et al., 2010, Mérian et al., 2011; Mérian & Lebourgeois,
+2011; Guillemot et al., 2015). More specifically, in this study, we sought
+(1) to quantify the variance of growth sensitivity and vigor within forest
+tree populations, (2) to assess the correlation between these traits and, in
+particular, test for a possible trade-off, (3) to characterize the temporal
+dynamics of variances and correlation within populations, and (4) to
+identify pedoclimatic environmental factors that explain differences in
+variances, correlation, and average values of growth sensitivity and
+vigor among populations.
+Here, we defined individual vigor as the growth performance in
+favorable years, and sensitivity as the reaction norm of growth to stress
+level. For both traits, we sought to capture an individual effect inde­
+pendent of cofactors such as age or size. We hypothesize that genetic and
+micro-environmental factors may jointly contribute to the observed
+variation in sensitivity and vigor at the individual tree level. We consider
+that phenotypic variation and covariation of growth sensitivity to
+2
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+drought and vigor directly influence forest stand dynamics and forest
+management choices and, therefore, interfere with selection through
+size-dependent reproductive success (Greene & Johnson, 1994; Burczyk
+et al., 1996), growth and survival (Caspersen et al., 2011; Bennett et al.,
+2015).
+
+(ESW) as follows:
+ESW = D(1 − C)(θfc − θwilt)
+
+(1)
+
+where D is soil depth, C is the coarse element percentage, θwilt is hu­
+midity at the wilting point and θfc is humidity at field capacity assessed
+using soil texture data (Baize & Jabiol 1995; Supp. Table 1). The ESW
+computed over the entire soil profile ranged from 19 to 351 mm among
+populations.
+
+2. Material and methods
+2.1. Study area and species
+
+2.2. Selected trees, ring-width measurements and analysis
+
+Our study is based on the French permanent plot network for the
+monitoring of forest ecosystems (RENECOFOR, part of the ICP Forests
+Level II network, Lorenz 1995). We focused here on five contrasted
+species (i.e., contrasted autecology, gymnosperm vs angiosperm, shade
+tolerant vs intolerant, high vs low growth rate) sampled in 61 forest tree
+populations managed in pure and even-aged stands: Fagus sylvatica L. (n
+= 20 populations), Pseudotsuga menziesii (Mirb.) Franco (n = 6), Pinus
+pinaster Aiton (n = 7), Quercus petraea (Matt.) Liebl. (n = 19) and Quercus
+robur L. (n = 9). Together, the five temperate species represent 43 % of
+the French standing volume (IGN, 2021). The 61 populations were
+located between 41◦ 45′ 08′ ’ and 50◦ 10′ 16′ ’N and between 3◦ 32′ 34′ ’ and
+9◦ 12′ 23′ ’W (Fig. 1) and covered a wide range of bioclimatic conditions:
+oceanic (n = 15 populations), semi-continental (n = 35), Mediterranean
+(n = 2) and mountainous (n = 11).
+Over the 1959–1994 period, the mean annual precipitation varied
+from 647 to 1441 mm per year among populations. The mean minimum
+and the mean maximum temperature ranged from 4.2 ◦ C to 10.1 ◦ C and
+9.6 ◦ C to 17.3 ◦ C, respectively. The elevation ranged from 5 to 1400 m
+above sea level, and the slope ranged from 0 to 55 %. The populations
+sampled above an altitude of 500 m (n = 13) were mainly F. sylvatica and
+P. menziesii. Conversely, P. pinaster, Q. robur, and Q. petraea were mostly
+sampled on plains. We computed the extractable soil water for trees
+
+We used tree coring data obtained in 1995 by Lebourgeois et al.,
+(1997). Briefly, within each population, 23 to 30 dominant and
+codominant trees were cored at breast height as close as possible to the
+pith with an increment borer. Ring widths were measured with a ste­
+reomicroscope connected to a microcomputer and the tree ring program
+SAISIE (Becker, 1989) to the nearest 0.01 mm. Then, the individual ring
+width series were cross-dated by detecting regional pointer years and
+checked for erroneous dating (Lebourgeois et al., 2005).
+Tree-ring widths generally show a pronounced trend to change with
+tree size and age as well as with stand structure and competition (Trouvé
+et al., 2014; Perin et al., 2017). In this study, to disentangle the effect of
+climate on radial growth from the effect of other factors unrelated to
+climate, we standardized the individual radial growth series using a 30year cubic smoothing spline with a 50 % frequency response cutoff
+(Cook & Peters, 1981; Mérian & Lebourgeois, 2011). The transformation
+from the original ring width to the ring width index (RWI) was as
+follows:
+RWI = Woriginal /Wtrend
+
+(2)
+
+where Woriginal is the original tree ring width and Wtrend is the ring width
+
+Fig. 1. Geographical position of the 61 forest tree populations in the RENECOFOR network (ICP Forests Level II network) for the five species studied. The 22
+populations selected for analysis are in red (see 2.4. Selection of populations and temporal intervals for analyses).
+3
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+trend unrelated to climate identified by the spline function. The stan­
+dardized individual series were averaged using a bi-weighted robust
+mean to create stand tree-ring chronologies (Cook & Peters 1981).
+All core data processing was undertaken using the Dendrochro­
+nology Program Library (dplR; Bunn, 2008) in R version 3.6.2 (R
+Development Core Team, 2019).
+
+time series was less than the interval length of 21 years. The youngest
+selected populations show only a few temporal intervals.
+The growth response to drought stress may be masked by other bi­
+otic, abiotic or anthropogenic disturbance factors. These factors may
+differ among species and populations, making it difficult to disentangle
+and quantify a posteriori (Galván et al., 2014). For these reasons, we
+carried out a double selection of populations and temporal intervals and
+retained only populations and intervals for which the growth response to
+drought stress was directly observable. To do so, we selected pop­
+ulations with a significant simple correlation between stand tree-ring
+chronology and StressLvl over the whole period of observation (p <
+0.05) and the temporal intervals of these populations with a significant
+simple correlation between stand tree-ring chronology and StressLvl (p
+< 0.05). For some populations (n = 14), the correlation between RWI
+and StressLvl was not significant overall but significant for some tem­
+poral intervals; we still eliminated them. This selection process also led
+us to discard populations and intervals with low interannual drought
+stress variability or for which water was not a factor limiting growth.
+Among the 61 initial populations, 22 met the selection criteria and
+were used for the analyses (Fig. 1): 11F. sylvatica populations (55 %),
+3P. menziesii (50 %), 2P. pinaster (29 %), 3 Q. robur (33 %) and 3
+Q. petraea (16 %). The geographical position of the 22 selected pop­
+ulations is highlighted in Fig. 1. The climatic and pedological ranges of
+the selected populations were close to those of the initial group: mean
+annual rainfall ranged from 686 to 1422 mm among selected pop­
+ulations; mean minimum and mean maximum temperature ranged from
+5.6 ◦ C to 10.1 ◦ C and 11.9 ◦ C to 16.4 ◦ C, respectively; and extractable
+soil water for trees ranged from 19 to 275 mm (Supp. Table 3). The
+average population age in the selected temporal intervals varied be­
+tween 13 and 183 (Supp. Table 3), which provided a contrasting pop­
+ulation panel to analyze the variation of the studied traits.
+
+2.3. Simulation of the edaphic drought stress level
+An appropriate approach to quantify water stress is key for any type
+of growth responses analysis as the drought index choice may strongly
+influence the results (Van Loon et al. 2016). Raw climate data, as well as
+the PDSI or SPEI index, are valuable indicators for the study of drought
+on large scales but do not capture the intensity and duration of sitespecific soil water deficits (Zang et al. 2020). For these reasons, we
+opted for an ecophysiological approach and exhaustivity quantified
+water reserves and flux within each plot.
+We used an ecophysiological process-based model (CASTANEA,
+Dufrêne et al., 2005; Davi & Cailleret 2017) to simulate the annual
+drought stress level relative to the soil water content experienced by
+trees (StressLvl). We set the soil forcing variables (soil depth, texture,
+coarse element percentage) using the plot soil values available in the
+RENECOFOR dataset. We extracted the daily local climatic variables
+(minimum, average and maximum temperatures; precipitation; wind
+speed; average relative humidity; global radiation) from the objective
+analysis module SAFRAN (Durand et al., 1993; Vidal et al., 2010) using
+the closest grid points to the sampled populations (8 km grid resolution,
+data available from 1959 to 2019). We initialized the dendrometric
+variables, i.e., the number of trees per hectare (Nha) and the mean
+diameter at breast height (DBH), using the stand dendrometric values
+available in the RENECOFOR dataset. The parameters used for the
+simulations and their values are given per species in Supplementary
+Table 2.
+We computed daily soil water content based on supply and demand
+dynamics applied to soil moisture and as a function of soil forcing var­
+iables. Campbell’s soil water retention equation (Campbell, 1974) was
+used to predict the soil water potential (Ψsoil ) at a given volumetric water
+content (θ) anchored at the saturated volumetric water content (θsat ) as:
+( )− b
+θ
+Ψsoil = Ψe
+(3)
+θsat
+
+2.5. Growth sensitivity to drought stress and vigor
+We first estimated individual growth sensitivity and vigor within
+each selected temporal interval and then computed mean values over
+the selected intervals both at the individual tree level within each
+population and at the population level.
+2.5.1. Sensitivity estimation
+For each tree of each population and at each selected temporal in­
+terval T, we computed the regression coefficient between the ring width
+index (RWI) and StressLvl simulated with CASTANEA as a quantitative
+estimate of individual growth sensitivity to drought stress. We used the
+following linear model to estimate individual sensitivity within each
+selected temporal interval T (TSensi):
+
+where Ψe is the air-entry matric potential and b is the soil water reten­
+tion parameter. Ψe , b and θsat are strongly dependent on soil texture, and
+we assessed their local values using soil texture data (Bonan, 2019;
+Supp. Table 1).
+Then, we used CASTANEA to integrate the annual soil water balance
+(Dufrêne et al., 2005) in the form of a drought stress level indicator
+(StressLvl) computed as a Palmer index measured in MPa (Palmer, 1965):
+∑365
+StressLvl =
+Ψsoil
+(4)
+d=1
+
+RWI i,n = β + TSensii × StressLvln + εi,n
+
+(5)
+
+where β is the intercept, TSensi is the temporal growth sensitivity to
+drought stress, StressLvl is the annual drought stress simulated by the
+process-based model, and ε is the between-year growth residual. Sub­
+scripts i and n denote the individual and the year considered,
+respectively.
+
+where Ψsoil is the daily soil water potential of day d.
+Thus, StressLvl integrates both the duration and intensity of the
+annual water deficit. Subsequently, we used the StressLvl time series
+simulated with CASTANEA to characterize the interannual variation in
+drought stress in each studied population.
+
+2.5.2. Vigor estimation
+We computed individual vigor on a subset of the data corresponding
+to the three years of lowest StressLvl within each selected 21-years in­
+terval, as follows.
+For pure even-aged stands, growth models, in which annual growth
+is a function of DBH, had been developed for F. sylvatica (Dhôte 1991;
+Dhôte & Le Moguedec 2012), Quercus sp. (Dhôte & Le Moguedec 2012;
+Trouvé et al., 2014), P. menziesii (Deleuze et al., 2004; Trouvé et al.,
+2014; Perin et al., 2017) and P. pinaster (Najar et al., 1999). In these
+empirical models, the relationship between DBH and radial growth
+dynamically evolves with stand structure. Here, for each of the three
+
+2.4. Selection of populations and temporal intervals for analyses
+To study the temporal dynamics of growth sensitivity and vigor, we
+defined 21-year moving intervals slipped by one year. The 21-year
+period represented a compromise between the temporal resolution
+required to reveal variations in growth performance and the minimum
+number of years required to observe sufficient annual variation in
+StressLvl and growth. Here, we eliminated populations whose tree-ring
+4
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+years, we assumed a linear relation of radial growth to DBH, and we
+defined individual vigor as the deviation from this average growth
+model, so vigor is independent of initial tree size. The populations of the
+RENECOFOR network are, for the most part, managed in even-aged
+stands (Mérian & Lebourgeois, 2011). However, few ones are likely to
+deviate from even-aged structure. Therefore, we systematically added
+age as an explanatory factor in the model. Thus, we analyzed the 3-year
+subdataset within each interval with the following model:
+Woriginali,n = β + τn + DBH + τn : DBH + Agei + TVigi + εi,n
+
+Table 1
+Glossary of the growth variables and associated variances and covariances
+analyzed in this study.
+
+(6)
+
+where Woriginali,n is the original ring width of tree i in year n, β is the
+intercept, τn is the effect of year n on growth, DBH is the effect of DBH,
+τn : DBH is the interaction between DBH and year, Agei is the average age
+of tree i in the considered interval, TVigi is the temporal vigor of tree i in
+the considered interval, and εi,n is the residual variation for the ith tree in
+the nth year. We used individual overbark DBH of year n (see Perin et al.,
+2017), computed from the cumulative ring widths from the inside out
+until year n. For the few populations deviating from even-aged, collin­
+earity is possible between DBH and Age, but it does not affect the esti­
+mation of vigor.
+2.5.3. Sensitivity and vigor: From dynamic variables to intrinsic individual
+and average population values
+To characterize each individual by unique values, we computed the
+individual intrinsic growth sensitivity (ISensi) and vigor (IVig) for each
+individual of each population as the mean of its sensitivity and vigor
+values over the selected intervals. We computed the average population
+sensitivity (µSensi) by averaging the intrinsic sensitivity of individuals
+and the average population vigor (µVig) by averaging individual growth
+in favorable years. In addition, based on the average population sensi­
+tivity and vigor, we computed the between-population variances for
+each species and over all species as references to which we compared the
+within-population variances. Finally, to quantify the correlation be­
+tween growth sensitivity and vigor, we computed the Pearson correla­
+tion coefficient between intrinsic vigor (IVig) and sensitivity (ISensi) for
+each population and between temporal dynamic growth sensitivity
+(TSensi) and vigor (TVig) for each interval. Table 1 lists all the growth
+variables and their associated variances and correlations.
+2.6. Statistical analysis between populations
+We used mixed models to study the overall effects of local environ­
+mental conditions (climate and soil) and average population age across
+species and sites on population means, variances and correlations be­
+tween growth sensitivity and vigor. For each of these variables, we built
+a model with 1959–1994 average summer precipitation and maximum
+temperature (in June, July, and August), extractable soil water and
+average population age in the selected intervals as explanatory vari­
+ables. We added the species as a random cofactor in the model. The
+retained models were:
+Yp = β + Prp + Tmaxp + ESW p +agep + spp + εp
+
+Code
+
+Unit
+
+Description
+
+Temporal vigor
+
+TVig
+
+cm
+
+Intrinsic vigor
+
+IVig
+
+cm
+
+Average population
+vigor
+
+µVig
+
+cm
+
+Variance of temporal
+vigor
+Within-population
+variance of vigor
+Within-species betweenpopulation variance
+of vigor
+Between-population
+variance of vigor
+Temporal sensitivity
+
+var (TVig)
+
+cm2
+
+A temporal dynamic variable
+quantifying the specific ability
+of a tree to grow in favorable
+years relative to an average
+growth model
+The averaged value of TVig over
+temporal intervals
+The average growth of
+populations during favorable
+years
+The variance of temporal vigor
+
+var (IVig)
+
+cm2
+
+The variance of intrinsic vigor
+
+var (µVig|
+sp)
+
+2
+
+cm
+
+The within-species variance of
+average population vigor
+
+var (µVig)
+
+cm2
+
+TSensi
+
+MPa
+
+Intrinsic sensitivity
+
+ISensi
+
+MPa− 1
+
+Average population
+sensitivity
+
+µSensi
+
+MPa− 1
+
+Variance of temporal
+sensitivity
+Within-population
+variance of sensitivity
+Within-species betweenpopulation variance
+of sensitivity
+Between-population
+variance of sensitivity
+
+var
+(TSensi)
+var
+(ISensi)
+var
+(µSensi|
+sp)
+var
+(µSensi)
+
+MPa− 2
+
+Correlation between
+temporal sensitivity
+and vigor
+Within-population
+correlation between
+sensitivity and vigor
+
+r (TVig,
+TSensi)
+
+–
+
+r (IVig,
+ISensi)
+
+–
+
+− 1
+
+MPa− 2
+MPa− 2
+MPa− 2
+
+The total variance of average
+population vigor over all species
+A temporal dynamic variable
+quantifying the specific
+response of a tree’s growth to
+drought stress level
+The averaged value of TSensi
+over temporal intervals
+The average population
+sensitivity obtained by
+averaging the individual
+intrinsic sensitivities
+The variance of temporal
+sensitivity
+The variance of intrinsic
+sensitivity
+The within-species variance of
+average population sensitivity
+The total variance of average
+population sensitivity over all
+species
+The Pearson correlation
+coefficient between temporal
+vigor and temporal sensitivity
+The Pearson correlation
+coefficient between intrinsic
+vigor and intrinsic sensitivity
+
+Development Core Team, 2019).
+3. Results
+3.1. Within-population variations in growth sensitivity and vigor
+Within each species, within-population variance of sensitivity (resp.
+vigor) represents on average 520 % (resp. 376 %) of the betweenpopulation variance. Considering all species together, the mean
+within-population variance of sensitivity (resp. vigor) represents 47 %
+(resp. 17 %) of the between-population variance over all populations
+from all species (detailed variances are given in Supp. Table 4). These
+results indicate that most of the phenotypic variation in vigor and
+sensitivity to drought stress is within populations.
+Among the twenty-two populations, the correlation between
+intrinsic sensitivity and vigor was significantly positive in ten pop­
+ulations at threshold p < 0.05 and in three populations at threshold p <
+0.1, which included 7F. sylvatica populations (64 %), 2P. menziesii (67
+%), 1P. pinaster (50 %), 2 Q. robur (67 %), and 1 Q. petraea (33 %) (Fig. 2
+for P. menziesii and Supp. Fig. 1 for the other species). In these 13 pop­
+ulations, individual trees with better vigor showed higher growth
+sensitivity to drought stress. No significant negative correlation was
+observed. It should be noted that some trees, for the most part the less
+
+(7)
+
+where Y successively corresponds to µSensi, var (ISensi), var (IVig) and r
+(IVig, ISensi); β is the intercept; Pr and Tmax are the 1959–1994 average
+summer precipitation and maximum temperature, respectively; ESW is
+the extractable soil water; age is the average population age in the
+selected intervals; sp is the species random cofactor; and ε is the
+between-population Y residual. Subscript p denotes the population.
+Specifically, for the average population vigor (µVig), we added tree
+density (Nha, a proxy for competition; Supp. Table 3) as explanatory
+variables since growth is largely dependent on competition level:
+
+μVigp = β + Prp + Tmaxp + ESW p + Nhap + agep + spp + εp
+
+Full Name
+
+(8)
+
+We performed all statistical analyses using R version 3.6.2 (R
+5
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+Fig. 2. Correlation between intrinsic sensitivity
+(ISensi) and intrinsic vigor (IVig) in the three
+P. menziesii populations (Ps.m 34, Ps.m 61 and Ps.
+m 69). Each point represents an individual tree.
+The correlation was significantly positive in two
+of the three populations (Ps.m 61 and Ps.m 69).
+The significance level is indicated on the graphs
+by ’***’ at p < 0.001, ’**’ at p < 0.01, ’*’ at p <
+0.05, ’.’ at p < 0.1 and ’ns’ above. The dotted
+lines indicate zero sensitivity. Note that some
+trees were insensitive, i.e., ISensi ≤ 0.
+
+vigorous ones, were insensitive to drought stress, i.e., ISensi ≤ 0.
+We observed a temporal variation in the variance of sensitivity and
+vigor: the temporal variations within populations did not overcome the
+largest differences between contrasted populations and did not show a
+clear common pattern among populations or species (Fig. 3a,b for
+P. menziesii and Supp. Fig. 2 for the other species). The value and sig­
+nificance of the correlation coefficients between growth sensitivity
+(TSensi) and vigor (TVig) also varied among temporal intervals without a
+clear pattern (Fig. 3c). Nevertheless, the correlation was positive for
+most populations and intervals (Fig. 3c for P. menziesii and Supp. Fig. 2
+for the other species). We found at least one significant positive corre­
+lation between temporal sensitivity and vigor within 17 of the 22
+selected populations and no significant negative correlation. We
+observed this correlation in populations at the juvenile stage (e.g., <15
+years in Ps.m 69) as well as in largely mature populations (e.g., >180
+years in Q.r 55).
+
+significant effect (Table 2a; Supp. Fig. 3a,b). The overall model had a
+marginal R2 value of 0.56. In addition, summer precipitation (Pr; p <
+0.001) had a positive effect on within-population variance of sensitivity
+(var (ISensi)), while extractable soil water (ESW), maximum summer
+temperature (Tmax) and average population age (age) had no significant
+effect (Table 2b; Supp. Fig. 3c). The overall model had a marginal R2
+value of 0.56. To summarize, the average population value and the
+within-population variance of sensitivity to drought stress decreased
+with greater water constraints.
+Regarding vigor, no factor had a significant effect on either average
+population vigor (µVig) or on the within-population variance of vigor
+(var (IVig)) (Table 2c,d).
+Regarding the sensitivity–vigor correlation, extractable soil water
+(ESW; p = 0.012) had a negative effect on the within-population cor­
+relation between sensitivity and vigor (r (IVig, ISensi)), while maximum
+summer precipitation (Pr), summer temperature (Tmax) and average
+population age had no significant effects (Fig. 4; Table 2e). The overall
+model had a marginal R2 value of 0.24. These results indicate that
+environmental factors were a major determinant of the correlation be­
+tween growth sensitivity to drought stress and vigor within populations.
+
+3.2. Effect of environmental conditions of the populations on the
+variations in sensitivity and vigor
+Over the entire period from 1959 to 1994, the different populations
+showed high contrasts in the environmental factors driving water defi­
+cits: average summer precipitation (Pr) ranged from 116 to 347 mm,
+average summer maximum temperature (Tmax) ranged from 19 to
+24 ◦ C, and extractable soil water ranged (ESW) from 19 to 275 mm
+(Supp. Table 3). It should be noted that the range of water conditions
+varied between species with some overlap: ESW varied significantly
+between species unlike Pr and Tmax.
+Regarding sensitivity to drought stress, summer precipitation (Pr; p
+< 0.001) and extractable soil water (ESW; p = 0.009) had a positive
+effect on the average population sensitivity (µSensi), while maximum
+summer temperature (Tmax) and average population age (age) had no
+
+4. Discussion
+In this study, we quantified the variation and covariation of vigor
+and sensitivity to drought, as well as their temporal dynamics, both
+within and between 22 populations of five contrasting temperate spe­
+cies. We defined two growth variables at the individual tree level as a
+framework to disentangle the components of tree growth performance in
+environments with varying drought stress levels. We argue that these
+two individual growth variables can be considered new tree-ring based
+phenotypic traits (Housset et al., 2018).
+Our results are based on a subset of the RENECOFOR dataset for
+6
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+Table 2
+Results of the mixed models on all the selected populations (n = 22 populations)
+of average population sensitivity (a), within-population variance of sensitivity
+(b), average population vigor (c), within-population variance of vigor (d), and
+within-population correlation between sensitivity and vigor (e) according to
+average summer precipitation (Pr), average maximum summer temperature
+(Tmax), extractable soil water (ESW), species (sp), stand density (Nha) and
+average population age (age). Significant results are shown in bold with the
+significance level indicated by ’***’ at p < 0.001, ’**’ at p < 0.01, ’*’ at p < 0.05
+and ’.’ at p < 0.1.
+Source
+a) µSensi
+
+(Intercept)
+Pr
+Tmax
+ESW
+age
+b) var (ISensi)
+(Intercept)
+Pr
+Tmax
+ESW
+age
+c) µVig
+(Intercept)
+Pr
+Tmax
+ESW
+age
+Nha
+d) var (IVig)
+(Intercept)
+Pr
+Tmax
+ESW
+age
+e) r (IVig, ISensi)
+(Intercept)
+Pr
+Tmax
+ESW
+age
+
+Estimate
+
+Chisq.
+
+Df
+
+p-Value
+
+6.14 × 10− 3
+2.78 × 10− 5
+− 4.65 × 10− 4
+1.23 × 10− 5
+2.69 × 10− 6
+
+0.95
+16.87
+2.56
+6.73
+0.14
+
+1
+1
+1
+1
+1
+
+0.329
+<0.001***
+0.110
+0.009**
+0.712
+
+− 2.75 × 10− 6
+3.50 × 10− 8
+− 1.27 × 10− 7
+8.33 × 10− 9
+− 5.55 × 10− 9
+
+0.16
+22.87
+0.16
+2.58
+0.48
+
+1
+1
+1
+1
+1
+
+0.687
+<0.001***
+0.688
+0.108
+0.488
+
+1.66 × 10− 1
+4.35 × 10− 4
+1.07 × 10− 2
+− 2.00 × 10− 4
+− 1.19 × 10− 3
+− 5.37 × 10− 5
+
+0.27
+1.15
+0.49
+0.36
+3.24
+0.36
+
+1
+1
+1
+1
+1
+1
+
+0.602
+0.284
+0.483
+0.548
+0.072
+0.550
+
+2.79 × 10− 3
+− 1.23 × 10− 5
+5.91 × 10− 5
+1.24 × 10− 5
+3.245 × 10− 6
+
+0.12
+2.08
+0.03
+2.68
+0.09
+
+1
+1
+1
+1
+1
+
+0.730
+0.150
+0.871
+0.102
+0.761
+
+− 0.29 × 10− 1
+7.08 × 10− 4
+3.36 × 10− 2
+− 1.70 × 10− 3
+− 3.12 × 10− 4
+
+0.10
+0.53
+0.64
+6.25
+0.09
+
+1
+1
+1
+1
+1
+
+0.753
+0.468
+0.422
+0.012*
+0.766
+
+Fig. 3. Variances (a, b) and correlation (c) of temporal sensitivity (TSensi) and
+temporal vigor (TVig) for each interval T of the three P. menziesii populations
+(Ps.m 34, Ps.m 61 and Ps.m 69). Each point represents an interval T charac­
+terized by the average age of the trees (age). On the graph c, the dashed lines
+represent the values beyond which correlation coefficients are significant at p
+< 0.05 computed for a sample size of n = 30 individuals.
+
+which growth response to stress was present (selection of populations
+and intervals). The pedoclimatic range of all the populations and that of
+the selected subset were equivalent. We hypothesized that the pop­
+ulations and intervals removed from the analyses experienced insuffi­
+cient drought stress to observe a growth response and/or were impacted
+by other disturbance factors masking the relationship between growth
+and drought stress. Nevertheless, species-specific seasonal growth dy­
+namics may also affect the response to drought. First, the formation of
+earlywood in ring porous wood species, such as Quercus sp., largely
+depends on remobilization from reserves accumulated in previous years
+and starts before budburst (Michelot et al., 2012). In these species, tree
+rings of similar widths can have very different proportions of latewood
+(Lebourgeois, 1999). Therefore, wood density can differ considerably
+from year to year, buffering the variation of ring width in response to
+environmental conditions over the overall growing period (Schwarz
+et al., 2020). In this study, we attribute the small proportion of Quercus
+sp. populations selected for analyses (21 % compared to 49 % for other
+species) to these physiological and anatomical characteristics and to the
+fact that the Quercus sp. populations are preferentially on the best site
+conditions in the RENECOFOR network (Lebourgeois, 1999; Mérian
+et al., 2011). Second, there may be a certain time lag between the
+
+Fig. 4. Effect of extractable soil water (ESW) on the correlation between
+sensitivity and vigor (r (IVig, ISensi)). Each point represents a population. The
+correlation increases with lower ESW. The line shown is the simple regression
+coefficients on all the selected populations (n = 22): r (IVig, ISensi) = 0.52–1.47
+× 10− 3 ESW (R2 = 0.24).
+7
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+growth period and the water stress period, e.g., drought in autumn could
+deepen the annual water deficit while annual growth would not be
+affected. The intra-annual analysis of radial growth can help to define
+the growing season over which to integrate the stress (Olivar et al.,
+2014). The growing season varies greatly depending on the site and the
+species (Michelot et al., 2012). Pine species show active growth in
+October and late regrowth until November (P. pinaster, Vieira et al.,
+2009; P. halepensis, Olivar et al., 2014). In oak, growth usually stops at
+the first events of water deficit, during the months of June-July
+(Q. petraea, Bréda & Granier, 1996). For the sake of comparability be­
+tween sites and species, we have integrated stress at the scale of the
+entire year. Thus, our selection of intervals would exclude autumn
+drought events having no impact on the annual growth. However, in the
+temperate region, most of the water stress occurs in July and August,
+and therefore a moderate impact on the results is expected.
+
+populations with no clear pattern. The temporal variations in withinpopulation variances were sometimes important but did not exceed
+the largest between-population differences of average values. Thus,
+averaging over temporal intervals, as we did here, provides more robust
+estimates of within-population variance of growth-related traits. More­
+over, stand age had no effect on either trait (mean population values and
+variances), suggesting that we indeed captured an individual effect in­
+dependent of cofactors such as tree age or size.
+4.2. A growth vigor-sensitivity trade-off within populations facing drought
+stress
+We observed a positive correlation between vigor and sensitivity to
+drought stress within 17 of 22 populations (77 %) in both juvenile and
+largely mature stands. Vigorous trees showed higher sensitivity to
+drought stress episodes. Conversely, trees with higher sensitivity
+showed a higher capacity to benefit from favorable years. These corre­
+lations can originate from different and non-mutually exclusive envi­
+ronmental and genetic causes.
+The observed positive correlation between vigor and sensitivity
+could first result from the acclimation of trees to the spatially hetero­
+geneous microenvironmental conditions within stands. In microsites
+with low available water (e.g., low ESW) and/or high evapotranspira­
+tion (e.g., high density of trees, high LAI), individual trees may experi­
+ence higher drought stress than expected on average and respond
+adaptively through shifts in allocation to foliage, sapwood, and roots at
+the expense of vigor. Adaptive responses include short-term reductions
+in leaf area through early senescence (Ciais et al., 2005; Bréda et al.,
+2006), resource-intensive adaptations in hydraulic architecture and
+wood density induced by longer-term growth (Ruiz Diaz Britez et al.,
+2014), and lasting global physiological, morphological and architectural
+changes (e.g., tree height, number and longevity of stems, leaves and
+roots; Nicotra et al., 2010). Conversely, under favorable microsites (e.g.,
+higher ESW, better fertility), the accumulation of aboveground biomass
+due to growth may increase the sensitivity to drought events, since these
+morphological investments in stems and leaves induce substantial
+maintenance costs in water and carbohydrates during dry periods
+(McDowell et al., 2011; Cailleret et al., 2019). Changes in the hetero­
+geneity of stand structure (e.g., LAI, tree crown volume, clumping)
+through forest dynamics and silvicultural interventions are expected to
+lead to temporal variations in the vigor–sensitivity correlation, as
+observed. The pronounced spatial heterogeneity often associated with
+shallow soils could lead to a higher correlation between sensitivity and
+vigor, as we observed in lower ESW environments (Nourtier et al. 2014).
+The vigor–sensitivity correlation could also be of genetic origin,
+whereby selection for vigor entails a functional cost in terms of sensi­
+tivity and vice versa, potentially resulting in the coexistence of different
+genotypes within the population. Stomatal control determines the
+reduction in assimilation during water deficit periods. Therefore, ge­
+notypes characterized by maximum transpiration and assimilation rates
+under favorable conditions, and thus by high vigor, are expected to show
+stronger stomatal control during dry episodes, reducing carbon assimi­
+lation accordingly (Roussel et al., 2009a,b; Martínez-Vilalta et al.,
+2012). Vigor can be associated with a larger leaf area, which implies
+more photosynthesis and thus more growth but also more water loss
+through evapotranspiration and thus greater sensitivity (Marron et al.,
+2003). Lower sensitivity can be associated with increased root devel­
+opment, with the allocation of resources to the roots resulting in a
+substantial cost in terms of aboveground growth (Aranda et al., 2010).
+Wood density, a trait implicated in resistance to cavitation, is related to
+slower growth and longer life (Chave et al., 2009). Although universal,
+this relationship is not systematically found at the intraspecific level
+(Fajardo et al., 2022). The coexistence of different adaptive combina­
+tions of growth, phenology and anatomy traits, i.e., trait syndromes, was
+observed in a water-stressed population of F. sylvatica (Bontemps et al.,
+2017). Here, we observed a weaker correlation between vigor and
+
+4.1. A notable within-population variation in sensitivity and vigor
+Our results reveal high levels of within-population phenotypic vari­
+ation in growth sensitivity and vigor. On average for all species and for
+both traits, the within-population variance was higher than the variance
+of population mean values, even though the different populations of
+each species were sampled in different geographic areas and different
+environmental conditions. This suggests both genetic and environ­
+mental contributions to between-population variance. We had no in­
+formation on microenvironmental heterogeneity within each population
+that could help disentangle the genetic and microenvironmental com­
+ponents of within-population variance, but the environmental charac­
+terization at the population level provides a clue on this issue, as follows.
+The average population sensitivity was mainly driven by two envi­
+ronmental factors, summer precipitation and extractable soil water
+(ESW). Summer precipitation also had a positive effect on withinpopulation variance in sensitivity. As a parsimonious interpretation,
+we can assume that the positive impact of summer precipitation on
+within-population variance simply results from a scale effect, thus
+contributing to the environmental component of the variance of sensi­
+tivity. In contrast, ESW only drove the average population sensitivity but
+neither the within-population variance nor the average population
+vigor. Thus, ESW is likely to explain part of the between-population
+variance that is not a scale effect, whereby lower sensitivity in pop­
+ulations of lower ESW effectively indicates a lower response to stress.
+Although we cannot properly test for local adaptation based on our
+dataset, this cline in sensitivity along the ESW gradient suggests past
+adaptation to drought stress regimes. Furthermore, it has been shown
+that microgeographic variation in soil conditions within populations
+may contribute to interindividual variation in the response to drought
+(Nourtier et al., 2014) and there is increasing empirical evidence of
+microenvironmental adaptation within forest tree populations (Audi­
+geos et al., 2013; Heer et al., 2018; Brousseau et al., 2021). Therefore,
+we also hypothesize that part of the within-population variance in
+sensitivity, which is higher than between-population variance, is partly
+under genetic control.
+The average population vigor was not affected by any environmental
+factors. In particular, the lack of effect of summer precipitation indicates
+that our selection of the most favorable years for computing vigor
+effectively excluded water-limiting years. None of the environmental
+factors tested showed an effect on the within-population variance in
+vigor, indicating in particular that within-population phenotypic vari­
+ation in vigor was unrelated to drought conditions.
+In this study, we considered temporal variations in growth vigor and
+sensitivity to drought during stand development. For growth-related
+traits, temporal changes in population means and variances during a
+rotation cycle result from dynamic environmental factors (e.g., trends in
+climate change), evolution of stand structure, tree age, and long-term
+memory of past events (e.g., acclimation). For both studied traits, the
+dynamics of within-population variances differed among species and
+8
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+sensitivity in higher extractable soil water environments, i.e., lower
+drought stress environments, which suggests a low selection pressure on
+sensitivity leading to the persistence of genotypes a priori unfavorable,
+that is to say not so vigorous but sensitive. The effect of ESW on the
+correlation between vigor and sensitivity is also consistent with the lack
+of a significant relationship between drought stress and growth for plots
+with low stress level. Thus, environmental conditions favoring drought
+stress, such as low extractable soil water, might be necessary to reveal
+the trade-off between growth sensitivity and vigor.
+
+Such models should consider all demographic performances, i.e., sur­
+vival and reproduction in addition to growth, and the potential tradeoffs between them as well as the underlying genetic basis for ques­
+tions on a multigenerational scale.
+5. Conclusions
+We assessed within-population variation and covariation for growth
+performances, considered as dynamic phenotypic traits. We focused on
+two growth traits: vigor and sensitivity to drought stress. The phenotypic
+variation in vigor and growth sensitivity was considerable in all studied
+forest tree populations, and we observed a general trade-off between
+individual tree vigor and sensitivity to drought. The phenotypic varia­
+tion within populations can be related to better resilience and evolv­
+ability, whereas the trade-off represents a potential constraint on
+adaptation. Overall, the phenotypic variation observed is expected to
+influence evolutionary trajectory and forest stand dynamics, forest
+management being impacted by and having an impact on this variation.
+In particular, selective thinning aimed at favoring fast-growing trees
+could indirectly: (i) increase population sensitivity to water stress, (ii)
+harm the process of acclimation, and consequently (iii) affect future
+growth performance under climate change. Here, management practices
+supporting the conservation of both slow-growing and fast-growing
+trees within populations could be considered as a possible strategy to
+mitigate the negative effects of droughts and increase population
+resilience.
+
+4.3. Implications for population adaptation and management under
+climate change
+Forest dynamics tends to progressively lower the social rank of trees
+with lower growth and then, in particular for shade-intolerant species, to
+eliminate them through asymmetric competition (Hülsmann et al.,
+2018). Both vigor and sensitivity are components of tree growth, and we
+can expect different selection intensities for sensitivity and vigor
+depending on the local drought regime. When drought is rare or absent,
+the selection will operate only on vigor, which is likely to indirectly
+induce the selection of sensitive trees through the trade-off or, at least, to
+maintain sensitive trees at a dominant social rank. In contrast, the more
+intense and/or regular the drought events, the greater the selection will
+operate against sensitivity, which is likely to indirectly select for less
+vigorous trees. In the context of climate change, we expect such local
+shifts in drought regimes through increasingly frequent and severe dry
+conditions. Despite the strong interindividual variations observed, a
+genetic correlation could restrain the response to selection and
+contribute to maintaining within-population genetic variation for both
+sensitivity and vigor (Pujol et al., 2018). Regarding the evolution of
+forest functions under climate change, selection for lower sensitivity
+may correlate with selection for reduced growth potential. Depending
+on the underlying genetic determinism, this is likely to lead to changes
+in population growth performance over generations.
+Forest management modifies the composition, structure, environ­
+ment, and therefore evolutionary processes of forest tree populations
+(Jactel et al., 2009; Lefèvre et al., 2014). When silvicultural operations
+consist of controlling competition by removing trees on the basis of their
+phenotype, one issue is that current selection criteria may not neces­
+sarily correlate with future adaptedness (Lefèvre, 2012). Indeed, our
+results suggest that systematically favoring fast-growing trees could be
+unsafe if water conditions deteriorate because this risks indirectly
+selecting sensitive trees and, therefore, affects future growth perfor­
+mance. Furthermore, choosing the fastest growing trees among those
+that remain as seed trees may possibly increase the growth sensitivity in
+the following generations depending on the underlying genetic basis.
+When silvicultural practices are used to buffer the intensity and there­
+fore the impact of drought stress (e.g., reduction in stand density and
+LAI, Giuggiola et al., 2013; Schmitt et al., 2020), attention must be given
+to avoid over-selection of vigorous and sensitive genotypes and to avoid
+too much counter-action of acclimation processes. It is expected that the
+later these practices are applied, i.e., at a mature stand stage, the less the
+impact on selection for sensitivity will be, since much of the selection
+will have already taken place before (Lefèvre et al., 2014). One strategy
+could then be to maintain a significant drought stress level in the ju­
+venile stage to favor adaptation and acclimation before reducing it
+through thinning or pruning. Ideally, this reflection should address
+multiple stressors rather than just one, and not just traits associated with
+growth. In addition, microsite heterogeneity within populations de­
+serves attention in forest management strategies because it provides a
+variety of conditions with multiple benefits, in terms of resilience of the
+whole population and in terms of within-population genetic diversity
+(Scotti et al, 2016; Gauzere et al, 2020).
+Only a modeling approach seems to be able to explicitly account for
+the complexity of the underlying interactions between demography,
+ecology, management and evolution (Oddou-Muratorio et al., 2020).
+
+Declaration of Competing Interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Data availability
+Data will be made available on request.
+Acknowledgements
+This work was supported by the European Union’s Horizon 2020
+research and innovation program as part of the B4EST project [grant
+number 773383]; and the French National Forests Office. We thank all
+the people who worked on setting up and maintaining the RENECOFOR
+network, as well as collecting and making their data available. We
+would like to thank the three anonymous reviewers who gave their time
+to improve the content of this article.
+Appendix A. Supplementary material
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.foreco.2022.120754.
+References
+Aitken, S.N., Yeaman, S., Holliday, J.A., Wang, T., Curtis-McLane, S., 2008. Adaptation,
+migration or extirpation: climate change outcomes for tree populations. Evol. Appl.
+1, 95–111. https://doi.org/10.1111/j.1752-4571.2007.00013.x.
+Alfaro, R.I., Fady, B., Vendramin, G.G., Dawson, I.K., Fleming, R.A., Sáenz-Romero, C.,
+Lindig-Cisneros, R.A., Murdock, T., Vinceti, B., Navarro, C.M., Skrøppa, T.,
+Baldinelli, G., El-Kassaby, Y.A., Loo, J., 2014. The role of forest genetic resources in
+responding to biotic and abiotic factors in the context of anthropogenic climate
+change. Forest Ecol. Manage., Global Forest Genet. Resour.: Taking Stock 333,
+76–87. https://doi.org/10.1016/j.foreco.2014.04.006.
+Allen, C.D., Breshears, D.D., McDowell, N.G., 2015. On underestimation of global
+vulnerability to tree mortality and forest die-off from hotter drought in the
+Anthropocene. Ecosphere 6, art129. https://doi.org/10.1890/ES15-00203.1.
+Allen, C.D., Macalady, A.K., Chenchouni, H., Bachelet, D., McDowell, N., Vennetier, M.,
+Kitzberger, T., Rigling, A., Breshears, D.D., Hogg, E.H. (Ted), Gonzalez, P., Fensham,
+R., Zhang, Z., Castro, J., Demidova, N., Lim, J.-H., Allard, G., Running, S.W.,
+
+9
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+Semerci, A., Cobb, N., 2010. A global overview of drought and heat-induced tree
+mortality reveals emerging climate change risks for forests. Forest Ecology and
+Management 259, 660–684. 10.1016/j.foreco.2009.09.001.
+Anderegg, W.R.L., Schwalm, C., Biondi, F., Camarero, J.J., Koch, G., Litvak, M., Ogle, K.,
+Shaw, J.D., Shevliakova, E., Williams, A.P., Wolf, A., Ziaco, E., Pacala, S., 2015.
+Pervasive drought legacies in forest ecosystems and their implications for carbon
+cycle models. Science 349, 528–532. https://doi.org/10.1126/science.aab1833.
+Aranda, I., Alía, R., Ortega, U., Dantas, Â.K., Majada, J., 2010. Intra-specific variability in
+biomass partitioning and carbon isotopic discrimination under moderate drought
+stress in seedlings from four Pinus pinaster populations. Tree Genet. Genomes 6,
+169–178. https://doi.org/10.1007/s11295-009-0238-5.
+Arntz, M.A., Delph, L.F., 2001. Pattern and process: evidence for the evolution of
+photosynthetic traits in natural populations. Oecologia 127, 455–467. https://doi.
+org/10.1007/s004420100650.
+Audigeos, D., Brousseau, L., Traissac, S., Scotti-Saintagne, C., Scotti, I., 2013. Molecular
+divergence in tropical tree populations occupying environmental mosaics. J. Evol.
+Biol. 26, 529–544. https://doi.org/10.1111/jeb.12069.
+Baize, D., Jabiol, B., 1995. Guide pour la description des sols. Quae.
+Bansal, S., Harrington, C.A., Gould, P.J., St.Clair, J.B., 2015. Climate-related genetic
+variation in drought-resistance of Douglas-fir (Pseudotsuga menziesii). Global
+Change Biology 21, 947–958. 10.1111/gcb.12719.
+Becker, M., 1989. The role of climate on present and past vitality of silver fir forests in
+the Vosges mountains of northeastern France. Can. J. For. Res. 19, 1110–1117.
+https://doi.org/10.1139/x89-168.
+Bennett, A.C., McDowell, N.G., Allen, C.D., Anderson-Teixeira, K.J., 2015. Larger trees
+suffer most during drought in forests worldwide. Nat. Plants 1, 1–5. https://doi.org/
+10.1038/nplants.2015.139.
+Bonan, G., 2019. Climate Change and Terrestrial Ecosystem Modeling, 1st ed. Cambridge
+University Press. 10.1017/9781107339217.
+Bontemps, A., Davi, H., Lefèvre, F., Rozenberg, P., Oddou-Muratorio, S., 2017. How do
+functional traits syndromes covary with growth and reproductive performance in a
+water-stressed population of Fagus sylvatica? Oikos 126, 1472–1483. https://doi.
+org/10.1111/oik.04156.
+Bréda, N., Granier, A., 1996. Intra- and interannual variations of transpiration, leaf area
+index and radial growth of a sessile oak stand (Quercus petraea). Ann. For. Sci. 53,
+521–536. https://doi.org/10.1051/forest:19960232.
+Bréda, N., Huc, R., Granier, A., Dreyer, E., 2006. Temperate forest trees and stands under
+severe drought: a review of ecophysiological responses, adaptation processes and
+long-term consequences. Ann. For. Sci. 63, 625–644. https://doi.org/10.1051/
+forest:2006042.
+Brodribb, T., Cochard, H., 2009. Hydraulic failure defines the recovery and point of
+death in water-stressed conifers. Plant Physiol. 149, 575–584. https://doi.org/
+10.1104/pp.108.129783.
+Brousseau, L., Fine, P.V.A., Dreyer, E., Vendramin, G.G., Scotti, I., 2021. Genomic and
+phenotypic divergence unveil microgeographic adaptation in the Amazonian
+hyperdominant tree Eperua falcata Aubl. (Fabaceae). Mol. Ecol. 30, 1136–1154.
+https://doi.org/10.1111/mec.15595.
+Bunn, A.G., 2008. A dendrochronology program library in R (dplR). Dendrochronologia
+26, 115–124. https://doi.org/10.1016/j.dendro.2008.01.002.
+Burczyk, J., Adams, W.T., Shimizu, J.Y., 1996. Mating patterns and pollen dispersal in a
+natural knobcone pine (Pinus attenuate Lemmon.) stand. Heredity 77, 251–260.
+https://doi.org/10.1038/hdy.1996.139.
+Cailleret, M., Dakos, V., Jansen, S., Robert, E.M.R., Aakala, T., Amoroso, M.M., Antos, J.
+A., Bigler, C., Bugmann, H., Caccianaga, M., Camarero, J.-J., Cherubini, P.,
+Coyea, M.R., Čufar, K., Das, A.J., Davi, H., Gea-Izquierdo, G., Gillner, S., Haavik, L.J.,
+Hartmann, H., Hereş, A.-M., Hultine, K.R., Janda, P., Kane, J.M., Kharuk, V.I.,
+Kitzberger, T., Klein, T., Levanic, T., Linares, J.-C., Lombardi, F., Mäkinen, H.,
+Mészáros, I., Metsaranta, J.M., Oberhuber, W., Papadopoulos, A., Petritan, A.M.,
+Rohner, B., Sangüesa-Barreda, G., Smith, J.M., Stan, A.B., Stojanovic, D.B.,
+Suarez, M.-L., Svoboda, M., Trotsiuk, V., Villalba, R., Westwood, A.R., Wyckoff, P.H.,
+Martínez-Vilalta, J., 2019. Early-warning signals of individual tree mortality based
+on annual radial growth. Front. Plant Sci. 9 https://doi.org/10.3389/
+fpls.2018.01964.
+Camarero, J.J., Gazol, A., Sangüesa-Barreda, G., Vergarechea, M., Alfaro-Sánchez, R.,
+Cattaneo, N., Vicente-Serrano, S.M., 2021. Tree growth is more limited by drought in
+rear-edge forests most of the times. Forest Ecosyst. 8, 25. https://doi.org/10.1186/
+s40663-021-00303-1.
+Campbell, G.S., 1974. A simple method for determining unsaturated conductivity from
+moisture retention data. Soil Sci. 117, 311–314. https://doi.org/10.1097/
+00010694-197406000-00001.
+Carrer, M., 2011. Individualistic and time-varying tree-ring growth to climate sensitivity.
+PLoS One 6, e22813. https://doi.org/10.1371/journal.pone.0022813.
+Caspersen, J.P., Vanderwel, M.C., Cole, W.G., Purves, D.W., 2011. How stand
+productivity results from size- and competition-dependent growth and mortality.
+PLoS One 6, e28660. https://doi.org/10.1371/journal.pone.0028660.
+Chave, J., Coomes, D., Jansen, S., Lewis, S.L., Swenson, N.G., Zanne, A.E., 2009. Towards
+a worldwide wood economics spectrum. Ecol. Lett. 12, 351–366. https://doi.org/
+10.1111/j.1461-0248.2009.01285.x.
+Choat, B., Jansen, S., Brodribb, T.J., Cochard, H., Delzon, S., Bhaskar, R., Bucci, S.J.,
+Feild, T.S., Gleason, S.M., Hacke, U.G., Jacobsen, A.L., Lens, F., Maherali, H.,
+Martínez-Vilalta, J., Mayr, S., Mencuccini, M., Mitchell, P.J., Nardini, A.,
+Pittermann, J., Pratt, R.B., Sperry, J.S., Westoby, M., Wright, I.J., Zanne, A.E., 2012.
+Global convergence in the vulnerability of forests to drought. Nature 491, 752–755.
+https://doi.org/10.1038/nature11688.
+Ciais, P.h., Reichstein, M., Viovy, N., Granier, A., Ogée, J., Allard, V., Aubinet, M.,
+Buchmann, N., Bernhofer, C., Carrara, A., Chevallier, F., De Noblet, N., Friend, A.D.,
+
+Friedlingstein, P., Grünwald, T., Heinesch, B., Keronen, P., Knohl, A., Krinner, G.,
+Loustau, D., Manca, G., Matteucci, G., Miglietta, F., Ourcival, J.M., Papale, D.,
+Pilegaard, K., Rambal, S., Seufert, G., Soussana, J.F., Sanz, M.J., Schulze, E.D.,
+Vesala, T., Valentini, R., 2005. Europe-wide reduction in primary productivity
+caused by the heat and drought in 2003. Nature 437, 529–533. https://doi.org/
+10.1038/nature03972.
+Cook, E.R., 1985. A time series analysis approach to tree-ring standardization. University
+of Arizona, Tucson, AZ.US. Ph.D. dissertation).
+Cook, E.R., Peters, K., 1981. The Smoothing Spline: A New Approach to Standardizing
+Forest Interior Tree-Ring Width Series for Dendroclimatic Studies. Tree-Ring Bull.
+41, 45–53.
+Corcuera, L., Gil-Pelegrin, E., Notivol, E., 2011. Intraspecific variation in pinus pinaster
+PSII photochemical efficiency in response to winter stress and freezing temperatures.
+PLoS One 6, e28772.
+Cornic, G., Massacci, A., 1996. Leaf Photosynthesis Under Drought Stress. In: Baker, N.R.
+(Ed.), Photosynthesis and the Environment, Advances in Photosynthesis and
+Respiration. Springer, Netherlands, Dordrecht, pp. 347–366. https://doi.org/
+10.1007/0-306-48135-9_14.
+Davi, H., Cailleret, M., 2017. Assessing drought-driven mortality trees with physiological
+process-based models. Agric. For. Meteorol. 232, 279–290. https://doi.org/10.1016/
+j.agrformet.2016.08.019.
+Deleuze, C., Pain, O., Dhôte, J.-F., Hervé, J.-C., 2004. A flexible radial increment model
+for individual trees in pure even-aged stands. Ann. For. Sci. 61, 327–335. https://
+doi.org/10.1051/forest:2004026.
+Depardieu, C., Girardin, M.P., Nadeau, S., Lenz, P., Bousquet, J., Isabel, N., 2020.
+Adaptive genetic variation to drought in a widely distributed conifer suggests a
+potential for increasing forest resilience in a drying climate. New Phytol. 227,
+427–439. https://doi.org/10.1111/nph.16551.
+DeSoto, L., Cailleret, M., Sterck, F., Jansen, S., Kramer, K., Robert, E.M.R., Aakala, T.,
+Amoroso, M.M., Bigler, C., Camarero, J.J., Čufar, K., Gea-Izquierdo, G., Gillner, S.,
+Haavik, L.J., Hereş, A.-M., Kane, J.M., Kharuk, V.I., Kitzberger, T., Klein, T.,
+Levanič, T., Linares, J.C., Mäkinen, H., Oberhuber, W., Papadopoulos, A., Rohner, B.,
+Sangüesa-Barreda, G., Stojanovic, D.B., Suárez, M.L., Villalba, R., MartínezVilalta, J., 2020. Low growth resilience to drought is related to future mortality risk
+in trees. Nat. Commun. 11, 545. https://doi.org/10.1038/s41467-020-14300-5.
+Dhôte, J., 1991. Modélisation de la croissance des peuplements réguliers de hêtre :
+dynamique des hiérarchies sociales et facteurs de production. Ann. For. Sci. 48,
+389–416. https://doi.org/10.1051/forest:19910404.
+Dhôte, J.-F., Le Moguedec, G., 2012. Fagacées : a tree-centered growth and yield model
+for sessils oak (Quercus petraea L.) and common beech (Fagus sylvatica L.). Ann. For.
+Sci. 69, 257–269. https://doi.org/10.1007/s13595-011-0157-0.
+Dufrêne, E., Davi, H., François, C., le Maire, G., Dantec, V.L., Granier, A., 2005.
+Modelling carbon and water cycles in a beech forest. Ecol. Model. 185, 407–436.
+https://doi.org/10.1016/j.ecolmodel.2005.01.004.
+Durand, Y., Brun, E., Merindol, L., Guyomarc’h, G., Lesaffre, B., Martin, E., 1993. A
+meteorological estimation of relevant parameters for snow models. Annals of
+Glaciology 18, 65–71. 10.3189/S0260305500011277.
+Fajardo, A., Piper, F.I., García-Cervigón, A.I., 2022. The intraspecific relationship
+between wood density, vessel diameter and other traits across environmental
+gradients. Funct. Ecol. 36, 1585–1598. https://doi.org/10.1111/1365-2435.14069.
+Fallour-Rubio, D., Guibal, F., Klein, E.K., Bariteau, M., Lefèvre, F., 2009. Rapid changes
+in plasticity across generations within an expanding cedar forest. J. Evol. Biol. 22,
+553–563. https://doi.org/10.1111/j.1420-9101.2008.01662.x.
+Forrester, D.I., 2019. Linking forest growth with stand structure: tree size inequality, tree
+growth or resource partitioning and the asymmetry of competition. For. Ecol.
+Manage. 447, 139–157. https://doi.org/10.1016/j.foreco.2019.05.053.
+Fritts, H.C., 1971. Dendroclimatology and dendroecology. Quat. Res. 1, 419–449.
+https://doi.org/10.1016/0033-5894(71)90057-3.
+Galván, J.D., Camarero, J.J., Gutiérrez, E., 2014. Seeing the trees for the forest: drivers of
+individual growth responses to climate in Pinus uncinata mountain forests. J. Ecol.
+102, 1244–1257. https://doi.org/10.1111/1365-2745.12268.
+Gauzere, J., Klein, E.K., Brendel, O., Davi, H., Oddou-Muratorio, S., 2020.
+Microgeographic adaptation and the effect of pollen flow on the adaptive potential
+of a temperate tree species. New Phytol. 227, 641–653. https://doi.org/10.1111/
+nph.16537.
+Giguère-Croteau, C., Boucher, É., Bergeron, Y., Girardin, M.P., Drobyshev, I., Silva, L.C.
+R., Hélie, J.-F., Garneau, M., 2019. North America’s oldest boreal trees are more
+efficient water users due to increased [CO 2 ], but do not grow faster. Proc. Natl.
+Acad. Sci. USA 116, 2749–2754. https://doi.org/10.1073/pnas.1816686116.
+Giuggiola, A., Bugmann, H., Zingg, A., Dobbertin, M., Rigling, A., 2013. Reduction of
+stand density increases drought resistance in xeric Scots pine forests. For. Ecol.
+Manage. 310, 827–835. https://doi.org/10.1016/j.foreco.2013.09.030.
+Grady, K., Ferrier, S., Kolb, T., Hart, S., Allan, G., Whitham, T., 2011. Genetic variation in
+productivity of foundation riparian species at the edge of their distribution:
+implications for restoration and assisted migration in a warming climate. Glob.
+Chang. Biol. 17, 3724–3735. https://doi.org/10.1111/j.1365-2486.2011.02524.x.
+Greene, D.F., Johnson, E.A., 1994. Estimating the mean annual seed production of trees.
+Ecology 75, 642–647. https://doi.org/10.2307/1941722.
+Guillemot, J., Martin-StPaul, N.K., Dufrêne, E., François, C., Soudani, K., Ourcival, J.M.,
+Delpierre, N., 2015. The dynamic of the annual carbon allocation to wood in
+European tree species is consistent with a combined source–sink limitation of
+growth: implications for modelling. Biogeosciences 12, 2773–2790. https://doi.org/
+10.5194/bg-12-2773-2015.
+Heer, K., Behringer, D., Piermattei, A., Bässler, C., Brandl, R., Fady, B., Jehl, H.,
+Liepelt, S., Lorch, S., Piotti, A., Vendramin, G.G., Weller, M., Ziegenhagen, B.,
+Büntgen, U., Opgenoorth, L., 2018. Linking dendroecology and association genetics
+
+10
+
+V. Fririon et al.
+
+Forest Ecology and Management 531 (2023) 120754
+
+in natural populations: Stress responses archived in tree rings associate with SNP
+genotypes in silver fir (Abies alba Mill.). Mol. Ecol. 27, 1428–1438. https://doi.org/
+10.1111/mec.14538.
+Housset, J.M., Nadeau, S., Isabel, N., Depardieu, C., Duchesne, I., Lenz, P., Girardin, M.
+P., 2018. Tree rings provide a new class of phenotypes for genetic associations that
+foster insights into adaptation of conifers to climate change. New Phytol. 218,
+630–645. https://doi.org/10.1111/nph.14968.
+Hülsmann, L., Bugmann, H., Cailleret, M., Brang, P., 2018. How to kill a tree: empirical
+mortality models for 18 species and their performance in a dynamic forest model.
+Ecol. Appl. 28, 522–540. https://doi.org/10.1002/eap.1668.
+IGN, 2021. Le Mémento. Inventaire forestier. Édition 2021, Saint-Mandé, Institut
+national de l’information géographique et forestière.
+Jactel, H., Nicoll, B.C., Branco, M., Gonzalez-Olabarria, J.R., Grodzki, W., Långström, B.,
+Moreira, F., Netherer, S., Orazio, C., Piou, D., Santos, H., Schelhaas, M.J., Tojic, K.,
+Vodde, F., 2009. The influences of forest stand management on biotic and abiotic
+risks of damage. Ann. For. Sci. 66 https://doi.org/10.1051/forest/2009054.
+Lebourgeois, F., 1999. Les Chênes sessile et pédonculé (Quercus petraea Liebl. et Quercus
+robur L.) dans le réseau Renecofor : rythme de croissance radiale, anatomie du bois,
+de l’aubier et de l’écorce. Rev. For. Fr. 522 https://doi.org/10.4267/2042/5460.
+Lebourgeois, F., Bréda, N., Ulrich, E., Granier, A., 2005. Climate-tree-growth
+relationships of European beech (Fagus sylvatica L.) in the French Permanent Plot
+Network (RENECOFOR). Trees 19, 385–401. https://doi.org/10.1007/s00468-0040397-9.
+Lebourgeois, F., Rathgeber, C.B.K., Ulrich, E., 2010. Sensitivity of French temperate
+coniferous forests to climate variability and extreme events (Abies alba, Picea abies
+and Pinus sylvestris). J. Veg. Sci. 21, 364–376. https://doi.org/10.1111/j.16541103.2009.01148.x.
+Lebourgeois, F., 1997. RENECOFOR. Etude dendrochronologique des 102 peuplements
+du réseau. ONF Office National des Forêts, Département des Recherches Techniques.
+Lefèvre, F., Boivin, T., Bontemps, A., Courbet, F., Davi, H., Durand-Gillmann, M.,
+Fady, B., Gauzere, J., Gidoin, C., Karam, M.-J., Lalagüe, H., Oddou-Muratorio, S.,
+Pichot, C., 2014. Considering evolutionary processes in adaptive forestry. Ann. For.
+Sci. 71, 723–739. https://doi.org/10.1007/s13595-013-0272-1.
+Lefèvre, F., 2012. Les ressources génétiques, un réservoir et une dynamique pour la
+gestion des incertitudes. Rev. For. Fr. 10.4267/2042/48432.
+Lempereur, M., Martin-StPaul, N.K., Damesin, C., Joffre, R., Ourcival, J.-M.,
+Rocheteau, A., Rambal, S., 2015. Growth duration is a better predictor of stem
+increment than carbon supply in a Mediterranean oak forest: implications for
+assessing forest productivity under climate change. New Phytol. 207, 579–590.
+https://doi.org/10.1111/nph.13400.
+Liepe, K.J., 2014. Genetic variation in lodgepole pine and interior spruce: adaptation to
+climate and implications for seed transfer. University of Alberta, Calgary, Alberta,
+Canada. Ph.D. dissertation).
+Lloret, F., Keeling, E.G., Sala, A., 2011. Components of tree resilience: effects of
+successive low-growth episodes in old ponderosa pine forests. Oikos 120,
+1909–1920. https://doi.org/10.1111/j.1600-0706.2011.19372.x.
+Lorenz, M., 1995. International co-operative programme on assessment and monitoring
+of air pollution effects on forests-ICP forests-. Water Air Soil Pollut. 85, 1221–1226.
+https://doi.org/10.1007/BF00477148.
+Ma, Z., Peng, C., Zhu, Q., Chen, H., Yu, G., Li, W., Zhou, X., Wang, W., Zhang, W., 2012.
+Regional drought-induced reduction in the biomass carbon sink of Canada’s boreal
+forests. PNAS 109, 2423–2427. https://doi.org/10.1073/pnas.1111576109.
+Marron, N., Dreyer, E., Boudouresque, E., Delay, D., Petit, J.-M., Delmotte, F.M.,
+Brignolas, F., 2003. Impact of successive drought and re-watering cycles on growth
+and specific leaf area of two Populus x canadensis (Moench) clones, “Dorskamp” and
+“Luisa_Avanzo”. Tree Physiol. 23, 1225–1235. https://doi.org/10.1093/treephys/
+23.18.1225.
+Martínez-Vilalta, J., López, B.C., Loepfe, L., Lloret, F., 2012. Stand- and tree-level
+determinants of the drought response of Scots pine radial growth. Oecologia 168,
+877–888. https://doi.org/10.1007/s00442-011-2132-8.
+Mašek, J., Tumajer, J., Rydval, M., Lange, J., Treml, V., 2021. Age and size outperform
+topographic effects on growth-climate responses of trees in two Central European
+coniferous forest types. Dendrochronologia 68, 125845. https://doi.org/10.1016/j.
+dendro.2021.125845.
+McDowell, N.G., Beerling, D.J., Breshears, D.D., Fisher, R.A., Raffa, K.F., Stitt, M., 2011.
+The interdependence of mechanisms underlying climate-driven vegetation mortality.
+Trends Ecol. Evol. 26, 523–532. https://doi.org/10.1016/j.tree.2011.06.003.
+Mérian, P., Bontemps, J.-D., Bergès, L., Lebourgeois, F., 2011. Spatial variation and
+temporal instability in climate-growth relationships of sessile oak (Quercus petraea
+[Matt.] Liebl.) under temperate conditions. Plant Ecol. 212, 1855–1871. https://doi.
+org/10.1007/s11258-011-9959-2.
+Mérian, P., Lebourgeois, F., 2011. Size-mediated climate–growth relationships in
+temperate forests: a multi-species analysis. For. Ecol. Manage. 261, 1382–1391.
+https://doi.org/10.1016/j.foreco.2011.01.019.
+Michelot, A., Simard, S., Rathgeber, C., Dufrêne, E., Damesin, C., 2012. Comparing the
+intra-annual wood formation of three European species (Fagus sylvatica, Quercus
+petraea and Pinus sylvestris) as related to leaf phenology and non-structural
+carbohydrate dynamics. Tree Physiol. 32, 1033–1045. https://doi.org/10.1093/
+treephys/tps052.
+Najar, M., 1999. Un nouveau modèle de croissance pour le pin maritime. InformationsForêt 579, 6.
+
+Nicotra, A.B., Atkin, O.K., Bonser, S.P., Davidson, A.M., Finnegan, E.J., Mathesius, U.,
+Poot, P., Purugganan, M.D., Richards, C.L., Valladares, F., van Kleunen, M., 2010.
+Plant phenotypic plasticity in a changing climate. Trends Plant Sci. 15, 684–692.
+https://doi.org/10.1016/j.tplants.2010.09.008.
+Nourtier, M., Chanzy, A., Cailleret, M., Yingge, X., Huc, R., Davi, H., 2014. Transpiration
+of silver Fir (Abies alba mill.) during and after drought in relation to soil properties
+in a Mediterranean mountain area. Ann. For. Sci. 71, 683–695. https://doi.org/
+10.1007/s13595-012-0229-9.
+Oddou-Muratorio, S., Davi, H., Lefèvre, F., 2020. Integrating evolutionary, demographic
+and ecophysiological processes to predict the adaptive dynamics of forest tree
+populations under global change. Tree Genet. Genomes 16, 67. https://doi.org/
+10.1007/s11295-020-01451-1.
+Olivar, J., Bogino, S., Rathgeber, C., Bonnesoeur, V., Bravo, F., 2014. Thinning has a
+positive effect on growth dynamics and growth–climate relationships in Aleppo pine
+(Pinus halepensis) trees of different crown classes. Ann. For. Sci. 71, 395–404.
+https://doi.org/10.1007/s13595-013-0348-y.
+Palmer, W.C., 1965. Meteorological Drought. Weather Bureau Research Paper No. 45.
+Washington, DC: US Department of Commerce.
+Peltier, D.M.P., Ogle, K., 2020. Tree growth sensitivity to climate is temporally variable.
+Ecol. Lett. 23, 1561–1572. https://doi.org/10.1111/ele.13575.
+Perin, J., Claessens, H., Lejeune, P., Brostaux, Y., Hébert, J., 2017. Distance-independent
+tree basal area growth models for Norway spruce, Douglas-fir and Japanese larch in
+Southern Belgium. Eur. J. Forest Res. 136, 193–204. https://doi.org/10.1007/
+s10342-016-1019-y.
+Pujol, B., Blanchet, S., Charmantier, A., Danchin, E., Facon, B., Marrot, P., Roux, F.,
+Scotti, I., Teplitsky, C., Thomson, C.E., Winney, I., 2018. The missing response to
+selection in the wild. Trends Ecol. Evol. 33, 337–346. https://doi.org/10.1016/j.
+tree.2018.02.007.
+R Development Core Team, 2019. R: A Language and Environment for Statistical
+Computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.
+R-project.org/.
+Rehfeldt, G.E., Wykoff, W.R., Ying, C.C., 2001. Physiologic plasticity, evolution, and
+impacts of a changing climate on Pinus Contorta. Clim. Change 50, 355–376.
+https://doi.org/10.1023/A:1010614216256.
+Rehfeldt, G.E., Tchebakova, N.M., Parfenova, Y.I., Wykoff, W.R., Kuzmina, N.A.,
+Milyutin, L.I., 2002. Intraspecific responses to climate in Pinus sylvestris. Glob.
+Change Biol. 8, 912–929. https://doi.org/10.1046/j.1365-2486.2002.00516.x.
+Roussel, M., Dreyer, E., Montpied, P., Le-Provost, G., Guehl, J.-M., Brendel, O., 2009a.
+The diversity of 13C isotope discrimination in a Quercus robur full-sib family is
+associated with differences in intrinsic water use efficiency, transpiration efficiency,
+and stomatal conductance. J. Exp. Bot. 60, 2419–2431. https://doi.org/10.1093/
+jxb/erp100.
+Roussel, M., Thiec, D., Montpied, P., Ningre, N., Guehl, J.-M., Brendel, O., 2009b.
+Diversity of water use efficiency among Quercus robur genotypes: contribution of
+related leaf traits. Ann. For. Sci. 66, 408–408. 10.1051/forest/2009010.
+Ruiz Diaz Britez, M., Sergent, A.-S., Martinez Meier, A., Bréda, N., Rozenberg, P., 2014.
+Wood density proxies of adaptive traits linked with resistance to drought in Douglas
+fir (Pseudotsuga menziesii (Mirb.) Franco). Trees 28, 1289–1304. 10.1007/s00468014-1003-4.
+Schmitt, A., Trouvé, R., Seynave, I., Lebourgeois, F., 2020. Decreasing stand density
+favors resistance, resilience, and recovery of Quercus petraea trees to a severe
+drought, particularly on dry sites. Ann. For. Sci. 77, 52. https://doi.org/10.1007/
+s13595-020-00959-9.
+Schwarz, J., Skiadaresis, G., Kohler, M., Kunz, J., Schnabel, F., Vitali, V., Bauhus, J.,
+2020. Quantifying growth responses of trees to drought—a critique of commonly
+used resilience indices and recommendations for future studies. Curr. Forestry Rep.
+6, 185–200. https://doi.org/10.1007/s40725-020-00119-2.
+Scotti, I., González-Martínez, S.C., Budde, K.B., Lalagüe, H., 2016. Fifty years of genetic
+studies: what to make of the large amounts of variation found within populations?
+Ann. For. Sci. 73, 69–75. https://doi.org/10.1007/s13595-015-0471-z.
+Trouvé, R., Bontemps, J.-D., Collet, C., Seynave, I., Lebourgeois, F., 2014. Growth
+partitioning in forest stands is affected by stand density and summer drought in
+sessile oak and Douglas-fir. Forest Ecol. Manage. 334, 358–368. https://doi.org/
+10.1016/j.foreco.2014.09.020.
+Van Loon, A.F., Stahl, K., Di Baldassarre, G., Clark, J., Rangecroft, S., Wanders, N.,
+Gleeson, T., Van Dijk, A.I.J.M., Tallaksen, L.M., Hannaford, J., Uijlenhoet, R.,
+Teuling, A.J., Hannah, D.M., Sheffield, J., Svoboda, M., Verbeiren, B., Wagener, T.,
+Van Lanen, H.A.J., 2016. Drought in a human-modified world: reframing drought
+definitions, understanding, and analysis approaches. Hydrol. Earth Syst. Sci. 20,
+3631–3650. https://doi.org/10.5194/hess-20-3631-2016.
+Vicente-Serrano, S.M., Beguería, S., López-Moreno, J.I., 2010. A multiscalar drought
+index sensitive to global warming: the standardized precipitation evapotranspiration
+index. J. Clim. 23, 1696–1718. https://doi.org/10.1175/2009JCLI2909.1.
+Vidal, J.-P., Martin, E., Franchistéguy, L., Baillon, M., Soubeyroux, J.-M., 2010. A 50-year
+high-resolution atmospheric reanalysis over France with the Safran system. Int. J.
+Climatol. 30, 1627–1644. https://doi.org/10.1002/joc.2003.
+Vieira, J., Campelo, F., Nabais, C., 2009. Age-dependent responses of tree-ring growth
+and intra-annual density fluctuations of Pinus pinaster to Mediterranean climate.
+Trees 23, 257–265. https://doi.org/10.1007/s00468-008-0273-0.
+Zang, C.S., Buras, A., Esquivel-Muelbert, A., Jump, A.S., Rigling, A., Rammig, A., 2020.
+Standardized drought indices in ecological research: Why one size does not fit all.
+Glob. Change Biol. 26, 322–324. https://doi.org/10.1111/gcb.14809.
+
+11
+
+

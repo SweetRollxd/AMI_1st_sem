@@ -1,0 +1,10 @@
+status
+health
+toll since early
+toll
+term
+emergency
+public health
+public health emergency
+public
+health emergency
